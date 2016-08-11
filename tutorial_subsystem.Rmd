@@ -1,0 +1,54 @@
+---
+title: "How to Work with Data from a Subsystem"
+author: "Pri Oberoi"
+date: "August 9, 2016"
+output: html_document
+---
+
+## Get the data you need
+
+If you want to analyze net-zero data for specific subsystems, rather than data for the whole house, you can download the data from the Net Zero website and import it into R, or you can use the download link directly.
+
+For example, if you wanted to analyze the channels (like the heat pump air flow rate and/or the total power used by the heat pump) in the HVAC subsystem, you could pull data for that subsystem:
+
+```{r}
+# load libraries
+library(ggplot2) # plotting library
+library(DT) # interface to the JavaScript library DataTables
+
+# get data
+hvac <- read.csv("https://s3.amazonaws.com/net-zero/2015-data-files/HVAC.csv", header=TRUE, na.strings=c("NA", "NULL", "", " "))
+
+```
+
+Here are the variables included in the HVAC subsystem data:
+
+```{r}
+datatable(data.frame(channels = names(hvac), minValue = apply(hvac, 2, min), maxValue = apply(hvac, 2, max), nullCount = apply(hvac, 2, function(x) sum(is.na(x)))), options = list(pageLength = 20))
+```
+
+## Visualize the data
+
+Once you have your data, you can visualize the Supply and Return air temperatures by season. 
+
+```{r}
+
+# converts TimeStampGPSTime variable into date/time format (POSIXlt)
+hvac$TimeStampGPSTime <- strptime(hvac$TimeStampGPSTime, "%Y-%m-%d %H:%M:%S")
+
+# create a variable for seasons
+hvac$season <- "summer"
+hvac$season[hvac$TimeStampGPSTime < '2015-03-20 12:30:00'] <- "spring"
+hvac$season[hvac$TimeStampGPSTime > '2015-09-22 10:21:00' & hvac$TimeStampGPSTime < '2015-12-21 05:44:00'] <- "fall"
+hvac$season[hvac$TimeStampGPSTime > '2015-12-21 05:44:00'] <- "winter"
+hvac$season <- as.factor(hvac$season)
+
+# visualize air temperature  
+ggplot(hvac, aes(x = TimeStampCount)) +
+  geom_point(aes(y = HVAC_HVACTempSupplyAir), colour = "blue", alpha = 0.10, size = 1) +
+  geom_point(aes(y = HVAC_HVACTempReturnAir), colour = "black", alpha = 0.10, size = 1) +
+  xlab("Time") +
+  facet_wrap( ~ season, ncol = 2) 
+
+```
+
