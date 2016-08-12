@@ -5,15 +5,17 @@ date: "August 9, 2016"
 output: html_document
 ---
 
-Data from the Net Zero house includes a few date/time variables including 'TimeStampGPSTime', which is the date and timestamp for each reading, 'DayOfWeek' and 'TimeStampCount'. DayOfWeek is useful since computer controlled devices located in the house simulate the usage of a four-member family based on the day of the week.
+Data from the Net Zero house includes measurements from various instruments around the house in one minute increments. Each variable, also called channels in  NIST documentation, provides the readings from one instrument, and the instruments are grouped into subsystems like HVAC, Electrical, DHW.
 
-The rest of the variables are measurements from various instruments around the house in one minute increments. Each variable, also called channels in  NIST documentation, provides the readings from one instrument, and the instruments are grouped into subsystems like HVAC, Electrical, DHW.
+This data also includes a few date/time variables like 'TimeStampGPSTime', which is the date and timestamp for each reading, 'DayOfWeek' and 'TimeStampCount'. DayOfWeek is useful since computer controlled devices located in the house simulate the usage of a four-member family based on the day of the week.
 
-This tutorial walks through filtering data based on time of day and comparing channel readings by day of the week.
+This tutorial walks through filtering data based on time of day, and comparing channel readings by day of the week.
 
 ## Get the data you need
 
-You can download data from a particular subsystem from the [Net Zero data portal](http://commercedataservice.github.io/NZERTF/) or use the link for the subsystem you are interested in directly.
+If you want to analyze net-zero data for specific subsystems, rather than data for the whole house, you can download the data from the [Net Zero data portal](http://commercedataservice.github.io/NZERTF/) and import it into R, or you can use the download link directly.
+
+This is how you can analyze the channels (i.e. instrumentation data) in the Electrical subsystem:
 
 ```{r, warning=FALSE}
 # load libraries
@@ -25,12 +27,12 @@ hvac <- read.csv("https://s3.amazonaws.com/net-zero/2015-data-files/ElecEnergy.c
 
 ```
 
-Here are the variables included in the HVAC subsystem data. The nomenclature includes the name of the Sub-System and the name of the channel as SubSystem_SpecificChannel.
+Here are the variables included in the Electrical subsystem data. The nomenclature includes the name of the Sub-System and the name of the channel as SubSystem_SpecificChannel.
 ```{r, warning=FALSE}
 datatable(data.frame(channels = names(hvac)), options = list(pageLength = 20))
 ```
 
-## File and visualize the data
+## Filter and visualize the data
 
 Before we can visualize this data by date or time, we need to convert TimeStampGPSTime into a date/time format using strptime().
 ```{r, warning=FALSE}
