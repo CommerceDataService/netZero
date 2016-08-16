@@ -18,7 +18,6 @@ For example, if you wanted to analyze the channels (like the heat pump air flow 
 ```{r, warning=FALSE}
 # load libraries
 library(ggplot2) # plotting library
-library(DT) # interface to the JavaScript library DataTables
 
 # get data
 hvac <- read.csv("https://s3.amazonaws.com/net-zero/2015-data-files/HVAC.csv", header=TRUE, na.strings=c("NA", "NULL", "", " "))
@@ -28,7 +27,7 @@ hvac <- read.csv("https://s3.amazonaws.com/net-zero/2015-data-files/HVAC.csv", h
 Here are the variables included in the HVAC subsystem data. The nomenclature includes the name of the Sub-System and the name of the channel as SubSystem_SpecificChannel.
 
 ```{r, warning=FALSE}
-datatable(data.frame(channels = names(hvac)), options = list(pageLength = 20))
+names(hvac)
 ```
 
 ## Working with the data
