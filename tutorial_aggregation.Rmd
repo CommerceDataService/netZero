@@ -1,0 +1,78 @@
+---
+title: "Analyzing Aggregated Readings"
+output: html_document
+---
+
+Channels provide data at the instrumentation-level, however it is possible to analyze aggregate readings at the subsystem level.
+
+This tutorial walks through analyzing aggregate/total instantaneous readings for channels in the Electrical subsystem
+
+## Get the data you need
+
+First, we can use the download link from the Data page to import the data for the Electrical Subsystem:
+
+```{r, warning=FALSE}
+# load libraries
+library(ggplot2) # plotting library
+library(reshape2) # library for reshaping data easily
+
+# get data
+elec <- read.csv("https://s3.amazonaws.com/net-zero/2015-data-files/Elec.csv", header=TRUE, na.strings=c("NA", "NULL", "", " "))
+
+#exclude this from tutorial:
+load("~/backup.Rda")
+elec <- backup
+
+```
+
+There are 545 channels in the Electrical subsystem, however a subset of those channels measure total electrical readings, which is what we are interested in.
+
+```{r, warning=FALSE}
+# Row and column count for Electrical channel data
+dim(elec)
+
+# List of channels that contain total readings
+totals <- names(elec)[grep("Elec_Total", names(elec))]
+totals
+```
+
+## Working with the data
+
+Now that we know which variables contain total readings from this subsystem we can take a closer look.
+
+First, convert TimeStampGPSTime into a date/time format using strptime():
+```{r, warning=FALSE}
+# subset data to Totals only and any timestamp variables we need
+elec <- elec[,c("Timestamp", "TimeStamp_Count", "DayOfWeek", totals)]
+
+# converts Timestamp variable into date/time format (POSIXlt)
+elec$Timestamp <- strptime(elec$Timestamp, "%Y-%m-%d %H:%M:%S", tz = "EST")
+
+```
+
+Then decide which timestamps you are interested in. Remember that we have a reading for each minute of the year, so for this tutorial we are going to pull readings from 12pm EST on the first of each month:
+```{r, warning=FALSE}
+# extract readings from the first of each month at noon
+data <- elec[elec$Timestamp %in% (elec$Timestamp[elec$Timestamp$mday == 01 & elec$Timestamp$hour == 12 & elec$Timestamp$min == 00 & elec$Timestamp$sec == 00]),]
+data$TimeStamp_Count <- as.factor(1:nrow(data))
+data$Timestamp <- NULL
+data$DayOfWeek <- NULL
+data <- melt(data, value.name = "channel")
+
+```
+
+Now let's take a look at how these readings compare:
+```{r, warning=FALSE}
+ggplot(data, aes(x = TimeStamp_Count, y = channel, group = variable, colour = variable)) +
+  geom_line() +
+  ggtitle("Total readings from Electrical Subsystem") +
+  theme(legend.position="top")
+```
+
+Once you know which readings you are most interested in, you can filter for those:
+```{r, warning=FALSE}
+ggplot(data[data$variable %in% c("Elec_TotalOccupantEnergy", "Elec_TotalOccupantPower"),], aes(x = TimeStamp_Count, y = channel, group = variable, colour = variable)) +
+  geom_line() +
+  ggtitle("Total Occupant Energy and Power Readings from Electrical Subsystem")
+```
+
