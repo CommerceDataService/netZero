@@ -22,6 +22,8 @@ paths <- dir(path = rawDataWD, pattern = "\\.csv$", full.names = TRUE)
 
 for(path in paths){
   day <- read.csv(path, header = TRUE, stringsAsFactors = FALSE)
+  # remove _
+  names(day) <- gsub("_", "", names(day))
   # separate subsystem from channel in var names
   names(day) <- sub("\\.\\.\\.", "_", names(day))
   # remove . from variable names
@@ -42,7 +44,6 @@ for(path in paths){
   vars <- names(day)
   vars <- vars[!(vars %in% vars[grep("^Time", vars)])]
   d[as.character(d$Timestamp) %in% as.character(day$Timestamp),vars] <- day[,vars]
-  proc.time() - ptm
 }
 proc.time() - ptm
 
@@ -72,14 +73,17 @@ proc.time() - ptm
 # Remove unwanted channels (variables)
 ##########
 
-remove <- read.csv(paste0(processedDataWD, "/channels_to_remove.csv"), header = TRUE, stringsAsFactors = FALSE)
-remove$Data.Label <- gsub(" ", "", remove$Data.Label)
-remove$Data.Label <- gsub("-", "", remove$Data.Label)
-remove$Data.Label <- gsub("\\(", "", remove$Data.Label)
-remove$Data.Label <- gsub("\\)", "", remove$Data.Label)
-remove$variable <- paste0(substr(remove$Spreadsheet.Locator..Tab..Column., 1, 4), "_", remove$Data.Label)
-for(col in names(d)[names(d) %in% remove$variable]){
-  d[,col] <- NULL
+remove <- read.csv(paste0(processedDataWD, "/DataToBeIncluded.csv"), header = TRUE, stringsAsFactors = FALSE)
+remove$Channel <- gsub("[[:punct:]]", "", remove$Channel)
+remove$Channel <- gsub(" ", "", remove$Channel)
+remove$Remove[is.na(remove$Remove)] <- 1
+remove <- remove[remove$Remove < 1,]
+# remove the channels from data
+df <- data.frame()
+for(channel in remove$Channel){
+  temp <- names(d)[grep(paste0("_", channel), names(d), ignore.case = TRUE)]
+  #df <- rbind(df, data.frame())
+  d[,temp] <- NULL
 }
 
 ##########
@@ -131,9 +135,6 @@ write.csv(dic, file = paste0(processedDataWD, "/dataDictionary.csv"), row.names 
 # write entire dataset
 write.csv(d, file = paste0(processedDataWD, "/data.csv"), row.names = FALSE)
 
-# write dataset of Total readings
-write.csv(d[,c(timeVars, vars[grep("_Total", vars)])], file = paste0(processedDataWD, "/dataTotals.csv"), row.names = FALSE)
-
 # write CSV for each subsystem
 
 for(subsystem in subsystems){
@@ -151,12 +152,7 @@ proc.time() - ptm
 metadata <- data.frame(variable = names(d))
 metadata$subsystem <- NA
 metadata$subsystem[grep("_", metadata$variable)] <- unlist(lapply(as.character(metadata$variable[grep("_", metadata$variable)]), function(x) substr(x, 1, grep("_", strsplit(x, split = "")[[1]])-1)))
-metadata$description <- as.character("")
-metadata$description[metadata$variable %in% dic$channel] <- dic$Description[dic$channel %in% metadata$variable]
-metadata$measurement_location <- as.character("")
-metadata$measurement_location[metadata$variable %in% dic$channel] <- dic$Measurement.Location[dic$channel %in% metadata$variable]
-metadata$units <- as.character("")
-metadata$units[metadata$variable %in% dic$channel] <- dic$Units[dic$channel %in% metadata$variable]
+metadata <- merge(unique(metadata), unique(dic[,c("channel", "Description", "Measurement.Location", "Units")]), by.x = "variable", by.y = "channel", all.x = TRUE)
 metadata$in_dictionary <- "N"
 metadata$in_dictionary[!(metadata$description == "")] <- "Y"
 metadata[metadata$variable %in% timeVars,'description'] <- "Date/Time"
