@@ -101,21 +101,26 @@ proc.time() - ptm
 
 dic <- read.csv(paste0(rawDataWD, "/dataDictionary.csv"), header = TRUE, stringsAsFactors = FALSE, na.strings = c("", NA, " "))
 dic <- na.omit(dic)
-dic$channel <- gsub("\\\xd0", "", dic$Data.Label)
-dic$channel <- gsub("-", "", dic$channel)
+dic$channel <- gsub("[[:punct:]]", "", dic$Data.Label)
+dic$channel <- gsub("\\\xd0", "", dic$channel)
 dic$channel <- gsub(" ", "", dic$channel)
-dic$channel <- gsub("\\(", "", dic$channel)
-dic$channel <- gsub("\\)", "", dic$channel)
 
 # list of subsystems
 subsystems <- unlist(unique(lapply(names(d[grep("_", names(d))]), function(x) substr(x, 1, grep("_", strsplit(x, split = "")[[1]])-1))))
 subsystems <- subsystems[!(subsystems == "TimeStamp")]
-dic$subsystem <- "placeholder"
+dic$data_subsystem <- "placeholder"
 for(i in max(nchar(subsystems)):min(nchar(subsystems))){
-  dic$subsystem[!(dic$subsystem %in% subsystems)] <- substr(dic$Subsystem[!(dic$subsystem %in% subsystems)], 1, i)
+  dic$data_subsystem[!(dic$data_subsystem %in% subsystems)] <- substr(dic$Subsystem[!(dic$data_subsystem %in% subsystems)], 1, i)
 }
-dic$subsystem[!(dic$subsystem %in% subsystems)] <- "Not mapped"
-dic$channel <- paste0(dic$subsystem, "_", dic$channel)
+dic$data_subsystem[dic$Subsystem == "Lighting"] <- "Elec"
+dic$data_subsystem[dic$data_subsystem == "placeholder"] <- "Not mapped"
+dic$channel <- paste0(dic$data_subsystem, "_", dic$channel)
+# fuzzy match channel in dic to data to replace name with exact match
+for(channel in dic$channel){
+  temp <- names(d)[grep(channel, names(d), ignore.case = TRUE)]
+  temp <- ifelse(length(temp)==0, channel, temp)
+  dic$channel[dic$channel == channel] <- temp
+}
 
 write.csv(dic, file = paste0(processedDataWD, "/dataDictionary.csv"), row.names = FALSE)
 
@@ -126,6 +131,9 @@ write.csv(dic, file = paste0(processedDataWD, "/dataDictionary.csv"), row.names 
 # write entire dataset
 write.csv(d, file = paste0(processedDataWD, "/data.csv"), row.names = FALSE)
 
+# write dataset of Total readings
+write.csv(d[,c(timeVars, vars[grep("_Total", vars)])], file = paste0(processedDataWD, "/dataTotals.csv"), row.names = FALSE)
+
 # write CSV for each subsystem
 
 for(subsystem in subsystems){
@@ -133,5 +141,37 @@ for(subsystem in subsystems){
   data_subsystem <- d[,vars]
   write.csv(data_subsystem, file = paste0(processedDataWD, "/", subsystem, ".csv"), row.names = FALSE)
 }
+
+proc.time() - ptm
+
+###############
+# create metadata object
+###############
+
+metadata <- data.frame(variable = names(d))
+metadata$subsystem <- NA
+metadata$subsystem[grep("_", metadata$variable)] <- unlist(lapply(as.character(metadata$variable[grep("_", metadata$variable)]), function(x) substr(x, 1, grep("_", strsplit(x, split = "")[[1]])-1)))
+metadata$description <- as.character("")
+metadata$description[metadata$variable %in% dic$channel] <- dic$Description[dic$channel %in% metadata$variable]
+metadata$measurement_location <- as.character("")
+metadata$measurement_location[metadata$variable %in% dic$channel] <- dic$Measurement.Location[dic$channel %in% metadata$variable]
+metadata$units <- as.character("")
+metadata$units[metadata$variable %in% dic$channel] <- dic$Units[dic$channel %in% metadata$variable]
+metadata$in_dictionary <- "N"
+metadata$in_dictionary[!(metadata$description == "")] <- "Y"
+metadata[metadata$variable %in% timeVars,'description'] <- "Date/Time"
+metadata$description[grep("_Status", metadata$variable)] <- "Binary Status"
+temp <- c()
+for(i in 1:ncol(d)){
+  temp[i] <- max(as.numeric(d[,i]))
+}
+metadata$max_value <- temp
+temp <- c()
+for(i in 1:ncol(d)){
+  temp[i] <- min(as.numeric(d[,i]))
+}
+metadata$min_value <- temp
+
+write.csv(metadata, file = paste0(processedDataWD, "/metadata.csv"), row.names = FALSE)
 
 proc.time() - ptm
