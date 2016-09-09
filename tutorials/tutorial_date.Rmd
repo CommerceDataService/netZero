@@ -1,0 +1,63 @@
+---
+title: "Extract Data by Timestamp"
+output: html_document
+---
+
+The Net Zero data also includes a few date/time variables like 'Timestamp', which is the date and timestamp for each reading, 'DayOfWeek' and 'TimeStampCount'. 
+
+This tutorial walks through filtering data based on time of day, and comparing channel readings by day of the week.
+
+## Get the data you need
+
+If you want to analyze net-zero data for specific subsystems, rather than data for the whole house, you can download the data from the Net Zero website and import it into R, or you can use the download link directly.
+
+This is how you can analyze the channels (i.e. instrumentation data) in the Electrical subsystem:
+
+```{r, warning=FALSE}
+# load libraries
+library(ggplot2) # plotting library
+
+# get data
+#elec <- read.csv("https://s3.amazonaws.com/nist-netzero/2015-data-files/Elec.csv", header=TRUE, na.strings=c("NA", "NULL", "", " "))
+# delete the line below and uncomment the line above
+elec <- read.csv("/Users/prioberoi/Documents/nist/netZero/data/processed/Elec.csv", header=TRUE, na.strings=c("NA", "NULL", "", " "))
+
+```
+
+Here are the first 20 variables included in the Electrical subsystem data. The nomenclature includes the name of the Sub System and the name of the channel as SubSystem_Channel.
+```{r, warning=FALSE}
+names(elec)[1:20]
+```
+
+## Filter and visualize the data
+
+Before we can visualize this data by date or time, we need to convert Timestamp into a date/time format using strptime().
+```{r, warning=FALSE}
+# converts Timestamp variable into date/time format (POSIXlt)
+elec$Timestamp <- strptime(elec$Timestamp, "%Y-%m-%d %H:%M:%S")
+```
+Here is a sample of what that looks like:
+```{r, warning=FALSE}
+elec$Timestamp[1:10]
+```
+Now we can choose a random day and look at what the refrigerator readings looked like by filtering our data using on Timestamp and using the Elec_PowerRPBA8Refrigerator variable ('Power - RP BA-8 Refrigerator' in the data dictionary).
+```{r, warning=FALSE}
+ggplot(elec[elec$Timestamp < '2015-10-02 00:00:00' & elec$Timestamp > '2015-10-01 00:00:00',], aes(x = Timestamp, y = Elec_PowerRPBA8Refrigerator)) +
+  geom_line(alpha = 0.4) +
+  ggtitle("Instantaneous Power Consumption by Refrigerator")
+```
+Alternatively, to look at the cumulative energy consumption for that day (which resets once a day), we could visualize the Elec_EnergyRPBA8Refrigerator variable.
+```{r, warning=FALSE}
+ggplot(elec[elec$Timestamp < '2015-10-02 00:00:00' & elec$Timestamp > '2015-10-01 00:00:00',], aes(x = Timestamp, y = Elec_EnergyRPBA8Refrigerator)) +
+  geom_line(alpha = 0.4) +
+  ggtitle("Cumulative Power Consumption by Refrigerator")
+```
+
+Visualizing instaneous power consumption by the refrigerator for that day in comparison to the rest of the week would allow us to identify any spikes in power consumption.
+```{r, warning=FALSE}
+ggplot(elec[elec$Timestamp < '2015-10-05 00:00:00' & elec$Timestamp > '2015-09-28 00:00:00',], aes(x = Timestamp , y = Elec_PowerRPBA8Refrigerator)) +
+  geom_point(alpha = 0.4) +
+  geom_point(data = elec[elec$Timestamp < '2015-10-02 00:00:00' & elec$Timestamp > '2015-10-01 00:00:00',], alpha = 0.4, color = "blue") +
+  ggtitle("Refrigerator Channel Readings")
+```
+
