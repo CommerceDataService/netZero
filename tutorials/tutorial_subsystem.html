@@ -131,6 +131,7 @@ library(ggplot2) # plotting library
 
 # get data
 #hvac &lt;- read.csv(&quot;https://s3.amazonaws.com/nist-netzero/2015-data-files/HVAC.csv&quot;, header=TRUE, na.strings=c(&quot;NA&quot;, &quot;NULL&quot;, &quot;&quot;, &quot; &quot;))
+# delete the line below and uncomment the line above
 hvac &lt;- read.csv(&quot;/Users/prioberoi/Documents/nist/netZero/data/processed/HVAC.csv&quot;, header=TRUE, na.strings=c(&quot;NA&quot;, &quot;NULL&quot;, &quot;&quot;, &quot; &quot;))</code></pre>
 <p>Here are the variables included in the HVAC subsystem data. The nomenclature includes the name of the Sub System and the name of the channel as SubSystem_Channel.</p>
 <pre class="r"><code>names(hvac)</code></pre>
@@ -166,11 +167,11 @@ hvac$Timestamp &lt;- strptime(hvac$Timestamp, &quot;%Y-%m-%d %H:%M:%S&quot;)
 
 # quick check of the values in the Timestamp variable
 hvac$Timestamp[1:10]</code></pre>
-<pre><code>##  [1] &quot;2015-02-01 00:00:00 EST&quot; &quot;2015-02-01 00:01:00 EST&quot;
-##  [3] &quot;2015-02-01 00:02:00 EST&quot; &quot;2015-02-01 00:03:00 EST&quot;
-##  [5] &quot;2015-02-01 00:04:00 EST&quot; &quot;2015-02-01 00:05:00 EST&quot;
-##  [7] &quot;2015-02-01 00:06:00 EST&quot; &quot;2015-02-01 00:07:00 EST&quot;
-##  [9] &quot;2015-02-01 00:08:00 EST&quot; &quot;2015-02-01 00:09:00 EST&quot;</code></pre>
+<pre><code>##  [1] &quot;2015-02-01 00:00:00 CST&quot; &quot;2015-02-01 00:01:00 CST&quot;
+##  [3] &quot;2015-02-01 00:02:00 CST&quot; &quot;2015-02-01 00:03:00 CST&quot;
+##  [5] &quot;2015-02-01 00:04:00 CST&quot; &quot;2015-02-01 00:05:00 CST&quot;
+##  [7] &quot;2015-02-01 00:06:00 CST&quot; &quot;2015-02-01 00:07:00 CST&quot;
+##  [9] &quot;2015-02-01 00:08:00 CST&quot; &quot;2015-02-01 00:09:00 CST&quot;</code></pre>
 <p>Now we can use the Timestamp variable to create a new categorical ‘season’ variable:</p>
 <pre class="r"><code># create a variable for seasons
 hvac$season &lt;- &quot;summer&quot;

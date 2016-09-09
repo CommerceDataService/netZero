@@ -29,6 +29,7 @@ library(ggplot2) # plotting library
 
 # get data
 #hvac <- read.csv("https://s3.amazonaws.com/nist-netzero/2015-data-files/HVAC.csv", header=TRUE, na.strings=c("NA", "NULL", "", " "))
+# delete the line below and uncomment the line above
 hvac <- read.csv("/Users/prioberoi/Documents/nist/netZero/data/processed/HVAC.csv", header=TRUE, na.strings=c("NA", "NULL", "", " "))
 
 ```
