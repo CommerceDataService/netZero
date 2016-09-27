@@ -37,11 +37,12 @@ elec_power <- elec[,c("Timestamp", names(elec)[grep("_Power", names(elec))])]
 # using the data dictionary or metadata files, this object could be narrowed down to power consumption in one room or for a specific appliance
 # the 'total' variable below is a sum of all electrical power consumption channels
 elec_power$total <- rowSums(elec_power[,2:ncol(elec_power)])
-ggplot(elec_power[,c("Timestamp", "total")], aes(x = Timestamp, y = total)) +
-  geom_point(aes(colour = strftime(elec_power$Timestamp, format = "%m")), alpha = 0.4) +
-  geom_smooth() +
-  theme(legend.position="none") +
-  ggtitle("Total Instantaneous Power Consumption Readings")
+# uncomment below
+# ggplot(elec_power[,c("Timestamp", "total")], aes(x = Timestamp, y = total)) +
+#   geom_point(aes(colour = strftime(elec_power$Timestamp, format = "%m")), alpha = 0.4) +
+#   geom_smooth() +
+#   theme(legend.position="none") +
+#   ggtitle("Total Instantaneous Power Consumption Readings")
 
 ```
 
