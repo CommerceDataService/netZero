@@ -1,2 +1,5 @@
 # netZero
-Power disaggregation model for Net-Zero Energy Residential Test Facility (NZERTF)
+
+Cleaning scripts, tutorials, visualizations and statistical modeling for the Net-Zero Energy Residential Test Facility (NZERTF).
+
+
