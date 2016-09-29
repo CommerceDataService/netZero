@@ -38,3 +38,7 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 *.apple.*
+
+# Data files #
+##############
+.csv
