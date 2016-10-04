@@ -1,0 +1,391 @@
+Data Label,Subsystem,Measurement Location ,Description,Units
+Manifold-Hot Flow,DHW,Basement,The cumulative volume of water flowing into the hot side of the plumbing distribution manifold starting at midnight,Gallons
+Manifold-Cold Flow,DHW,Basement,The cumulative volume of water flowing into the cold side of the plumbing distribution manifold starting at midnight,Gallons
+MixValve -Cold Flow,DHW,Basement,The cumulative volume of mains water flowing into the mixing valve that is positioned downstream of the solar thermal storage tank starting at midnight,Gallons
+Clothes Washer – Hot Flow,DHW,Utility,The cumulative volume of hot water flowing into the clothes washer starting at midnight,Gallons
+Clothes Washer – Cold Flow,DHW,Utility,The cumulative volume of cold water flowing into the clothes washer starting at midnight,Gallons
+Dishwasher – Hot Flow,DHW,Kitchen,The cumulative volume of hot water flowing into the dishwasher starting at midnight,Gallons
+Room Temp – Basement HPWH,DHW,Basement,The dry bulb air temperature located two feet from the surface of the heat pump water heater at a vertical distance halfway up the tank,°C
+Water Temp – Manifold Cold In,DHW,Basement,The instantaneous temperature of the water entering the cold side of the plumbing manifold,°C
+Water Temp – Manifold Hot In,DHW,Basement,The instantaneous temperature of the water entering the hot side of the plumbing manifold,°C
+Water Temp – K Sink - Cold,DHW,Kitchen,The instantaneous temperature of the water in the cold water line at the kitchen sink,°C
+Water Temp – K Sink - Hot,DHW,Kitchen,The instantaneous temperature of the water in the hot water line at the kitchen sink,°C
+Water Temp - Dishwasher,DHW,Kitchen,The instantaneous temperature of the water in the hot water line at the dishwasher,°C
+Water Temp – Washer Cold,DHW,Utility,The instantaneous temperature of the water in the cold water line at the clothes washer,°C
+Water Temp - Washer Hot,DHW,Utility,The instantaneous temperature of the water in the hot water line at the clothes washer,°C
+,,,,
+Water Temp – MBA SinkR Hot,DHW,MBath,The instantaneous temperature of the water in the hot water line at the right sink in the Master Bathroom,°C
+,,,,
+Water Temp – MBA SinkR Cold,DHW,MBath,The instantaneous temperature of the water in the cold water line at the right sink in the Master Bathroom,°C
+,,,,
+Water Temp – MBA Shw Hot,DHW,MBath,The instantaneous temperature of the water in the hot water line at the shower in the Master Bathroom,°C
+,,,,
+Water Temp – MBA Shw Cold,DHW,MBath,The instantaneous temperature of the water in the cold water line at the shower in the Master Bathroom,°C
+Water Temp – MBA Tub Hot,DHW,MBath,The instantaneous temperature of the water in the hot water line at the tub in the Master Bathroom,°C
+Water Temp – MBA Tub Cold,DHW,MBath,The instantaneous temperature of the water in the cold water line at the tub in the Master Bathroom,°C
+Water Temp – BA2 Sink Hot,DHW,Bath2,The instantaneous temperature of the water in the hot water line at the sink in the bathroom located off the hallway on the second floor,°C
+Water Temp – BA2 Sink Cold,DHW,Bath2,The instantaneous temperature of the water in the cold water line at the sink in the bathroom located off the hallway on the second floor,°C
+Water Temp – BA2 Shw Hot,DHW,Bath2,The instantaneous temperature of the water in the hot water line at the shower in the bathroom located off the hallway on the second floor,°C
+Water Temp – BA2 Shw Cold,DHW,Bath2,The instantaneous temperature of the water in the cold water line at the shower in the bathroom located off the hallway on the second floor,°C
+Water Temp – K Sink - Mix,DHW,Kitchen,The instantaneous temperature of the water in the kitchen sink faucet after the mixing valve,°C
+Water Temp – MBA Shw Mix,DHW,MBath,The instantaneous temperature of the water in the master bath shower after the mixing valve,°C
+Water Temp – MBA Tub Mix,DHW,MBath,The instantaneous temperature of the water in the tub faucet after the mixing valve,°C
+Water Temp – BA2 Sink Mixed,DHW,Bath2,The instantaneous temperature of the water in the sink faucet of the bathroom located off the hallway on the second floor after the mixing valve,°C
+Water Temp – BA2 Shower Mixed,DHW,Bath2,The instantaneous temperature of the water in the shower faucet of the bathroom located off the hallway on the second floor after the mixing valve,°C
+Water Temp – MBA Sink-R Mixed,DHW,MBath,The instantaneous temperature of the water in the master bath sink located on the right after the mixing valve,°C
+Water Temp – Solar Preheat Tank (80 gal) In,DHW,Basement,The instantaneous temperature of the water entering the 80 gallon solar preheat tank,°C
+,,,,
+Water Temp – Solar Preheat Tank (80 gal) Out,DHW,Basement,The instantaneous temperature of the water leaving the 80 gallon solar preheat tank,°C
+Water Temp - MixValve Cold In,DHW,Basement,The instantaneous temperature of the water from the main entering the mixing valve downstream of the solar preheat tank,°C
+,,,,
+Water Temp - MixValve Hot In,DHW,Basement,The instantaneous temperature of the water from the solar preheat tank entering the mixing valve downstream of that tank,°C
+Water Temp - SHW HX (80 gal) HX In,DHW,Basement,The instantaneous temperature of the potable water on the inlet side of the heat exchanger of the solar water heating system (from the storage tank),°C
+Water Temp - SHW HX (80 gal) HX Out,DHW,Basement,The instantaneous temperature of the potable water on the exit side of the heat exchanger of the solar water heating system (returning to the storage tank),°C
+Water Temp - HPWH In,DHW,Basement,The instantaneous temperature of the water on the inlet side of the heat pump water heater,°C
+Water Temp - HPWH Out,DHW,Basement,The instantaneous temperature of the water on the exit side of the heat pump water heater,°C
+Glycol Temp - SHW HX (80 gal) HX In,DHW,Basement,The instantaneous temperature of the glycol-water solution on the inlet side of the heat exchanger of the solar water heating system (from the solar panels),°C
+Glycol Temp - SHW HX (80 gal) HX Out,DHW,Basement,The instantaneous temperature of the glycol-water solution on the outlet side of the heat exchanger of the solar water heating system (returning to the solar panels),°C
+Status?  Solenoid Hot #9 - MBA Shower,DHW,MBath,"Number to indicate whether hot water is flowing in master bath shower (1: Yes, O: No)",
+Status?  Solenoid Cold #12 - MBA Shower,DHW,MBath,"Number to indicate whether cold water is flowing in master bath shower (1: Yes, O: No)",
+Status?  Solenoid Hot #8 - MBA Tub,DHW,MBath,"Number to indicate whether hot water is flowing in master bath tub (1: Yes, O: No)",
+Status?  Solenoid Cold #11 - MBA Tub,DHW,MBath,"Number to indicate whether cold water is flowing in master bath tub (1: Yes, O: No)",
+Status?  Solenoid Hot #3 - Kitchen Sink,DHW,Kitchen,"Number to indicate whether hot water is flowing in kitchen sink (1: Yes, O: No)",
+Status?  Solenoid Cold #4 - Kitchen Sink,DHW,Kitchen,"Number to indicate whether cold water is flowing in kitchen sink (1: Yes, O: No)",
+Heat Pump Water Heater Energy - Total,DHW,Basement,Cumulative energy consumption by heat pump water heater starting from midnight,Wh
+Heat Pump Water Heater Power - Total,DHW,Basement,Instantaneous power consumption by heat pump water heater,W
+SHW Pumps Energy - with Standby,DHW,Basement,Cumulative energy consumption by solar water heating system pumps starting from midnight,Wh
+SHW Pumps Power - with Standby,DHW,Basement,Instantaneous power consumption by solar water heating system pumps,W
+SHW HX (80 gal) Water Flow,SHW,Basement,Cumulative volume of potable water flowing through the heat exchanger of the solar water heating system starting from midnight (as measured by the heat exchanger’s internal flow meter),Gallons
+Glycol Flow HX - Coriolis SHW,SHW,Basement,Cumulative volume of glycol/water solution flowing through the heat exchanger of the solar water heating system starting from midnight,Gallons
+Water Flow HX – Coriolis SHW,SHW,Basement,Cumulative volume of potable water flowing through the heat exchanger of the solar water heating system starting from midnight,Gallons
+Glycol Temp - SHW Panel (80 gal) Out,SHW,Outdoor,Instantaneous temperature of glycol/water solution leaving solar panel on roof; temperature is measured with a surface RTD mounted on the surface of the pipe and wrapped in insulation  ,°C
+Glycol Flow Rate HX - Coriolis SHW,SHW,Basement,Instantaneous flow rate of glycol/water solution flowing through the heat exchanger of the solar water heating system,Gallons Per Minute
+Water Flow Rate HX - Coriolis SHW,SHW,Basement,Instantaneous flow rate of potable water flowing through the heat exchanger of the solar water heating system,Gallons Per Minute
+PSP - SHW,SHW,Outdoor,Solar broadband insolation measured adjacent to and in the plane of the solar thermal collectors,W/m^2
+Latent Heat Water Volume,Loads,Kitchen,Cumulative volume of water injected into space by humidifier to simulate moisture addition by occupant behavior,Gallons
+Freezer Temp,Loads,Kitchen,** NOTE: mislabeled ** Instantaneous temperature within refrigerator compartment,°C
+Status?  RP S-1 BA1 Lights (RP BA-34),Loads,Bath1,"Number to indicate whether lights in 1st floor bathroom are activated (1: Yes, O: No)",
+Status?  RP S-2 Kitchen Lights A (RP BA-34),Loads,Kitchen,"Number to indicate whether lights A in kitchen are activated (1: Yes, O: No)",
+Status?  RP S-3 Kitchen Lights B (RP BA-34),Loads,Kitchen,"Number to indicate whether lights B in kitchen are activated (1: Yes, O: No)",
+Status?  RP S-5 Kitchen Lights C (RP BA-34),Loads,Kitchen,"Number to indicate whether lights C in kitchen are activated (1: Yes, O: No)",
+Status?  RP S-7 DR Lights (RP BA-34),Loads,Dining Room,"Number to indicate whether lights in dining room are activated (1: Yes, O: No)",
+Status?  RP S-8 LR Lights (RP BA-32),Loads,Living Room,"Number to indicate whether lights in living room are activated (1: Yes, O: No)",
+Status?  RP S-9 Entry Hall Lights (RP BA-32),Loads,Entry Hallway,"Number to indicate whether lights in entry hallway are activated (1: Yes, O: No)",
+Status?  RP S-10 BR4  Lights (RP BA-32),Loads,Bedroom4,"Number to indicate whether lights in bedroom 4 are activated (1: Yes, O: No)",
+Status?  RP S-14 MBA Lights (RP BA-2),Loads,MBath,"Number to indicate whether lights in master bathroom are activated (1: Yes, O: No)",
+Status?  RP S-15 MBR Lights (RP BA-2),Loads,MBedroom,"Number to indicate whether lights A in master bedroom are activated (1: Yes, O: No)",
+Status?  RP S-16 MBR Lights (RP BA-2),Loads,MBedroom,"Number to indicate whether lights B in master bedroom are activated (1: Yes, O: No)",
+Status?  RP S-17 BA2 Lights (RP BA-2),Loads,Bath2,"Number to indicate whether lights 2nd floor bathroom located off hallway are activated (1: Yes, O: No)",
+Status?  RP S-18 BR2 Lights (RP BA-2),Loads,Bedroom2,"Number to indicate whether lights in bedroom 2 are activated (1: Yes, O: No)",
+Status?  RP S-20 BR3 Lights (RP BA-2),Loads,Bedroom3,"Number to indicate whether lights in bedroom 3 are activated (1: Yes, O: No)",
+Status?  RP S-22 Sens. Heat - Prnt B DOWN (RP BB-39),Loads,Dining Room,"Number to indicate whether parent B is simulated as being downstairs (1: Yes, O: No)",
+Status?  RP S-23 Sens. Heat - Prnt A UP (RP BB-23),Loads,MBedroom,"Number to indicate whether parent A is simulated as being upstairs (1: Yes, O: No)",
+Status?  RP S-31 Sens. Heat - Prnt B UP (RP BB-34),Loads,MBedroom,"Number to indicate whether parent B is simulated as being upstairs (1: Yes, O: No)",
+Status?  RP S-32 Sens. Heat - Child A UP (RP BB-27),Loads,Bedroom2,"Number to indicate whether child A is simulated as being upstairs (1: Yes, O: No)",
+Status?  RP S-35 Sens. Heat - Child B UP (RP BB-28),Loads,Bedroom3,"Number to indicate whether child B is simulated as being upstairs (1: Yes, O: No)",
+Status?  RP S-40 Sens. Heat - Child B DOWN (RP BB-11),Loads,Dining Room,"Number to indicate whether child B is simulated as being downstairs (1: Yes, O: No)",
+Status?  RP S-47 LR Lights (RP BA-32),Loads,Living Room,"Number to indicate whether lights in living room are activated (1: Yes, O: No)",
+Status?  RP S-49 Sens. Heat - Prnt A DOWN (RP BB-8),Loads,Kitchen,"Number to indicate whether parent A is simulated as being downstairs (1: Yes, O: No)",
+Status?  RP S-53 Sens. Heat - Child A DOWN (RP BB-15),Loads,Living Room,"Number to indicate whether child A is simulated as being downstairs (1: Yes, O: No)",
+Status?  RP S-62 LR Lights (RP BA-32),Loads,Living Room,"Number to indicate whether lights in living room are activated (1: Yes, O: No)",
+Status? Plug Load - Blender,Loads,Kitchen,"Number to indicate whether blender is activated (1: Yes, O: No)",
+Status? Plug Load - ToasterOven,Loads,Kitchen,"Number to indicate whether toaster oven is activated (1: Yes, O: No)",
+Status? Appliance - Range Hood,Loads,Kitchen,"Number to indicate whether range hood is activated (1: Yes, O: No)",
+Status? Appliance - Cooktop,Loads,Kitchen,"Number to indicate whether cooktop is activated (1: Yes, O: No)",
+Status? Appliance - Oven,Loads,Kitchen,"Number to indicate whether oven is activated (1: Yes, O: No)",
+Status? Plug Load - SlowCooker,Loads,Kitchen,"Number to indicate whether slow cooker is activated (1: Yes, O: No)",
+Status? Plug Load - Toaster,Loads,Kitchen,"Number to indicate whether toaster is activated (1: Yes, O: No)",
+Status? Appliance - Dishwasher,Loads,Kitchen,"Number to indicate whether dishwasher is activated (1: Yes, O: No)",
+Status? Plug Load - HandMixer,Loads,Kitchen,"Number to indicate whether hand mixer is activated (1: Yes, O: No)",
+Status? Plug Load - CanOpener,Loads,Kitchen,"Number to indicate whether can opener is activated (1: Yes, O: No)",
+Status? Latent load,Loads,Kitchen,"Number to indicate whether moisture generator is activated (1: Yes, O: No)",
+Status? Plug Load - CoffeeMaker,Loads,Kitchen,"Number to indicate whether coffee maker is activated (1: Yes, O: No)",
+Status? Plug Load - LR TV,Loads,Living Room,"Number to indicate whether television in living room is activated (1: Yes, O: No)",
+Status? Plug Load - LR BlueRay,Loads,Living Room,"Number to indicate whether BluRay player in living room is activated (1: Yes, O: No)",
+Status? Plug Load - Video Game,Loads,Living Room,"Number to indicate whether video game console in living room is activated (1: Yes, O: No)",
+Status? Plug Load - Vacuum,Loads,Bedroom4,"Number to indicate whether vacuum is activated (1: Yes, O: No)",
+Status? Plug Load - Desktop PC/Monitor,Loads,Bedroom4,"Number to indicate whether desktop computer and monitor in first floor bedroom is activated (1: Yes, O: No)",
+Status? Plug Load - Hair Dryer/Curl. Iron,Loads,MBath,"Number to indicate whether hair dryer or curling iron is activated (1: Yes, O: No)",
+Status? Plug Load - BR2 Laptop,Loads,Bedroom2,"Number to indicate whether laptop computer in bedroom 2 is activated (1: Yes, O: No)",
+Status? Plug Load - BR3 Laptop,Loads,Bedroom3,"Number to indicate whether laptop computer in bedroom 3 is activated (1: Yes, O: No)",
+Status? Plug Load - MBR TV,Loads,MBedroom,"Number to indicate whether television in master bedroom is activated (1: Yes, O: No)",
+Status? Plug Load - MBR BlueRay,Loads,MBedroom,"Number to indicate whether BluRay player in master bedroom is activated (1: Yes, O: No)",
+Status? Plug Load - Fan,Loads,MBedroom,"Number to indicate whether fan in master bedroom is activated (1: Yes, O: No)",
+Status? Plug Load - Heating Pad,Loads,MBedroom,"Number to indicate whether heating pad is activated (1: Yes, O: No)",
+Status? Plug Load - Iron,Loads,MBedroom,"Number to indicate whether iron is activated (1: Yes, O: No)",
+LR Plug Loads Power Usage,Loads,Living Room,Instantaneous power consumption by plug loads in living room,W
+K Plug Loads Power Usage,Loads,Kitchen,Instantaneous power consumption by plug loads in kitchen,W
+MBR Plug Loads Power Usage,Loads,MBedroom,Instantaneous power consumption by plug loads in master bedroom,W
+BR2 Plug Loads Power Usage,Loads,Bedroom2,Instantaneous power consumption by plug loads in bedroom 2,W
+BR3 Plug Loads Power Usage,Loads,Bedroom3,Instantaneous power consumption by plug loads in bedroom 3,W
+BR4 Plug Loads Power Usage,Loads,Bedroom4,Instantaneous power consumption by plug loads in bedroom 4,W
+1st Floor Sens. Heat Power Usage,Loads,Multiple,Instantaneous power consumption by sensible heat emulators on first floor,W
+2nd Floor Sens. Heat Power Usage,Loads,Multiple,Instantaneous power consumption by sensible heat emulators on second floor,W
+1st Floor Lights Power Usage,Loads,Multiple,Instantaneous power consumption by lights on first floor,W
+2nd Floor Lights Power Usage,Loads,Multiple,Instantaneous power consumption by lights on second floor,W
+Latent Heat Power Usage,Loads,Kitchen,Instantaneous power consumption by moisture generator,W
+LR Plug Loads Energy Usage,Loads,Living Room,Cumulative energy consumption starting at midnight by plug loads in living room,Wh
+K Plug Loads Energy Usage,Loads,Kitchen,Cumulative energy consumption starting at midnight by plug loads in kitchen,Wh
+MBR Plug Loads Energy Usage,Loads,MBedroom,Cumulative energy consumption starting at midnight by plug loads in master bedroom,Wh
+BR2 Plug Loads Expected Energy Usage,Loads,Bedroom2,Cumulative energy consumption starting at midnight by plug loads in bedroom 2,Wh
+BR3 Plug Loads Expected Energy Usage,Loads,Bedroom3,Cumulative energy consumption starting at midnight by plug loads in bedroom 3,Wh
+BR4 Plug Loads Expected Energy Usage,Loads,Bedroom4,Cumulative energy consumption starting at midnight by plug loads in bedroom 4,Wh
+1st Floor Sens. Heat Energy Usage,Loads,Multiple,Cumulative energy consumption starting at midnight by sensible heat generators on first floor,Wh
+2nd Floor Sens. Heat Energy Usage,Loads,Multiple,Cumulative energy consumption starting at midnight by sensible heat generators on second floor,Wh
+1st Floor Lights Energy Usage,Loads,Multiple,Cumulative energy consumption starting at midnight by lights on first floor,Wh
+2nd Floor Lights Energy Usage,Loads,Multiple,Cumulative energy consumption starting at midnight by lights on second floor,Wh
+Latent Heat Energy Usage,Loads,Kitchen,Cumulative energy consumption starting at midnight by moisture generators,Wh
+Dryer Energy - Total,Loads,Kitchen,Cumulative energy consumption starting at midnight by dryer,Wh
+Dryer Power - Total,Loads,Kitchen,Instantaneous power consumption by dryer,W
+Oven Energy - Total,Loads,Kitchen,Cumulative energy consumption starting at midnight by oven,Wh
+Oven Power - Total,Loads,Kitchen,Instantaneous power consumption by oven,W
+Basement Plug Loads Power Usage,Loads,Basement,Instantaneous power consumption by plug loads in basement,W
+Basement Plug Loads Energy Usage,Loads,Basement,Cumulative energy consumption starting at midnight by plug loads in basement,Wh
+Clothes Washer Energy - with Standby,Loads,Kitchen,Cumulative energy consumption starting at midnight by clothes washer,Wh
+Clothes Washer Power - With Standby,Loads,Kitchen,Instantaneous power consumption by clothes washer,W
+Refrigerator Energy - with Standby,Loads,Kitchen,Cumulative energy consumption starting at midnight by refrigerator,Wh
+Refrigerator Power - With Standby,Loads,Kitchen,Instantaneous power consumption by refrigerator,W
+Microwave Energy - with Standby,Loads,Kitchen,Cumulative energy consumption starting at midnight by microwave oven,Wh
+Microwave Power - With Standby,Loads,Kitchen,Instantaneous power consumption by microwave oven,W
+HVAC Temp - Return Air,HVAC,Basement,Instantaneous dry bulb temperature of air in return duct prior to indoor unit,°C
+HVAC Dewpoint - Return Air,HVAC,Basement,Instantaneous dewpoint temperature of air in return duct prior to indoor unit,°C
+HVAC Temp - Supply Air,HVAC,Basement,Instantaneous dry bulb temperature of air in supply duct after indoor unit,°C
+HVAC Dewpoint - Supply Air,HVAC,Basement,Instantaneous dewpoint temperature of air in supply duct after indoor unit,°C
+Heat Pump Indoor Unit Power,HVAC,Basement,"Average power consumption of heat pump indoor unit (blower, controls, resistance heat) over the course of the minute",W
+Heat Pump Outdoor Unit Power,HVAC,Outdoor,,W
+,,,"Average power consumption of heat pump outdoor unit (compressor, fan, controls, defrost) over the course of the minute",
+,,,,
+,,,,
+Dehumidifier Power,HVAC,Basement,Average power consumption of dedicated dehumidifier over the course of the minute,W
+Dehumidifier Inlet Air Temp,HVAC,Basement,Average temperature of air in inlet duct to dedicated dehumidifier over the course of the minute,°F
+Dehumidifier Exit Air Temp,HVAC,Basement,Average temperature of air in outlet duct from dedicated dehumidifier over the course of the minute,°F
+Dehumidifier Airflow,HVAC,Basement,Average airflow through dedicated dehumidifier over the course of the minute,ft3/min
+Room Temp - Basement NW,IndEnv,Basement,Instantaneous drybulb temperature in middle of northwest quadrant of basement,°C
+Room Temp - Basement NE,IndEnv,Basement,Instantaneous drybulb temperature in middle of northeast quadrant of basement,°C
+Room Temp - Basement SE,IndEnv,Basement,Instantaneous drybulb temperature in middle of southeast quadrant of basement,°C
+Room Temp - Basement SW,IndEnv,Basement,Instantaneous drybulb temperature in middle of southwest quadrant of basement,°C
+Room Temp - Kitchen Temp,IndEnv,Kitchen,Instantaneous drybulb temperature in kitchen,°C
+Room Temp - DR Temp,IndEnv,Dining Room,Instantaneous drybulb temperature in dining room,°C
+Room Temp - LR Temp,IndEnv,Living Room,Instantaneous drybulb temperature in living room,°C
+Room Temp - Hall Lowest,IndEnv,Entry Hallway,"Instantaneous drybulb temperature in center hallway, measured at a height of ** m",°C
+Room Temp - Hall Lower Mid,IndEnv,Entry Hallway,"Instantaneous drybulb temperature in center hallway, measured at a height of ** m",°C
+Room Temp - Hall Middle,IndEnv,Entry Hallway,"Instantaneous drybulb temperature in center hallway, measured at a height of ** m",°C
+Room Temp - Hall Upper Mid,IndEnv,Entry Hallway,"Instantaneous drybulb temperature in center hallway, measured at a height of ** m",°C
+Room Temp - Hall Upper,IndEnv,Entry Hallway,"Instantaneous drybulb temperature in center hallway, measured at a height of ** m",°C
+Room Temp - BR4 Temp,IndEnv,Bedroom4,Instantaneous drybulb temperature in bedroom 4,°C
+Room Temp - BA1 Temp,IndEnv,Bath1,Instantaneous drybulb temperature in bathroom 1 on first floor,°C
+Room Temp - WD Temp,IndEnv,Kitchen,Instantaneous drybulb temperature in utility closet holding clothes washer and dryer,°C
+Room Temp - MBA Temp,IndEnv,MBath,Instantaneous drybulb temperature in master bathroom on second floor,°C
+Room Temp - MBR Temp,IndEnv,MBedroom,Instantaneous drybulb temperature in master bedroom on second floor,°C
+Room Temp - BR2 Temp,IndEnv,Bedroom2,Instantaneous drybulb temperature in bedroom 2 on second floor,°C
+Room Temp - BR3 Temp,IndEnv,Bedroom3,Instantaneous drybulb temperature in bedroom 3 on second floor,°C
+Room Temp - BA2 Temp,IndEnv,Bath2,Instantaneous drybulb temperature in bathroom 2 on second floor,°C
+Room Temp - Attic NW,IndEnv,Attic,Instantaneous drybulb temperature in northwest quadrant of attic,°C
+Room Temp - Attic NE,IndEnv,Attic,Instantaneous drybulb temperature in northeast quadrant of attic,°C
+Room Temp - Attic SE,IndEnv,Attic,Instantaneous drybulb temperature in southeast quadrant of attic,°C
+Room Temp - Attic SW,IndEnv,Attic,Instantaneous drybulb temperature in southwest quadrant of attic,°C
+Radiant Temp - Kitchen,IndEnv,Kitchen,Instantaneous drybulb temperature within the radiant temperature sensor in the kitchen,°C
+Radiant Temp - LR,IndEnv,Living Room,Instantaneous drybulb temperature within the radiant temperature sensor in the living room,°C
+Radiant Temp - MBR,IndEnv,MBedroom,Instantaneous drybulb temperature within the radiant temperature sensor in the master bedroom,°C
+Radiant Temp - BR2,IndEnv,Bedroom2,Instantaneous drybulb temperature within the radiant temperature sensor in bedroom 2 on second floor,°C
+Radiant Temp - BR3,IndEnv,Bedroom3,Instantaneous drybulb temperature within the radiant temperature sensor in bedroom 3 on second floor,°C
+Kitchen RH,IndEnv,Kitchen,"Relative humidity in kitchen, on a scale of 0 to 1",
+Living Rm RH,IndEnv,Living Room,"Relative humidity in living room, on a scale of 0 to 1",
+Mast. Bed Rm RH,IndEnv,MBedroom,"Relative humidity in master bedroom, on a scale of 0 to 1",
+Bedroom 3 RH,IndEnv,Bedroom3,"Relative humidity in bedroom 3 on second floor, on a scale of 0 to 1",
+Bedroom 2 RH,IndEnv,Bedroom2,"Relative humidity in bedroom 2 on second floor, on a scale of 0 to 1",
+MBA RH,IndEnv,MBath,"Relative humidity in master bathroom, on a scale of 0 to 1",
+Basement RH,IndEnv,Basement,"Relative humidity in basement, on a scale of 0 to 1",
+PV System 1 AC Energy OS;  E_AC_PV1_OS,PV,Attic,Cumulative AC energy generation out of inverter 1 of the photovoltaic array; data collected with current shunts.  ,Wh
+PV System 2 AC Energy OS;  E_AC_PV2_OS,PV,Attic,Cumulative AC energy generation out of the inverter 2 of the photovoltaic array; data collected with current shunts.  ,Wh
+PV Backside Temp 2,PV,Outdoor,"Instantaneous temperature on the backside of module at location 2 of the photovoltaic array.  Location 2 is on the 3rd string from the bottom of the array, the fourth module from the west side of the array.  ",°C
+PV Backside Temp 3,PV,Outdoor,"Instantaneous temperature on the backside of module at location 3 of the photovoltaic array.  Location 3 is on the 3rd string from the bottom of the array, the fourth module from the west side of the array.  ",°C
+PV Backside Temp 4,PV,Outdoor,"Instantaneous temperature on the backside of module at location 4 of the photovoltaic array.  Location 4 is on the 3rd string from the bottom of the array, the fourth module from the west side of the array.  ",°C
+PV Backside Temp 7,PV,Outdoor,"Instantaneous temperature on the backside of module at location 7 of the photovoltaic array.  Location 7 is on the top string of the array, the west-most module of the array.  ",°C
+String Voltage [U_Str2],PV,Attic,Instantaneous voltage from String 2 of photovoltaic array into inverter 1 (DC),V
+String Voltage [U_Str4],PV,Attic,Instantaneous voltage from String 4 of photovoltaic array into inverter 2 (DC),V
+Volts A-N [U_AN_1=],PV,Attic,Instantaneous voltage difference between the Phase A live wire and neutral wire from inverter 1 (AC),V
+Volts B-N [U_BN_1],PV,Attic,Instantaneous voltage difference between the Phase B live wire and neutral wire from inverter 1 (AC),V
+Amps A [I_A_1],PV,Attic,Instantaneous current produced from the Phase A wire from inverter 1 (AC),A
+Amps B [I_B_1],PV,Attic,Instantaneous current produced from the Phase B wire from inverter 1 (AC),V
+"Watts, 3-Ph Total [W_3PhT_1]",PV,Attic,Instantaneous power produced from Inverter 1 (Single phase AC); meters utilize current transformers,W
+"Power Factor, 3-Ph Total [PF_3PhT_1]",PV,Attic,Instantaneous power factor of electricity output from inverter 1 (Single Phase AC),
+Frequency [F_1],PV,Attic,Instantaneous frequency of AC electricity output from inverter 1,Hz
+"W-hours, Delivered [Wh_D_1]",PV,Attic,Cumulative energy delivered by inverter 1 from beginning of operation as measured by system using current transformers,Wh
+Volts A-N [U_AN_2=],PV,Attic,Instantaneous voltage difference between the Phase A live wire and neutral wire from inverter 2 (AC),V
+Volts B-N [U_BN_2],PV,Attic,Instantaneous voltage difference between the Phase B live wire and neutral wire from inverter 2 (AC),V
+Amps A [I_A_2],PV,Attic,Instantaneous current produced from the Phase A wire from inverter 2 (AC),A
+Amps B [I_B_2],PV,Attic,Instantaneous current produced from the Phase B wire from inverter 2 (AC),V
+"Watts, 3-Ph Total [W_3PhT_2]",PV,Attic,Instantaneous power produced from Inverter 2 (Single phase AC); meters utilize current transformers,W
+"Power Factor, 3-Ph Total [PF_3PhT_2]",PV,Attic,Instantaneous power factor of electricity output from inverter 2 (Single Phase AC),
+Frequency [F_2],PV,Attic,Instantaneous frequency of AC electricity output from inverter 2,Hz
+"W-hours, Delivered [Wh_D_2]",PV,Attic,Cumulative energy delivered by inverter 2 from beginning of operation as measured by system using current transformers,Wh
+String Current [I_Str1],PV,Attic,Instantaneous direct current from string 1 feeding into inverter 1,A
+String Current [I_Str2],PV,Attic,Instantaneous direct current from string 2 feeding into inverter 1,A
+String Current [I_Str3],PV,Attic,Instantaneous direct current from string 3 feeding into inverter 2,A
+String Current [I_Str4],PV,Attic,Instantaneous direct current from string 4 feeding into inverter 2,A
+PV System 1 AC Power OS;  P_AC_PV1_OS,PV,Attic,Instantaneous AC power reading from inverter 1 as measured by current shunts,W
+PV System 2 AC Power OS;  P_AC_PV2_OS,PV,Attic,Instantaneous AC power reading from inverter 1 as measured by current shunts,W
+PV Insolation (H_Array),PV,Outdoor,The amount of sunlight impacting the array during the past minute.  ,kWh
+Outdoor Amb. Temp,OutEnv,Outdoor,Instantaneous dry bulb temperature measured on roof of house,°C
+Rooftop Wind Speed,OutEnv,Outdoor,Instantaneous wind speed measured on roof of house,m/s
+Rooftop Wind Direction,OutEnv,Outdoor,"Instantaneous wind direction measured on roof of house; 0° means wind is blowing from true north; all other readings are taken relative to clockwise from true north.  For example, 90° means wind is blowing from true east to true west.   ",degrees
+HRV Temp - Supply Out,Ventilation,Basement,Instantaneous dry bulb temperature in the supply duct outlet from the heat recovery ventilator; refers to outdoor air being brought into the house,°C
+HRV Temp - Return In,Ventilation,Basement,Instantaneous dry bulb temperature in the return duct inlet to the heat recovery ventilator; refers to indoor air being exhausted from the house,°C
+HRV Temp - Exhaust Out,Ventilation,Basement,Instantaneous dry bulb temperature in the exhaust duct outlet from the heat recovery ventilator; refers to indoor air being exhausted from the house,°C
+HRV Temp - Outdoor in,Ventilation,Basement,Instantaneous dry bulb temperature in the outdoor inlet duct to the heat recovery ventilator; refers to outdoor air being brought into the house,°C
+HRV Dewpoint Temperature - Supply,Ventilation,Basement,Instantaneous dew point temperature in the supply duct outlet from the heat recovery ventilator; refers to outdoor air being brought into the house,°C
+HRV Dewpoint Temperature - Return,Ventilation,Basement,Instantaneous dew point temperature in the return duct inlet to the heat recovery ventilator; refers to indoor air being exhausted from the house,°C
+HRV Dewpoint Temperature - Exhaust,Ventilation,Basement,Instantaneous dew point temperature in the exhaust duct outlet from the heat recovery ventilator; refers to indoor air being exhausted from the house,°C
+HRV Dewpoint Temperature - Outdoor,Ventilation,Basement,Instantaneous dew point temperature in the outdoor inlet duct to the heat recovery ventilator; refers to outdoor air being brought into the house,°C
+HRV fresh air pressure differential,Ventilation,Basement,Instantaneous pressure differential across heat recovery ventilator of the outdoor air stream,Inches H2O
+HRV stale air pressure differential,Ventilation,Basement,Instantaneous pressure differential across heat recovery ventilator of the exhaust air stream,Inches H2O
+HRV return flow rate,Ventilation,Basement,Instantaneous flow rate of air in the return flow duct entering the heat recovery ventilator; refers to indoor air being exhausted from the house,ft^3/min
+HRV exhaust flow rate,Ventilation,Basement,Instantaneous flow rate of air in the exhaust duct outlet from the heat recovery ventilator; refers to indoor air being exhausted from the house,ft^3/min
+HRV outdoor flow rate,Ventilation,Basement,Instantaneous flow rate of air in the outdoor inlet duct to the heat recovery ventilator; refers to outdoor air being brought into the house,ft^3/min
+Energy - RP B-1 Plugs - Base A (Heliodyne HXs),SHW,Basement,Cumulative energy used by solar water heater pumps from midnight,Wh
+Energy - RP B-2 Plugs - Base B,Electrical,Basement,Cumulative energy consumption at receptacle B in basement from midnight,Wh
+Energy - RP B-3 Plugs - Base C,Electrical,Basement,Cumulative energy consumption at receptacle C in basement from midnight,Wh
+Energy - RP B-4 Sump Pump,Electrical,Basement,Cumulative energy consumption of sump pump in basement from midnight,Wh
+Energy - RP B-5 Lights - Basement Stair,Lighting,Basement,Cumulative energy consumption of lights over basement stairs from midnight,Wh
+Energy - RP B-6 Spare,Electrical,Basement,Cumulative energy consumption of standby electrical load in basement from midnight,Wh
+Energy - RP B-8 Plugs - BA1,Electrical,Bath1,Cumulative energy consumption at receptacles of bathroom 1 from midnight,Wh
+Energy - RP B-13 Plugs - DR,Electrical,Dining Room,Cumulative energy consumption at receptacles of dining room from midnight,Wh
+Energy - RP B-14 Plugs - BR4,Electrical,Bedroom4,Cumulative energy consumption at receptacles of bedroom 4 from midnight,Wh
+Energy - RP B-15 Plugs - Entry Hall,Electrical,Entry Hallway,Cumulative energy consumption at receptacles in entry hallway from midnight,Wh
+Energy - RP B-16 Plugs - LR,Electrical,Living Room,Cumulative energy consumption at receptacles of living room from midnight,Wh
+Energy - RP B-17 Clothes Washer,Electrical,Utility,Cumulative energy consumption of clothes washer from midnight,Wh
+Energy - RP B-18 Dryer (1of2),Electrical,Utility,Cumulative energy consumption of one leg of electrical supply to dryer from midnight; note that energy consumption from other leg is needed to get total energy consumption by dryer,Wh
+Energy - RP B-19 Dehumidifier,HVAC,Basement,Cumulative energy consumption of dehumidifier from midnight,Wh
+Energy - RP B-20 Dryer (2of2),Electrical,Utility,Cumulative energy consumption of one leg of electrical supply to dryer from midnight; note that energy consumption from other leg is needed to get total energy consumption by dryer,Wh
+Energy - RP B-25 HRV,HVAC,Basement,Cumulative energy consumption of heat recovery ventilator from midnight,Wh
+Energy - RP B-26 Heat Pump WH (1of2),DHW,Basement,Cumulative energy consumption of one leg of electrical supply to heat pump water heater from midnight; note that energy consumption from other leg is needed to get total energy consumption by heat pump water heater,Wh
+Energy - RP B-28 Heat Pump WH (2of2),DHW,Basement,Cumulative energy consumption of one leg of electrical supply to heat pump water heater from midnight; note that energy consumption from other leg is needed to get total energy consumption by heat pump water heater,Wh
+Energy - RP B-33 PV (1of2),PV,Basement,Cumulative energy fed into breaker panel by one leg of electrical supply from PV inverters from midnight; note that energy supplied from other leg is needed to get total energy supply from inverters,Wh
+Energy - RP B-35 PV (2of2),PV,Basement,Cumulative energy fed into breaker panel by one leg of electrical supply from PV inverters from midnight; note that energy supplied from other leg is needed to get total energy supply from inverters,Wh
+Energy - RP BA-1 Make-Up Air Damper,Ventilation,Attic,Cumulative energy consumption of make-up air damper located in attic from midnight,Wh
+Energy - RP BA-2 Lights - 2nd Floor,Lighting,Bath2,Cumulative energy consumption of lighting in bathroom 2 from midnight,Wh
+Energy - RP BA-3 Plugs - MBA (East),Electrical,MBath,Cumulative energy consumption from receptacles on east side of master bathroom from midnight,Wh
+Energy - RP BA-4 Plugs - BA2 (South),Electrical,Bath2,Cumulative energy consumption from receptacles on south side of bathroom 2 from midnight,Wh
+Energy - RP BA-5 Plugs - MBA (West),Electrical,MBath,Cumulative energy consumption from receptacles on west side of master bathroom from midnight,Wh
+Energy - RP BA-6 Plugs - BA2 (North),Electrical,Bath2,Cumulative energy consumption from receptacles on north side of bathroom 2 from midnight,Wh
+Energy - RP BA-7 Plugs - BR3,Electrical,Bedroom3,Cumulative energy consumption from receptacles in bedroom 3 from midnight,Wh
+Energy - RP BA-8 Refrigerator,Electrical,Kitchen,Cumulative energy consumption by refrigerator from midnight,Wh
+Energy - RP BA-9 Plugs - Kit (Sink),Electrical,Kitchen,Cumulative energy consumption by toaster from midnight,Wh
+Energy - RP BA-10 Garbage Disposal,Electrical,Kitchen,Cumulative energy consumption by garbage disposal from midnight,Wh
+Energy - RP BA-11 Plugs - Kit (Range),Electrical,Kitchen,Cumulative energy consumption by blender from midnight,Wh
+Energy - RP BA-12 Plugs - Kit Peninsula,Electrical,Kitchen,Cumulative energy consumption by hand mixer and can opener from midnight,Wh
+Energy - RP BA-14 Microwave,Electrical,Kitchen,Cumulative energy consumption by microwave oven from midnight,Wh
+Energy - RP BA-21 Plugs - 2nd Floor,Electrical,Bath2,Cumulative energy consumption from receptacles in bathroom 2 from midnight,Wh
+Energy - RP BA-23 Spare,Electrical,Basement,Cumulative energy consumption by computer network hardware in basement from midnight,Wh
+Energy - RP BA-29 Plugs - BR2,Electrical,Bedroom2,Cumulative energy consumption from receptacles in bedroom 2 from midnight,Wh
+Energy - RP BA-31 Plugs - MBR,Electrical,MBedroom,Cumulative energy consumption from receptacles in master bedroom from midnight,Wh
+Energy - RP BA-32 Lights - 1st FloorA,Lighting,Multiple,"Cumulative energy consumption by a subset of lighting on first floor from midnight; includes living room, hallway, and bedroom 4.  ",Wh
+Energy - RP BA-34 Lights - 1st FloorB,Lighting,Multiple,"Cumulative energy consumption by a subset of lighting on first floor from midnight; includes hallway, bathroom, kitchen, and dining room",Wh
+Energy - RP BA-40 Dishwasher,Electrical,Kitchen,Cumulative energy consumption by dishwasher from midnight,Wh
+Energy - RP BB-1 Plugs - GSHP Instrumentation,Instr,Basement,Cumulative energy consumption from midnight by instrumentation connected to ground source heat pump test apparatus,Wh
+Energy - RP BB-2 Plugs - Inst Mudroom A,Instr,Mudroom,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in mudroom,Wh
+Energy - RP BB-3 Plugs - HVAC Instrumentation,Instr,Basement,Cumulative energy consumption from midnight by instrumentation connected to heat pump,Wh
+Energy - RP BB-4 Plugs - Inst BA1,Instr,Bath1,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in bathroom 1,Wh
+Energy - RP BB-5 Lights - Attic,Lighting,Attic,Cumulative energy consumption from midnight by lights activated in attic,Wh
+Energy - RP BB-6 Plugs - Inst Kit A,Instr,Kitchen,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in kitchen,Wh
+Energy - RP BB-7 Plugs - Inst Mudroom B,Instr,Mudroom,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in mudroom,Wh
+Energy - RP BB-8 Parent A - Downstairs,Loads,Kitchen,Cumulative heat energy given off from midnight by emulator of parent A in the kitchen,Wh
+Energy - RP BB-9 Plugs - Inst DR A,Instr,Dining Room,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in dining room,Wh
+Energy - RP BB-10 Plugs - Inst BR4 A,Instr,Bedroom4,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in bedroom 4,Wh
+Energy - RP BB-11 Child B - Downstairs,Loads,Dining Room,Cumulative heat energy given off from midnight by emulator of child B in the dining room,Wh
+Energy - RP BB-12 Plugs - Inst BR4 A,Instr,Bedroom4,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in bedroom 4,Wh
+Energy - RP BB-13 Plugs - Inst LR A,Instr,Living Room,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in living room,Wh
+Energy - RP BB-15 Child A - Downstairs,Loads,LivingRoom,Cumulative heat energy given off from midnight by emulator of child A in the living room,Wh
+Energy - RP BB-16 Plugs - Inst LR B,Instr,Living Room,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in living room,Wh
+Energy - RP BB-18 Plugs - Inst BA2,Instr,Bath2,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in bathroom 2,Wh
+Energy - RP BB-19 Plugs - Inst MBA B,Instr,MBath,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in master bathroom,Wh
+Energy - RP BB-21 Plugs - Inst MBR A,Instr,MBedroom,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in the master bedroom,Wh
+Energy - RP BB-22 Plugs - Inst BR2/Hall,Instr,Bedroom 2,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in bedroom 2,Wh
+Energy - RP BB-23 Parent A - Upstairs,Loads,MBedroom,Cumulative heat energy given off from midnight by emulator of parent A in the master bedroom,Wh
+Energy - RP BB-24 Plugs - Inst Hall,Instr,Entry Hallway,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in entry hallway,Wh
+Energy - RP BB-25 Lighting Control Panel (RP-S #1),Instr,Basement,Cumulative energy consumption from midnight by lighting control panel located in basement,Wh
+Energy - RP BB-26 Plugs - Inst BR3,Instr,Bedroom3,Cumulative energy consumption from midnight by instrumentation plugged into receptacles in bedroom 3,Wh
+Energy - RP BB-27 Child A - Upstairs,Loads,Bedroom2,Cumulative heat energy given off from midnight by emulator of child A in bedroom 2,Wh
+Energy - RP BB-28 Child B - Upstairs,Loads,Bedroom3,Cumulative heat energy given off from midnight by emulator of child B in bedroom 3,Wh
+Energy - RP BB-29 Heat Load for Refrigerator,Instr,Kitchen,Cumulative heat energy added to compartment of refrigerator to simulate opening and adding warm items,Wh
+Energy - RP BB-31 Lighting Control Panel (RP-S #2),Instr,Basement,Cumulative energy consumption from midnight by lighting control panel located in basement,Wh
+Energy - RP BB-33 Lights - Basement,Lighting,Basement,Cumulative energy consumption from midnight by lights activated in basement,Wh
+Energy - RP BB-34 Parent B - Upstairs,Loads,MBedroom,Cumulative heat energy given off from midnight by emulator of parent B in master bedroom,Wh
+Energy - RP BB-39 Parent B - Downstairs,Loads,Dining Room,Cumulative heat energy given off from midnight by emulator of parent B in dining room,Wh
+Energy - RP BB-40 Plugs - Inst Kit D,Instr,Kitchen,Cumulative energy consumption from midnight by instrumentation located in kitchen,Wh
+Energy - RP BB-41 Plugs - DR B,Electrical,Dining Room,Cumulative energy consumption from receptacles in dining room from midnight,Wh
+Energy - RP BB-42 Plugs - Attic,Electrical,Attic,Cumulative energy consumption from receptacles in attic from midnight,Wh
+Power - RP B-1 Plugs - Base A (Heliodyne HXs),SHW,Basement,Instantaneous power used by solar water heater pumps,W
+Power - RP B-2 Plugs - Base B,Electrical,Basement,Instantaneous power used at receptacle B in basement ,W
+Power - RP B-3 Plugs - Base C,Electrical,Basement,Instantaneous power used at receptacle C in basement ,W
+Power - RP B-4 Sump Pump,Electrical,Basement,Instantaneous power used by sump pump in basement,W
+Power - RP B-5 Lights - Basement Stair,Lighting,Basement,Instantaneous power used by lights over basement stairs,W
+Power - RP B-6 Spare,Electrical,Basement,Instantaneous power used by standby load in basement,W
+Power - RP B-8 Plugs - BA1,Electrical,Bath1,Instantaneous power used by receptacles of bathroom 1,W
+Power - RP B-13 Plugs - DR,Electrical,Dining Room,Instantaneous power used at receptacles of dining room ,W
+Power - RP B-14 Plugs - BR4,Electrical,Bedroom4,Instantaneous power used at receptacles of bedroom 4 ,W
+Power - RP B-15 Plugs - Entry Hall,Electrical,Entry Hallway,Instantaneous power used at receptacles in entry hallway ,W
+Power - RP B-16 Plugs - LR,Electrical,Living Room,Instantaneous power used at receptacles of living room ,W
+Power - RP B-17 Clothes Washer,Electrical,Utility,Instantaneous power used by clothes washer ,W
+Power - RP B-18 Dryer (1of2),Electrical,Utility,Instantaneous power used by one leg of electrical supply to dryer; note that power from other leg is needed to get total power consumption by dryer,W
+Power - RP B-19 Dehumidifier,HVAC,Basement,Instantaneous power used by dehumidifier,W
+Power - RP B-20 Dryer (2of2),Electrical,Utility,Instantaneous power consumption of one leg of electrical supply to dryer; note that power from other leg is needed to get total power consumption by dryer,W
+Power - RP B-25 HRV,HVAC,Basement,Instantaneous power consumption of heat recovery ventilator ,W
+Power - RP B-26 Heat Pump WH (1of2),DHW,Basement,Instantaneous power consumption of one leg of electrical supply to heat pump water heater; note that power from other leg is needed to get total power consumption by heat pump water heater,W
+Power - RP B-28 Heat Pump WH (2of2),DHW,Basement,Instantaneous power consumption of one leg of electrical supply to heat pump water heater; note that power from other leg is needed to get total power consumption by heat pump water heater,W
+Power - RP B-33 PV (1of2),PV,Basement,Instantaneous power fed into breaker panel by one leg of electrical supply from PV inverters; note that power supplied from other leg is needed to get total power supply from inverters,W
+Power - RP B-35 PV (2of2),PV,Basement,Instantaneous power fed into breaker panel by one leg of electrical supply from PV inverters; note that power supplied from other leg is needed to get total power supply from inverters,W
+Power - RP BA-1 Make-Up Air Damper,Ventilation,Attic,Instantaneous power consumption of make-up air damper located in attic ,W
+Power - RP BA-2 Lights - 2nd Floor,Lighting,Bath2,Instantaneous power consumption of lighting in bathroom 2 ,W
+Power - RP BA-3 Plugs - MBA (East),Electrical,MBath,Instantaneous power consumption from receptacles on east side of master bathroom ,W
+Power - RP BA-4 Plugs - BA2 (South),Electrical,Bath2,Instantaneous power consumption from receptacles on south side of bathroom 2 ,W
+Power - RP BA-5 Plugs - MBA (West),Electrical,MBath,Instantaneous power consumption from receptacles on west side of master bathroom ,W
+Power - RP BA-6 Plugs - BA2 (North),Electrical,Bath2,Instantaneous power consumption from receptacles on north side of bathroom 2 ,W
+Power - RP BA-7 Plugs - BR3,Electrical,Bedroom3,Instantaneous power consumption from receptacles in bedroom 3 ,W
+Power - RP BA-8 Refrigerator,Electrical,Kitchen,Instantaneous power consumption by refrigerator ,W
+Power - RP BA-9 Plugs - Kit (Sink),Electrical ,Kitchen,Instantaneous power consumption by toaster,W
+Power - RP BA-10 Garbage Disposal,Electrical ,Kitchen,Instantaneous power consumption by garbage disposal ,W
+Power - RP BA-11 Plugs - Kit (Range),Electrical ,Kitchen,Instantaneous power consumption by blender ,W
+Power - RP BA-12 Plugs - Kit Peninsula,Electrical ,Kitchen,Instantaneous power consumption by mixer and can opener,W
+Power - RP BA-14 Microwave,Electrical ,Kitchen,Instantaneous power consumption by microwave oven ,W
+Power - RP BA-21 Plugs - 2nd Floor,Electrical,Bath2,Instantaneous power consumption from receptacles in bathroom 2 ,W
+Power - RP BA-23 Spare,Electrical,Basement,Instantaneous power consumption by computer network connection in basement,W
+Power - RP BA-29 Plugs - BR2,Electrical,Bedroom2,Instantaneous power consumption from receptacles in bedroom 2 ,W
+Power - RP BA-31 Plugs - MBR,Electrical,MBedroom,Instantaneous power consumption from receptacles in master bedroom ,W
+Power - RP BA-32 Lights - 1st FloorA,Lighting,Multiple,"Instantaneous power consumption by a subset of lighting on first floor from midnight; includes living room, hallway, and bedroom 4.  ",W
+Power - RP BA-34 Lights - 1st FloorB,Lighting,Multiple,"Instantaneous power consumption by a subset of lighting on first floor from midnight; includes hallway, bathroom, kitchen, and dining room",W
+Power - RP BA-40 Dishwasher,Electrical,Kitchen,Instantaneous power consumption by dishwasher ,W
+Power - RP BB-1 Plugs - GSHP Instrumentation,Instr,Basement,Instantaneous power consumption by instrumentation connected to ground source heat pump test apparatus,W
+Power - RP BB-2 Plugs - Inst Mudroom A,Instr,Mudroom,Instantaneous power consumption by instrumentation plugged into receptacles in mudroom,W
+Power - RP BB-3 Plugs - HVAC Instrumentation,Instr,Basement,Instantaneous power consumption by instrumentation connected to heat pump ,W
+Power - RP BB-4 Plugs - Inst BA1,Instr,Bath1,Instantaneous power consumption by instrumentation plugged into receptacles in bathroom 1,W
+Power - RP BB-5 Lights - Attic,Lighting,Attic,Instantaneous power consumption by lights activated in attic,W
+Power - RP BB-6 Plugs - Inst Kit A,Instr,Kitchen,Instantaneous power consumption by instrumentation plugged into receptacles in kitchen,W
+Power - RP BB-7 Plugs - Inst Mudroom B,Instr,Mudroom,Instantaneous power consumption by instrumentation plugged into receptacles in mudroom,W
+Power - RP BB-8 Parent A - Downstairs,Loads,Kitchen,Instantaneous power consumption by emulator of parent A in the kitchen,W
+Power - RP BB-9 Plugs - Inst DR A,Instr,Dining Room,Instantaneous power consumption by instrumentation plugged into receptacles in dining room,W
+Power - RP BB-10 Plugs - Inst BR4 A,Instr,Bedroom4,Instantaneous power consumption by instrumentation plugged into receptacles in bedroom 4,W
+Power - RP BB-11 Child B - Downstairs,Loads,Dining Room,Instantaneous power consumption by emulator of child B in the dining room,W
+Power - RP BB-12 Plugs - Inst BR4 A,Instr,Bedroom4,Instantaneous power consumption by instrumentation plugged into receptacles in bedroom 4,W
+Power - RP BB-13 Plugs - Inst LR A,Instr,Living Room,Instantaneous power consumption by instrumentation plugged into receptacles in living room,W
+Power - RP BB-15 Child A - Downstairs,Loads,LivingRoom,Instantaneous power consumption by emulator of child A in the living room,W
+Power - RP BB-16 Plugs - Inst LR B,Instr,Living Room,Instantaneous power consumption by instrumentation plugged into receptacles in living room,W
+Power - RP BB-18 Plugs - Inst BA2,Instr,Bath2,Instantaneous power consumption by instrumentation plugged into receptacles in bathroom 2,W
+Power - RP BB-19 Plugs - Inst MBA B,Instr,MBath,Instantaneous power consumption by instrumentation plugged into receptacles in master bathroom,W
+Power - RP BB-21 Plugs - Inst MBR A,Instr,MBedroom,Instantaneous power by instrumentation plugged into receptacles in the master bedroom,W
+Power - RP BB-22 Plugs - Inst BR2/Hall,Instr,Bedroom 2,Instantaneous power consumption by instrumentation plugged into receptacles in bedroom 2,W
+Power - RP BB-23 Parent A - Upstairs,Loads,MBedroom,Instantaneous power consumption by emulator of parent A in the master bedroom ,W
+Power - RP BB-24 Plugs - Inst Hall,Instr,Entry Hallway,Instantaneous power consumption by instrumentation plugged into receptacles in entry hallway,W
+Power - RP BB-25 Lighting Control Panel (RP-S #1),Instr,Basement,Instantaneous power consumption by lighting control panel located in basement,W
+Power - RP BB-26 Plugs - Inst BR3,Instr,Bedroom3,Instantaneous power consumption by instrumentation plugged into receptacles in bedroom 3,W
+Power - RP BB-27 Child A - Upstairs,Loads,Bedroom2,Instantaneous power consumption by emulator of child A in bedroom 2,W
+Power - RP BB-28 Child B - Upstairs,Loads,Bedroom3,Instantaneous power consumption by emulator of child B in bedroom 3,W
+Power - RP BB-29 Heat Load for Refrigerator,Instr,Kitchen,Instantaneous power of heat load in refrigerator to simulate opening and adding warm items,W
+Power - RP BB-31 Lighting Control Panel (RP-S #2),Instr,Basement,Instantaneous power consumption by lighting control panel located in basement,W
+Power - RP BB-33 Lights - Basement,Lighting,Basement,Instantaneous power consumption by lights activated in basement,W
+Power - RP BB-34 Parent B - Upstairs,Loads,MBedroom,Instantaneous power consumption by emulator of parent B in master bedroom ,W
+Power - RP BB-39 Parent B - Downstairs,Loads,Dining Room,Instantaneous power consumption by emulator of parent B in dining room ,W
+Power - RP BB-40 Plugs - Inst Kit D,Instr,Kitchen,Instantaneous power consumption by instrumentation located in kitchen,W
+Power - RP BB-41 Plugs - DR B,Electrical,Dining Room,Instantaneous power consumption from receptacles in dining room ,W
+Power - RP BB-42 Plugs - Attic,Electrical,Attic,Instantaneous power consumption from receptacles in attic ,W
