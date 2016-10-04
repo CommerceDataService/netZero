@@ -1,0 +1,413 @@
+"variable","subsystem","Description","Measurement.Location","Units","in_dictionary","description","max_value","min_value"
+"DayOfWeek",NA,NA,NA,NA,"N","Date/Time",1454216400,1422766800
+"DHW_ClothesWasherColdFlow","DHW","The cumulative volume of cold water flowing into the clothes washer starting at midnight","Utility","Gallons","N",NA,26.56531,0
+"DHW_ClothesWasherHotFlow","DHW","The cumulative volume of hot water flowing into the clothes washer starting at midnight","Utility","Gallons","N",NA,4.28004,0
+"DHW_DishwasherHotFlow","DHW","The cumulative volume of hot water flowing into the dishwasher starting at midnight","Kitchen","Gallons","N",NA,3.76485,0
+"DHW_GlycolTempSHWHX80galHXIn","DHW","The instantaneous temperature of the glycol-water solution on the inlet side of the heat exchanger of the solar water heating system (from the solar panels)","Basement","°C","N",NA,92.2067875624,-66404.6330206
+"DHW_GlycolTempSHWHX80galHXOut","DHW","The instantaneous temperature of the glycol-water solution on the outlet side of the heat exchanger of the solar water heating system (returning to the solar panels)","Basement","°C","N",NA,77.1462640235,0
+"DHW_HeatPumpWaterHeaterEnergyTotal","DHW","Cumulative energy consumption by heat pump water heater starting from midnight","Basement","Wh","N",NA,7591.36655078,0
+"DHW_HeatPumpWaterHeaterPowerTotal","DHW","Instantaneous power consumption by heat pump water heater","Basement","W","N",NA,4153.22265625,0
+"DHW_ManifoldColdFlow","DHW","The cumulative volume of water flowing into the cold side of the plumbing distribution manifold starting at midnight","Basement","Gallons","N",NA,54.693114,0
+"DHW_ManifoldHotFlow","DHW","The cumulative volume of water flowing into the hot side of the plumbing distribution manifold starting at midnight","Basement","Gallons","N",NA,80.347248,0
+"DHW_MixValveColdFlow","DHW","The cumulative volume of mains water flowing into the mixing valve that is positioned downstream of the solar thermal storage tank starting at midnight","Basement","Gallons","N",NA,20.25093,0
+"DHW_RoomTempBasementHPWH","DHW","The dry bulb air temperature located two feet from the surface of the heat pump water heater at a vertical distance halfway up the tank","Basement","°C","N",NA,23.6099792464,0
+"DHW_SHWPumpsEnergywithStandby","DHW","Cumulative energy consumption by solar water heating system pumps starting from midnight","Basement","Wh","N",NA,1603.20644043,0
+"DHW_SHWPumpsPowerWithStandby","DHW","Instantaneous power consumption by solar water heating system pumps","Basement","W","N",NA,1464.61407471,0
+"DHW_StatusSolenoidCold11MBATub","DHW",NA,NA,NA,"N","Binary Status",1,0
+"DHW_StatusSolenoidCold12MBAShower","DHW",NA,NA,NA,"N","Binary Status",1,0
+"DHW_StatusSolenoidCold4KitchenSink","DHW",NA,NA,NA,"N","Binary Status",1,0
+"DHW_StatusSolenoidHot3KitchenSink","DHW",NA,NA,NA,"N","Binary Status",1,0
+"DHW_StatusSolenoidHot8MBATub","DHW",NA,NA,NA,"N","Binary Status",1,0
+"DHW_StatusSolenoidHot9MBAShower","DHW",NA,NA,NA,"N","Binary Status",1,0
+"DHW_WaterTempBA2ShowerMixed","DHW","The instantaneous temperature of the water in the shower faucet of the bathroom located off the hallway on the second floor after the mixing valve","Bath2","°C","N",NA,46.2731777014,0
+"DHW_WaterTempBA2ShwCold","DHW","The instantaneous temperature of the water in the cold water line at the shower in the bathroom located off the hallway on the second floor","Bath2","°C","N",NA,35.1148559702,0
+"DHW_WaterTempBA2ShwHot","DHW","The instantaneous temperature of the water in the hot water line at the shower in the bathroom located off the hallway on the second floor","Bath2","°C","N",NA,53.2195772553,0
+"DHW_WaterTempBA2SinkCold","DHW","The instantaneous temperature of the water in the cold water line at the sink in the bathroom located off the hallway on the second floor","Bath2","°C","N",NA,27.6453425363,0
+"DHW_WaterTempBA2SinkHot","DHW","The instantaneous temperature of the water in the hot water line at the sink in the bathroom located off the hallway on the second floor","Bath2","°C","N",NA,48.7026346543,0
+"DHW_WaterTempBA2SinkMixed","DHW","The instantaneous temperature of the water in the sink faucet of the bathroom located off the hallway on the second floor after the mixing valve","Bath2","°C","N",NA,44.5730022339,0
+"DHW_WaterTempDishwasher","DHW","The instantaneous temperature of the water in the hot water line at the dishwasher","Kitchen","°C","N",NA,552.034786023,-66398.8174091
+"DHW_WaterTempHPWHIn","DHW","The instantaneous temperature of the water on the inlet side of the heat pump water heater","Basement","°C","N",NA,60.1596321749,0
+"DHW_WaterTempHPWHOut","DHW","The instantaneous temperature of the water on the exit side of the heat pump water heater","Basement","°C","N",NA,56.5923009507,0
+"DHW_WaterTempKSinkCold","DHW","The instantaneous temperature of the water in the cold water line at the kitchen sink","Kitchen","°C","N",NA,27.761122099,0
+"DHW_WaterTempKSinkHot","DHW","The instantaneous temperature of the water in the hot water line at the kitchen sink","Kitchen","°C","N",NA,53.9481319466,0
+"DHW_WaterTempKSinkMix","DHW","The instantaneous temperature of the water in the kitchen sink faucet after the mixing valve","Kitchen","°C","N",NA,49.9376098488,-65589.0700147
+"DHW_WaterTempManifoldColdIn","DHW","The instantaneous temperature of the water entering the cold side of the plumbing manifold","Basement","°C","N",NA,34.950601203,0
+"DHW_WaterTempManifoldHotIn","DHW","The instantaneous temperature of the water entering the hot side of the plumbing manifold","Basement","°C","N",NA,53.0826367312,0
+"DHW_WaterTempMBAShwCold","DHW","The instantaneous temperature of the water in the cold water line at the shower in the Master Bathroom","MBath","°C","N",NA,44.2474379593,0
+"DHW_WaterTempMBAShwHot","DHW","The instantaneous temperature of the water in the hot water line at the shower in the Master Bathroom","MBath","°C","N",NA,48.1658583005,0
+"DHW_WaterTempMBAShwMix","DHW","The instantaneous temperature of the water in the master bath shower after the mixing valve","MBath","°C","N",NA,276.385344418,-66849.6315042
+"DHW_WaterTempMBASinkRCold","DHW","The instantaneous temperature of the water in the cold water line at the right sink in the Master Bathroom","MBath","°C","N",NA,351.25809099,-66827.8219816
+"DHW_WaterTempMBASinkRHot","DHW","The instantaneous temperature of the water in the hot water line at the right sink in the Master Bathroom","MBath","°C","N",NA,27.3397287973,0
+"DHW_WaterTempMBASinkRMixed","DHW","The instantaneous temperature of the water in the master bath sink located on the right after the mixing valve","MBath","°C","N",NA,53.0287738341,0
+"DHW_WaterTempMBATubCold","DHW","The instantaneous temperature of the water in the cold water line at the tub in the Master Bathroom","MBath","°C","N",NA,44.4324260552,0
+"DHW_WaterTempMBATubHot","DHW","The instantaneous temperature of the water in the hot water line at the tub in the Master Bathroom","MBath","°C","N",NA,25.6931806109,0
+"DHW_WaterTempMBATubMix","DHW","The instantaneous temperature of the water in the tub faucet after the mixing valve","MBath","°C","N",NA,56.1176917313,0
+"DHW_WaterTempMixValveColdIn","DHW","The instantaneous temperature of the water from the main entering the mixing valve downstream of the solar preheat tank","Basement","°C","N",NA,28.9686048205,0
+"DHW_WaterTempMixValveHotIn","DHW","The instantaneous temperature of the water from the solar preheat tank entering the mixing valve downstream of that tank","Basement","°C","N",NA,71.7506376816,0
+"DHW_WaterTempSHWHX80galHXIn","DHW","The instantaneous temperature of the potable water on the inlet side of the heat exchanger of the solar water heating system (from the storage tank)","Basement","°C","N",NA,73.2896397526,0
+"DHW_WaterTempSHWHX80galHXOut","DHW","The instantaneous temperature of the potable water on the exit side of the heat exchanger of the solar water heating system (returning to the storage tank)","Basement","°C","N",NA,74.8187529385,-66230.2092344
+"DHW_WaterTempSolarPreheatTank80galIn","DHW","The instantaneous temperature of the water entering the 80 gallon solar preheat tank","Basement","°C","N",NA,52.4757776822,0
+"DHW_WaterTempSolarPreheatTank80galOut","DHW","The instantaneous temperature of the water leaving the 80 gallon solar preheat tank","Basement","°C","N",NA,71.823573743,-65299.1141164
+"DHW_WaterTempWasherCold","DHW","The instantaneous temperature of the water in the cold water line at the clothes washer","Utility","°C","N",NA,26.582257982,-65233.5327041
+"DHW_WaterTempWasherHot","DHW","The instantaneous temperature of the water in the hot water line at the clothes washer","Utility","°C","N",NA,54.4338757477,-65167.7513936
+"Elec_EnergyRPB13PlugsDR","Elec","Cumulative energy consumption at receptacles of dining room from midnight","Dining Room","Wh","N",NA,1556.72644043,0
+"Elec_EnergyRPB14PlugsBR4","Elec","Cumulative energy consumption at receptacles of bedroom 4 from midnight","Bedroom4","Wh","N",NA,169.732772827,0
+"Elec_EnergyRPB15PlugsEntryHall","Elec","Cumulative energy consumption at receptacles in entry hallway from midnight","Entry Hallway","Wh","N",NA,1904.50268555,0
+"Elec_EnergyRPB16PlugsLR","Elec","Cumulative energy consumption at receptacles of living room from midnight","Living Room","Wh","N",NA,2016.76141357,0
+"Elec_EnergyRPB17ClothesWasher","Elec","Cumulative energy consumption of clothes washer from midnight","Utility","Wh","N",NA,537.554748535,0
+"Elec_EnergyRPB18Dryer1of2","Elec","Cumulative energy consumption of one leg of electrical supply to dryer from midnight; note that energy consumption from other leg is needed to get total energy consumption by dryer","Utility","Wh","N",NA,166.617523193,0
+"Elec_EnergyRPB19Dehumidifier","Elec",NA,NA,NA,"N",NA,1996.04370117,0
+"Elec_EnergyRPB1PlugsBaseAHeliodyneHXs","Elec",NA,NA,NA,"N",NA,13157.6914062,0
+"Elec_EnergyRPB20Dryer2of2","Elec","Cumulative energy consumption of one leg of electrical supply to dryer from midnight; note that energy consumption from other leg is needed to get total energy consumption by dryer","Utility","Wh","N",NA,2541.82971191,0
+"Elec_EnergyRPB21HeatPump1of2","Elec",NA,NA,NA,"N",NA,1736.82189941,0
+"Elec_EnergyRPB22AHU21of2","Elec",NA,NA,NA,"N",NA,7780.73632812,0
+"Elec_EnergyRPB23HeatPump2of2","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPB24AHU22of2","Elec",NA,NA,NA,"N",NA,7776.78686523,0
+"Elec_EnergyRPB25HRV","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPB26HeatPumpWH1of2","Elec",NA,NA,NA,"N",NA,1619.76074219,0
+"Elec_EnergyRPB28HeatPumpWH2of2","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPB2PlugsBaseB","Elec","Cumulative energy consumption at receptacle B in basement from midnight","Basement","Wh","N",NA,3761.95727539,0
+"Elec_EnergyRPB33PV1of2","Elec",NA,NA,NA,"N",NA,45.5641822815,0
+"Elec_EnergyRPB35PV2of2","Elec",NA,NA,NA,"N",NA,36898.703125,0
+"Elec_EnergyRPB3PlugsBaseC","Elec","Cumulative energy consumption at receptacle C in basement from midnight","Basement","Wh","N",NA,36764,0
+"Elec_EnergyRPB4SumpPump","Elec","Cumulative energy consumption of sump pump in basement from midnight","Basement","Wh","N",NA,355.084075928,0
+"Elec_EnergyRPB5LightsBasementStair","Elec","Cumulative energy consumption of lights over basement stairs from midnight","Basement","Wh","N",NA,554.047790527,0
+"Elec_EnergyRPB6Spare","Elec","Cumulative energy consumption of standby electrical load in basement from midnight","Basement","Wh","N",NA,447.792358398,0
+"Elec_EnergyRPB8PlugsBA1","Elec","Cumulative energy consumption at receptacles of bathroom 1 from midnight","Bath1","Wh","N",NA,0,0
+"Elec_EnergyRPBA10GarbageDisposal","Elec","Cumulative energy consumption by garbage disposal from midnight","Kitchen","Wh","N",NA,22.1911563873,0
+"Elec_EnergyRPBA11PlugsKitRange","Elec","Cumulative energy consumption by blender from midnight","Kitchen","Wh","N",NA,1232.8145752,0
+"Elec_EnergyRPBA12PlugsKitPeninsula","Elec","Cumulative energy consumption by hand mixer and can opener from midnight","Kitchen","Wh","N",NA,188.771713257,0
+"Elec_EnergyRPBA14Microwave","Elec","Cumulative energy consumption by microwave oven from midnight","Kitchen","Wh","N",NA,24.1196632385,0
+"Elec_EnergyRPBA1MakeUpAirDamper","Elec",NA,NA,NA,"N",NA,524.249755859,0
+"Elec_EnergyRPBA21Plugs2ndFloor","Elec","Cumulative energy consumption from receptacles in bathroom 2 from midnight","Bath2","Wh","N",NA,2253.40966797,0
+"Elec_EnergyRPBA23Spare","Elec","Cumulative energy consumption by computer network hardware in basement from midnight","Basement","Wh","N",NA,1977.10375977,0
+"Elec_EnergyRPBA24ACCU11of2","Elec",NA,NA,NA,"N",NA,777.837219238,0
+"Elec_EnergyRPBA26ACCU12of2","Elec",NA,NA,NA,"N",NA,18141.4453125,0
+"Elec_EnergyRPBA29PlugsBR2","Elec","Cumulative energy consumption from receptacles in bedroom 2 from midnight","Bedroom2","Wh","N",NA,18132.1621094,0
+"Elec_EnergyRPBA2Lights2ndFloor","Elec","Cumulative energy consumption of lighting in bathroom 2 from midnight","Bath2","Wh","N",NA,1106.35913086,0
+"Elec_EnergyRPBA31PlugsMBR","Elec","Cumulative energy consumption from receptacles in master bedroom from midnight","MBedroom","Wh","N",NA,119.378929138,0
+"Elec_EnergyRPBA32Lights1stFloorA","Elec","Cumulative energy consumption by a subset of lighting on first floor from midnight; includes living room, hallway, and bedroom 4.  ","Multiple","Wh","N",NA,681.95438385,0
+"Elec_EnergyRPBA34Lights1stFloorB","Elec","Cumulative energy consumption by a subset of lighting on first floor from midnight; includes hallway, bathroom, kitchen, and dining room","Multiple","Wh","N",NA,1177.33203125,0
+"Elec_EnergyRPBA3PlugsMBAEast","Elec","Cumulative energy consumption from receptacles on east side of master bathroom from midnight","MBath","Wh","N",NA,2935.97924805,0
+"Elec_EnergyRPBA40Dishwasher","Elec","Cumulative energy consumption by dishwasher from midnight","Kitchen","Wh","N",NA,0,0
+"Elec_EnergyRPBA4PlugsBA2South","Elec","Cumulative energy consumption from receptacles on south side of bathroom 2 from midnight","Bath2","Wh","N",NA,610.432250977,0
+"Elec_EnergyRPBA5PlugsMBAWest","Elec","Cumulative energy consumption from receptacles on west side of master bathroom from midnight","MBath","Wh","N",NA,402.211196899,0
+"Elec_EnergyRPBA6PlugsBA2North","Elec","Cumulative energy consumption from receptacles on north side of bathroom 2 from midnight","Bath2","Wh","N",NA,0,0
+"Elec_EnergyRPBA7PlugsBR3","Elec","Cumulative energy consumption from receptacles in bedroom 3 from midnight","Bedroom3","Wh","N",NA,104.185134888,0
+"Elec_EnergyRPBA8Refrigerator","Elec","Cumulative energy consumption by refrigerator from midnight","Kitchen","Wh","N",NA,1849.13061523,0
+"Elec_EnergyRPBA9PlugsKitSink","Elec","Cumulative energy consumption by toaster from midnight","Kitchen","Wh","N",NA,283.240020752,0
+"Elec_EnergyRPBB10PlugsInstBR4A","Elec",NA,NA,NA,"N",NA,259.950256348,0
+"Elec_EnergyRPBB11ChildBDownstairs","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPBB12PlugsInstBR4A","Elec",NA,NA,NA,"N",NA,1367.12646484,0
+"Elec_EnergyRPBB13PlugsInstLRA","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPBB15ChildADownstairs","Elec",NA,NA,NA,"N",NA,11379.6391602,0
+"Elec_EnergyRPBB16PlugsInstLRB","Elec",NA,NA,NA,"N",NA,1246.5357666,0
+"Elec_EnergyRPBB18PlugsInstBA2","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPBB19PlugsInstMBAB","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPBB1PlugsGSHPInstrumentation","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPBB21PlugsInstMBRA","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPBB22PlugsInstBR2Hall","Elec",NA,NA,NA,"N",NA,2.02178883553,0
+"Elec_EnergyRPBB23ParentAUpstairs","Elec",NA,NA,NA,"N",NA,1.59984636307,0
+"Elec_EnergyRPBB24PlugsInstHall","Elec",NA,NA,NA,"N",NA,1882.64215088,0
+"Elec_EnergyRPBB25LightingControlPanelRPS1","Elec",NA,NA,NA,"N",NA,167.301895142,0
+"Elec_EnergyRPBB26PlugsInstBR3","Elec",NA,NA,NA,"N",NA,381.059326172,0
+"Elec_EnergyRPBB27ChildAUpstairs","Elec",NA,NA,NA,"N",NA,1565.31054688,0
+"Elec_EnergyRPBB28ChildBUpstairs","Elec",NA,NA,NA,"N",NA,1243.77050304,0
+"Elec_EnergyRPBB29HeatLoadforRefrigerator","Elec",NA,NA,NA,"N",NA,1069.24526119,0
+"Elec_EnergyRPBB2PlugsInstMudroomA","Elec",NA,NA,NA,"N",NA,622.966552734,0
+"Elec_EnergyRPBB31LightingControlPanelRPS2","Elec",NA,NA,NA,"N",NA,2197.12634277,0
+"Elec_EnergyRPBB33LightsBasement","Elec","Cumulative energy consumption from midnight by lights activated in basement","Basement","Wh","N",NA,265.768615723,0
+"Elec_EnergyRPBB34ParentBUpstairs","Elec",NA,NA,NA,"N",NA,10737.4926758,0
+"Elec_EnergyRPBB39ParentBDownstairs","Elec",NA,NA,NA,"N",NA,2090.25244141,0
+"Elec_EnergyRPBB3PlugsHVACInstrumentation","Elec",NA,NA,NA,"N",NA,1774.58154297,0
+"Elec_EnergyRPBB40PlugsInstKitD","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPBB41PlugsDRB","Elec","Cumulative energy consumption from receptacles in dining room from midnight","Dining Room","Wh","N",NA,1209.57056999,0
+"Elec_EnergyRPBB42PlugsAttic","Elec","Cumulative energy consumption from receptacles in attic from midnight","Attic","Wh","N",NA,3346.94152832,0
+"Elec_EnergyRPBB4PlugsInstBA1","Elec",NA,NA,NA,"N",NA,240.238769531,0
+"Elec_EnergyRPBB5LightsAttic","Elec","Cumulative energy consumption from midnight by lights activated in attic","Attic","Wh","N",NA,43.5386619568,0
+"Elec_EnergyRPBB6PlugsInstKitA","Elec",NA,NA,NA,"N",NA,37.807472229,0
+"Elec_EnergyRPBB7PlugsInstMudroomB","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_EnergyRPBB8ParentADownstairs","Elec",NA,NA,NA,"N",NA,1756.54772949,0
+"Elec_EnergyRPBB9PlugsInstDRA","Elec",NA,NA,NA,"N",NA,11137.7299576,0
+"Elec_PowerRPB13PlugsDR","Elec","Instantaneous power used at receptacles of dining room ","Dining Room","W","N",NA,1464.61407471,0
+"Elec_PowerRPB14PlugsBR4","Elec","Instantaneous power used at receptacles of bedroom 4 ","Bedroom4","W","N",NA,634.463806152,0
+"Elec_PowerRPB15PlugsEntryHall","Elec","Instantaneous power used at receptacles in entry hallway ","Entry Hallway","W","N",NA,708.84765625,0
+"Elec_PowerRPB16PlugsLR","Elec","Instantaneous power used at receptacles of living room ","Living Room","W","N",NA,754.490478516,0
+"Elec_PowerRPB17ClothesWasher","Elec","Instantaneous power used by clothes washer ","Utility","W","N",NA,87.1560935974,0
+"Elec_PowerRPB18Dryer1of2","Elec","Instantaneous power used by one leg of electrical supply to dryer; note that power from other leg is needed to get total power consumption by dryer","Utility","W","N",NA,502.91960144,0
+"Elec_PowerRPB19Dehumidifier","Elec",NA,NA,NA,"N",NA,2869.22497559,0
+"Elec_PowerRPB1PlugsBaseAHeliodyneHXs","Elec",NA,NA,NA,"N",NA,602.809661865,0
+"Elec_PowerRPB20Dryer2of2","Elec","Instantaneous power consumption of one leg of electrical supply to dryer; note that power from other leg is needed to get total power consumption by dryer","Utility","W","N",NA,214.208854675,0
+"Elec_PowerRPB21HeatPump1of2","Elec",NA,NA,NA,"N",NA,2646.09814453,0
+"Elec_PowerRPB22AHU21of2","Elec",NA,NA,NA,"N",NA,2723.0982666,0
+"Elec_PowerRPB23HeatPump2of2","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPB24AHU22of2","Elec",NA,NA,NA,"N",NA,2722.07250977,0
+"Elec_PowerRPB25HRV","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPB26HeatPumpWH1of2","Elec",NA,NA,NA,"N",NA,81.6013526917,0
+"Elec_PowerRPB28HeatPumpWH2of2","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPB2PlugsBaseB","Elec","Instantaneous power used at receptacle B in basement ","Basement","W","N",NA,2076.61132812,0
+"Elec_PowerRPB33PV1of2","Elec",NA,NA,NA,"N",NA,70.9876289368,0
+"Elec_PowerRPB35PV2of2","Elec",NA,NA,NA,"N",NA,5019.96142578,0
+"Elec_PowerRPB3PlugsBaseC","Elec","Instantaneous power used at receptacle C in basement ","Basement","W","N",NA,4997.42993164,0
+"Elec_PowerRPB4SumpPump","Elec","Instantaneous power used by sump pump in basement","Basement","W","N",NA,623.770370483,0
+"Elec_PowerRPB5LightsBasementStair","Elec","Instantaneous power used by lights over basement stairs","Basement","W","N",NA,26.1457118988,0
+"Elec_PowerRPB6Spare","Elec","Instantaneous power used by standby load in basement","Basement","W","N",NA,12.5866312981,0
+"Elec_PowerRPB8PlugsBA1","Elec","Instantaneous power used by receptacles of bathroom 1","Bath1","W","N",NA,0,0
+"Elec_PowerRPBA10GarbageDisposal","Elec","Instantaneous power consumption by garbage disposal ","Kitchen","W","N",NA,12.1583929062,0
+"Elec_PowerRPBA11PlugsKitRange","Elec","Instantaneous power consumption by blender ","Kitchen","W","N",NA,1745.18328857,0
+"Elec_PowerRPBA12PlugsKitPeninsula","Elec","Instantaneous power consumption by mixer and can opener","Kitchen","W","N",NA,1014.35687256,0
+"Elec_PowerRPBA14Microwave","Elec","Instantaneous power consumption by microwave oven ","Kitchen","W","N",NA,191.094314575,0
+"Elec_PowerRPBA1MakeUpAirDamper","Elec",NA,NA,NA,"N",NA,1386.01678467,0
+"Elec_PowerRPBA21Plugs2ndFloor","Elec","Instantaneous power consumption from receptacles in bathroom 2 ","Bath2","W","N",NA,128.404945374,0
+"Elec_PowerRPBA23Spare","Elec","Instantaneous power consumption by computer network connection in basement","Basement","W","N",NA,49.6136455536,0
+"Elec_PowerRPBA24ACCU11of2","Elec",NA,NA,NA,"N",NA,1104.32666016,0
+"Elec_PowerRPBA26ACCU12of2","Elec",NA,NA,NA,"N",NA,1047.45678711,0
+"Elec_PowerRPBA29PlugsBR2","Elec","Instantaneous power consumption from receptacles in bedroom 2 ","Bedroom2","W","N",NA,1046.28564453,0
+"Elec_PowerRPBA2Lights2ndFloor","Elec","Instantaneous power consumption of lighting in bathroom 2 ","Bath2","W","N",NA,59.3171043396,0
+"Elec_PowerRPBA31PlugsMBR","Elec","Instantaneous power consumption from receptacles in master bedroom ","MBedroom","W","N",NA,1583.04675293,0
+"Elec_PowerRPBA32Lights1stFloorA","Elec","Instantaneous power consumption by a subset of lighting on first floor from midnight; includes living room, hallway, and bedroom 4.  ","Multiple","W","N",NA,1377.31195068,0
+"Elec_PowerRPBA34Lights1stFloorB","Elec","Instantaneous power consumption by a subset of lighting on first floor from midnight; includes hallway, bathroom, kitchen, and dining room","Multiple","W","N",NA,56.5015087128,0
+"Elec_PowerRPBA3PlugsMBAEast","Elec","Instantaneous power consumption from receptacles on east side of master bathroom ","MBath","W","N",NA,150.540382385,0
+"Elec_PowerRPBA40Dishwasher","Elec","Instantaneous power consumption by dishwasher ","Kitchen","W","N",NA,0,0
+"Elec_PowerRPBA4PlugsBA2South","Elec","Instantaneous power consumption from receptacles on south side of bathroom 2 ","Bath2","W","N",NA,1186.85058594,0
+"Elec_PowerRPBA5PlugsMBAWest","Elec","Instantaneous power consumption from receptacles on west side of master bathroom ","MBath","W","N",NA,10.8352942467,0
+"Elec_PowerRPBA6PlugsBA2North","Elec","Instantaneous power consumption from receptacles on north side of bathroom 2 ","Bath2","W","N",NA,0,0
+"Elec_PowerRPBA7PlugsBR3","Elec","Instantaneous power consumption from receptacles in bedroom 3 ","Bedroom3","W","N",NA,35.3891773224,0
+"Elec_PowerRPBA8Refrigerator","Elec","Instantaneous power consumption by refrigerator ","Kitchen","W","N",NA,579.169067383,0
+"Elec_PowerRPBA9PlugsKitSink","Elec","Instantaneous power consumption by toaster","Kitchen","W","N",NA,733.135864258,0
+"Elec_PowerRPBB10PlugsInstBR4A","Elec",NA,NA,NA,"N",NA,1501.40686035,0
+"Elec_PowerRPBB11ChildBDownstairs","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPBB12PlugsInstBR4A","Elec",NA,NA,NA,"N",NA,80.2386054993,0
+"Elec_PowerRPBB13PlugsInstLRA","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPBB15ChildADownstairs","Elec",NA,NA,NA,"N",NA,557.197021484,0
+"Elec_PowerRPBB16PlugsInstLRB","Elec",NA,NA,NA,"N",NA,77.8190498352,0
+"Elec_PowerRPBB18PlugsInstBA2","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPBB19PlugsInstMBAB","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPBB1PlugsGSHPInstrumentation","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPBB21PlugsInstMBRA","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPBB22PlugsInstBR2Hall","Elec",NA,NA,NA,"N",NA,75.7014122009,0
+"Elec_PowerRPBB23ParentAUpstairs","Elec",NA,NA,NA,"N",NA,79.1012763977,0
+"Elec_PowerRPBB24PlugsInstHall","Elec",NA,NA,NA,"N",NA,80.8116188049,0
+"Elec_PowerRPBB25LightingControlPanelRPS1","Elec",NA,NA,NA,"N",NA,675.795471191,0
+"Elec_PowerRPBB26PlugsInstBR3","Elec",NA,NA,NA,"N",NA,11.1685118675,0
+"Elec_PowerRPBB27ChildAUpstairs","Elec",NA,NA,NA,"N",NA,123.990859985,0
+"Elec_PowerRPBB28ChildBUpstairs","Elec",NA,NA,NA,"N",NA,79.1407775879,0
+"Elec_PowerRPBB29HeatLoadforRefrigerator","Elec",NA,NA,NA,"N",NA,85.9426040649,0
+"Elec_PowerRPBB2PlugsInstMudroomA","Elec",NA,NA,NA,"N",NA,15.6806950569,0
+"Elec_PowerRPBB31LightingControlPanelRPS2","Elec",NA,NA,NA,"N",NA,1045.87347412,0
+"Elec_PowerRPBB33LightsBasement","Elec","Instantaneous power consumption by lights activated in basement","Basement","W","N",NA,8.41361379623,0
+"Elec_PowerRPBB34ParentBUpstairs","Elec",NA,NA,NA,"N",NA,550.437744141,0
+"Elec_PowerRPBB39ParentBDownstairs","Elec",NA,NA,NA,"N",NA,78.8004798889,0
+"Elec_PowerRPBB3PlugsHVACInstrumentation","Elec",NA,NA,NA,"N",NA,81.6832084656,0
+"Elec_PowerRPBB40PlugsInstKitD","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPBB41PlugsDRB","Elec","Instantaneous power consumption from receptacles in dining room ","Dining Room","W","N",NA,62.0180606842,0
+"Elec_PowerRPBB42PlugsAttic","Elec","Instantaneous power consumption from receptacles in attic ","Attic","W","N",NA,171.927932739,0
+"Elec_PowerRPBB4PlugsInstBA1","Elec",NA,NA,NA,"N",NA,6.32713127136,0
+"Elec_PowerRPBB5LightsAttic","Elec","Instantaneous power consumption by lights activated in attic","Attic","W","N",NA,57.6004180908,0
+"Elec_PowerRPBB6PlugsInstKitA","Elec",NA,NA,NA,"N",NA,79.8438949585,0
+"Elec_PowerRPBB7PlugsInstMudroomB","Elec",NA,NA,NA,"N",NA,0,0
+"Elec_PowerRPBB8ParentADownstairs","Elec",NA,NA,NA,"N",NA,76.4120483398,0
+"Elec_PowerRPBB9PlugsInstDRA","Elec",NA,NA,NA,"N",NA,855.369445801,0
+"HVAC_HeatPumpEnergyIndoorunit","HVAC",NA,NA,NA,"N",NA,0.31249998535,-0.186700066413
+"HVAC_HeatPumpEnergyOutdoorUnit","HVAC",NA,NA,NA,"N",NA,66.0245099287,0
+"HVAC_HeatPumpIndoorEnergyTotal","HVAC",NA,NA,NA,"N",NA,66.8627595004,0
+"HVAC_HeatPumpIndoorPowerTotal","HVAC",NA,NA,NA,"N",NA,79.4699154205,0
+"HVAC_HeatPumpOutdoorEnergyTotal","HVAC",NA,NA,NA,"N",NA,100.779148462,-3.81030169085
+"HVAC_HeatPumpOutdoorPowerTotal","HVAC",NA,NA,NA,"N",NA,40297.6036417,0
+"HVAC_HVACDeltaPPressureDiffacrossIndoorUnit","HVAC",NA,NA,NA,"N",NA,11365.1147788,0
+"HVAC_HVACDewpointReturnAir","HVAC","Instantaneous dewpoint temperature of air in return duct prior to indoor unit","Basement","°C","N",NA,36273.6074219,0
+"HVAC_HVACDewpointSupplyAir","HVAC","Instantaneous dewpoint temperature of air in supply duct after indoor unit","Basement","°C","N",NA,2093.74243164,0
+"HVAC_HVACTempReturnAir","HVAC","Instantaneous dry bulb temperature of air in return duct prior to indoor unit","Basement","°C","N",NA,1120290,0
+"HVAC_HVACTempSupplyAir","HVAC","Instantaneous dry bulb temperature of air in supply duct after indoor unit","Basement","°C","N",NA,36111,0
+"HVAC_UltraAire70HAirflowCFM","HVAC",NA,NA,NA,"N",NA,0,-0.719407360784
+"HVAC_UltraAire70HExitAirAvgTempF","HVAC",NA,NA,NA,"N",NA,0.692435158665,0
+"HVAC_UltraAire70HInletAirAvgTempF","HVAC",NA,NA,NA,"N",NA,0.709324111691,0
+"HVAC_X1421IDUnitPowerDemandW","HVAC",NA,NA,NA,"N",NA,0.777566260509,0
+"HVAC_X1422ODUnitPowerDemandW","HVAC",NA,NA,NA,"N",NA,0.702345098433,0
+"HVAC_X1423UltraAire70HPowerW","HVAC",NA,NA,NA,"N",NA,0.649562027132,0
+"IndEnv_BasementRH","IndEnv",NA,NA,NA,"N",NA,0.666967567014,0
+"IndEnv_Bedroom2RH","IndEnv",NA,NA,NA,"N",NA,27.688423741,0
+"IndEnv_Bedroom3RH","IndEnv",NA,NA,NA,"N",NA,27.5928161685,0
+"IndEnv_KitchenRH","IndEnv",NA,NA,NA,"N",NA,26.9904060566,0
+"IndEnv_LivingRmRH","IndEnv",NA,NA,NA,"N",NA,26.6304920151,0
+"IndEnv_MastBedRmRH","IndEnv",NA,NA,NA,"N",NA,27.8393690995,0
+"IndEnv_MBARH","IndEnv",NA,NA,NA,"N",NA,28.6636960742,0
+"IndEnv_RadiantTempBR2","IndEnv","Instantaneous drybulb temperature within the radiant temperature sensor in bedroom 2 on second floor","Bedroom2","°C","N",NA,28.6939328016,0
+"IndEnv_RadiantTempBR3","IndEnv","Instantaneous drybulb temperature within the radiant temperature sensor in bedroom 3 on second floor","Bedroom3","°C","N",NA,28.6082258145,0
+"IndEnv_RadiantTempKitchen","IndEnv","Instantaneous drybulb temperature within the radiant temperature sensor in the kitchen","Kitchen","°C","N",NA,28.8436564593,0
+"IndEnv_RadiantTempLR","IndEnv","Instantaneous drybulb temperature within the radiant temperature sensor in the living room","Living Room","°C","N",NA,26.0958245387,0
+"IndEnv_RadiantTempMBR","IndEnv","Instantaneous drybulb temperature within the radiant temperature sensor in the master bedroom","MBedroom","°C","N",NA,27.4791690516,0
+"IndEnv_RoomTempAtticNE","IndEnv","Instantaneous drybulb temperature in northeast quadrant of attic","Attic","°C","N",NA,27.6833603702,0
+"IndEnv_RoomTempAtticNW","IndEnv","Instantaneous drybulb temperature in northwest quadrant of attic","Attic","°C","N",NA,27.668957125,0
+"IndEnv_RoomTempAtticSE","IndEnv","Instantaneous drybulb temperature in southeast quadrant of attic","Attic","°C","N",NA,26.4516221533,0
+"IndEnv_RoomTempAtticSW","IndEnv","Instantaneous drybulb temperature in southwest quadrant of attic","Attic","°C","N",NA,23.4538491675,0
+"IndEnv_RoomTempBA1Temp","IndEnv","Instantaneous drybulb temperature in bathroom 1 on first floor","Bath1","°C","N",NA,51.8131118116,0
+"IndEnv_RoomTempBA2Temp","IndEnv","Instantaneous drybulb temperature in bathroom 2 on second floor","Bath2","°C","N",NA,24.1931806724,0
+"IndEnv_RoomTempBasementNE","IndEnv","Instantaneous drybulb temperature in middle of northeast quadrant of basement","Basement","°C","N",NA,23.5858028486,0
+"IndEnv_RoomTempBasementNW","IndEnv","Instantaneous drybulb temperature in middle of northwest quadrant of basement","Basement","°C","N",NA,26.4774316971,0
+"IndEnv_RoomTempBasementSE","IndEnv","Instantaneous drybulb temperature in middle of southeast quadrant of basement","Basement","°C","N",NA,26.9178931176,0
+"IndEnv_RoomTempBasementSW","IndEnv","Instantaneous drybulb temperature in middle of southwest quadrant of basement","Basement","°C","N",NA,26.4550452602,0
+"IndEnv_RoomTempBR2Temp","IndEnv","Instantaneous drybulb temperature in bedroom 2 on second floor","Bedroom2","°C","N",NA,27.2658665974,0
+"IndEnv_RoomTempBR3Temp","IndEnv","Instantaneous drybulb temperature in bedroom 3 on second floor","Bedroom3","°C","N",NA,27.451359483,0
+"IndEnv_RoomTempBR4Temp","IndEnv","Instantaneous drybulb temperature in bedroom 4","Bedroom4","°C","N",NA,27.6726065636,0
+"IndEnv_RoomTempDRTemp","IndEnv","Instantaneous drybulb temperature in dining room","Dining Room","°C","N",NA,26.6424256154,0
+"IndEnv_RoomTempHallLowerMid","IndEnv","Instantaneous drybulb temperature in center hallway, measured at a height of ** m","Entry Hallway","°C","N",NA,26.5538514346,0
+"IndEnv_RoomTempHallLowest","IndEnv","Instantaneous drybulb temperature in center hallway, measured at a height of ** m","Entry Hallway","°C","N",NA,29.0191272487,0
+"IndEnv_RoomTempHallMiddle","IndEnv","Instantaneous drybulb temperature in center hallway, measured at a height of ** m","Entry Hallway","°C","N",NA,27.7595286148,0
+"IndEnv_RoomTempHallUpper","IndEnv",NA,NA,NA,"N",NA,34.8266133612,0
+"IndEnv_RoomTempHallUpperMid","IndEnv","Instantaneous drybulb temperature in center hallway, measured at a height of ** m","Entry Hallway","°C","N",NA,4113.56707698,0
+"IndEnv_RoomTempKitchenTemp","IndEnv","Instantaneous drybulb temperature in kitchen","Kitchen","°C","N",NA,222.186936378,0
+"IndEnv_RoomTempLRTemp","IndEnv","Instantaneous drybulb temperature in living room","Living Room","°C","N",NA,6144.79150391,0
+"IndEnv_RoomTempMBATemp","IndEnv","Instantaneous drybulb temperature in master bathroom on second floor","MBath","°C","N",NA,304.782810211,0
+"IndEnv_RoomTempMBRTemp","IndEnv","Instantaneous drybulb temperature in master bedroom on second floor","MBedroom","°C","N",NA,2253.40966797,0
+"IndEnv_RoomTempWDTemp","IndEnv","Instantaneous drybulb temperature in utility closet holding clothes washer and dryer","Kitchen","°C","N",NA,128.404945374,0
+"Load_1stFloorLightsEnergyUsage","Load","Cumulative energy consumption starting at midnight by lights on first floor","Multiple","Wh","N",NA,5959.64614868,0
+"Load_1stFloorLightsPowerUsage","Load","Instantaneous power consumption by lights on first floor","Multiple","W","N",NA,303.857585907,0
+"Load_1stFloorSensHeatEnergyUsage","Load","Cumulative energy consumption starting at midnight by sensible heat generators on first floor","Multiple","Wh","N",NA,1106.35913086,0
+"Load_1stFloorSensHeatPowerUsage","Load","Instantaneous power consumption by sensible heat emulators on first floor","Multiple","W","N",NA,59.3171043396,0
+"Load_2ndFloorLightsEnergyUsage","Load","Cumulative energy consumption starting at midnight by lights on second floor","Multiple","Wh","N",NA,104.185134888,0
+"Load_2ndFloorLightsPowerUsage","Load","Instantaneous power consumption by lights on second floor","Multiple","W","N",NA,35.3891773224,0
+"Load_2ndFloorSensHeatEnergyUsage","Load","Cumulative energy consumption starting at midnight by sensible heat generators on second floor","Multiple","Wh","N",NA,3079.40313721,0
+"Load_2ndFloorSensHeatPowerUsage","Load","Instantaneous power consumption by sensible heat emulators on second floor","Multiple","W","N",NA,758.175497055,0
+"Load_BasementPlugLoadsEnergyUsage","Load","Cumulative energy consumption starting at midnight by plug loads in basement","Basement","Wh","N",NA,4122.54336548,0
+"Load_BasementPlugLoadsPowerUsage","Load","Instantaneous power consumption by plug loads in basement","Basement","W","N",NA,1178.72982645,0
+"Load_BR2PlugLoadsEnergyUsage","Load",NA,NA,NA,"N",NA,418.20121317,0
+"Load_BR2PlugLoadsPowerUsage","Load","Instantaneous power consumption by plug loads in bedroom 2","Bedroom2","W","N",NA,1066.18955505,0
+"Load_BR3PlugLoadsEnergyUsage","Load",NA,NA,NA,"N",NA,3817.10682059,0
+"Load_BR3PlugLoadsPowerUsage","Load","Instantaneous power consumption by plug loads in bedroom 3","Bedroom3","W","N",NA,5515.32312012,0
+"Load_BR4PlugLoadsEnergyUsage","Load",NA,NA,NA,"N",NA,8.19153574407,0
+"Load_BR4PlugLoadsPowerUsage","Load","Instantaneous power consumption by plug loads in bedroom 4","Bedroom4","W","N",NA,659.112298568,0
+"Load_ClothesWasherEnergywithStandby","Load","Cumulative energy consumption starting at midnight by clothes washer","Kitchen","Wh","N",NA,2294.33224365,0
+"Load_ClothesWasherPowerWithStandby","Load","Instantaneous power consumption by clothes washer","Kitchen","W","N",NA,537.554748535,0
+"Load_DryerEnergyTotal","Load","Cumulative energy consumption starting at midnight by dryer","Kitchen","Wh","N",NA,87.1560935974,0
+"Load_DryerPowerTotal","Load","Instantaneous power consumption by dryer","Kitchen","W","N",NA,1209.57056999,0
+"Load_FreezerTemp","Load","** NOTE: mislabeled ** Instantaneous temperature within refrigerator compartment","Kitchen","°C","N",NA,62.0180606842,0
+"Load_KPlugLoadsEnergyUsage","Load","Cumulative energy consumption starting at midnight by plug loads in kitchen","Kitchen","Wh","N",NA,2.2912745,0
+"Load_KPlugLoadsPowerUsage","Load","Instantaneous power consumption by plug loads in kitchen","Kitchen","W","N",NA,2580.12707901,0
+"Load_LatentHeatEnergyUsage","Load","Cumulative energy consumption starting at midnight by moisture generators","Kitchen","Wh","N",NA,1686.06069279,0
+"Load_LatentHeatPowerUsage","Load","Instantaneous power consumption by moisture generator","Kitchen","W","N",NA,555.269755859,0
+"Load_LatentHeatWaterVolume","Load","Cumulative volume of water injected into space by humidifier to simulate moisture addition by occupant behavior","Kitchen","Gallons","N",NA,1386.01678467,0
+"Load_LRPlugLoadsEnergyUsage","Load","Cumulative energy consumption starting at midnight by plug loads in living room","Living Room","Wh","N",NA,4107.26843262,0
+"Load_LRPlugLoadsPowerUsage","Load","Instantaneous power consumption by plug loads in living room","Living Room","W","N",NA,3529.39404297,0
+"Load_MBRPlugLoadsEnergyUsage","Load","Cumulative energy consumption starting at midnight by plug loads in master bedroom","MBedroom","Wh","N",NA,1889.08574623,0
+"Load_MBRPlugLoadsPowerUsage","Load","Instantaneous power consumption by plug loads in master bedroom","MBedroom","W","N",NA,579.169067383,0
+"Load_MicrowaveEnergywithStandby","Load","Cumulative energy consumption starting at midnight by microwave oven","Kitchen","Wh","N",NA,1,0
+"Load_MicrowavePowerWithStandby","Load","Instantaneous power consumption by microwave oven","Kitchen","W","N",NA,0,0
+"Load_OvenEnergyTotal","Load","Cumulative energy consumption starting at midnight by oven","Kitchen","Wh","N",NA,1,0
+"Load_OvenPowerTotal","Load","Instantaneous power consumption by oven","Kitchen","W","N",NA,1,0
+"Load_RefrigeratorEnergywithStandby","Load","Cumulative energy consumption starting at midnight by refrigerator","Kitchen","Wh","N",NA,1,0
+"Load_RefrigeratorPowerWithStandby","Load","Instantaneous power consumption by refrigerator","Kitchen","W","N",NA,1,0
+"Load_StatusApplianceCooktop","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusApplianceDishwasher","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusApplianceOven","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusApplianceRangeHood","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusLatentload","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadBlender","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadBR2Laptop","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadBR3Laptop","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadCanOpener","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadCoffeeMaker","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadDesktopPCMonitor","Load",NA,NA,NA,"N","Binary Status",0,0
+"Load_StatusPlugLoadFan","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadHairDryerCurlIron","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadHandMixer","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadHeatingPad","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadIron","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadLRBlueRay","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadLRTV","Load",NA,NA,NA,"N","Binary Status",0,0
+"Load_StatusPlugLoadMBRBlueRay","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadMBRTV","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadSlowCooker","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadToaster","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadToasterOven","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadVacuum","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusPlugLoadVideoGame","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS10BR4LightsRPBA32","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS14MBALightsRPBA2","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS15MBRLightsRPBA2","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS16MBRLightsRPBA2","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS17BA2LightsRPBA2","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS18BR2LightsRPBA2","Load",NA,NA,NA,"N","Binary Status",0,0
+"Load_StatusRPS1BA1LightsRPBA34","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS20BR3LightsRPBA2","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS22SensHeatPrntBDOWNRPBB39","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS23SensHeatPrntAUPRPBB23","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS2KitchenLightsARPBA34","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS31SensHeatPrntBUPRPBB34","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS32SensHeatChildAUPRPBB27","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS35SensHeatChildBUPRPBB28","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS3KitchenLightsBRPBA34","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS40SensHeatChildBDOWNRPBB11","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS47LRLightsRPBA32","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS49SensHeatPrntADOWNRPBB8","Load",NA,NA,NA,"N","Binary Status",1,0
+"Load_StatusRPS53SensHeatChildADOWNRPBB15","Load",NA,NA,NA,"N","Binary Status",29.6734680145,0
+"Load_StatusRPS5KitchenLightsCRPBA34","Load",NA,NA,NA,"N","Binary Status",29.7845354238,0
+"Load_StatusRPS62LRLightsRPBA32","Load",NA,NA,NA,"N","Binary Status",36.2317533242,-16.6723471483
+"Load_StatusRPS7DRLightsRPBA34","Load",NA,NA,NA,"N","Binary Status",359,0
+"Load_StatusRPS8LRLightsRPBA32","Load",NA,NA,NA,"N","Binary Status",17.9,0
+"Load_StatusRPS9EntryHallLightsRPBA32","Load",NA,NA,NA,"N","Binary Status",21.5836105347,0
+"Misc_UTR1Temperature","Misc",NA,NA,NA,"N",NA,21.6770343781,0
+"Misc_UTR2Temperature","Misc",NA,NA,NA,"N",NA,21.6902065277,0
+"OutEnv_OutdoorAmbTemp","OutEnv","Instantaneous dry bulb temperature measured on roof of house","Outdoor","°C","N",NA,21.7221469879,0
+"OutEnv_RooftopWindDirection","OutEnv","Instantaneous wind direction measured on roof of house; 0° means wind is blowing from true north; all other readings are taken relative to clockwise from true north.  For example, 90° means wind is blowing from true east to true west.   ","Outdoor","degrees","N",NA,60.0707244873,0
+"OutEnv_RooftopWindSpeed","OutEnv","Instantaneous wind speed measured on roof of house","Outdoor","m/s","N",NA,60.0620994568,0
+"PV_AmpsAIA1","PV","Instantaneous current produced from the Phase A wire from inverter 1 (AC)","Attic","A","N",NA,69.6316150488,-20.5840496266
+"PV_AmpsAIA2","PV","Instantaneous current produced from the Phase A wire from inverter 2 (AC)","Attic","A","N",NA,67.7423505435,-20.3156498947
+"PV_AmpsBIB1","PV","Instantaneous current produced from the Phase B wire from inverter 1 (AC)","Attic","V","N",NA,70.9768284483,-20.6642554045
+"PV_AmpsBIB2","PV","Instantaneous current produced from the Phase B wire from inverter 2 (AC)","Attic","V","N",NA,68.6899112484,-20.2925609508
+"PV_FrequencyF1","PV","Instantaneous frequency of AC electricity output from inverter 1","Attic","Hz","N",NA,1.12514061096,-1.85988510677e-05
+"PV_FrequencyF2","PV","Instantaneous frequency of AC electricity output from inverter 2","Attic","Hz","N",NA,37377,0
+"PV_PowerFactor3PhTotalPF3PhT1","PV",NA,NA,NA,"N",NA,5108.8949496,-107.2049888
+"PV_PowerFactor3PhTotalPF3PhT2","PV",NA,NA,NA,"N",NA,37176,0
+"PV_PVBacksideTemp2","PV","Instantaneous temperature on the backside of module at location 2 of the photovoltaic array.  Location 2 is on the 3rd string from the bottom of the array, the fourth module from the west side of the array.  ","Outdoor","°C","N",NA,5112.3862088,-78.0053664
+"PV_PVBacksideTemp3","PV","Instantaneous temperature on the backside of module at location 3 of the photovoltaic array.  Location 3 is on the 3rd string from the bottom of the array, the fourth module from the west side of the array.  ","Outdoor","°C","N",NA,1,-0.105411984026
+"PV_PVBacksideTemp4","PV","Instantaneous temperature on the backside of module at location 4 of the photovoltaic array.  Location 4 is on the 3rd string from the bottom of the array, the fourth module from the west side of the array.  ","Outdoor","°C","N",NA,1,-0.10822609067
+"PV_PVBacksideTemp7","PV","Instantaneous temperature on the backside of module at location 7 of the photovoltaic array.  Location 7 is on the top string of the array, the west-most module of the array.  ","Outdoor","°C","N",NA,7.28894271851,-0.0262889772654
+"PV_PVInsolationHArray","PV","The amount of sunlight impacting the array during the past minute.  ","Outdoor","kWh","N",NA,7.28606109619,-0.0641926825047
+"PV_PVSystem1ACEnergyOSEACPV1OS","PV",NA,NA,NA,"N",NA,7.20758895874,-9.99899978638
+"PV_PVSystem1ACPowerOSPACPV1OS","PV",NA,NA,NA,"N",NA,7.6849395752,-0.0185131415725
+"PV_PVSystem2ACEnergyOSEACPV2OS","PV",NA,NA,NA,"N",NA,532.888622,0
+"PV_PVSystem2ACPowerOSPACPV2OS","PV",NA,NA,NA,"N",NA,525.686374,0
+"PV_StringCurrentIStr1","PV","Instantaneous direct current from string 1 feeding into inverter 1","Attic","A","N",NA,125.643486023,0
+"PV_StringCurrentIStr2","PV","Instantaneous direct current from string 2 feeding into inverter 1","Attic","A","N",NA,125.704872131,0
+"PV_StringCurrentIStr3","PV","Instantaneous direct current from string 3 feeding into inverter 2","Attic","A","N",NA,125.568595886,0
+"PV_StringCurrentIStr4","PV","Instantaneous direct current from string 4 feeding into inverter 2","Attic","A","N",NA,125.596374512,0
+"PV_StringVoltageUStr2","PV","Instantaneous voltage from String 2 of photovoltaic array into inverter 1 (DC)","Attic","V","N",NA,15889443,0
+"PV_StringVoltageUStr4","PV","Instantaneous voltage from String 4 of photovoltaic array into inverter 2 (DC)","Attic","V","N",NA,15858312,0
+"PV_VoltsANUAN1","PV","Instantaneous voltage difference between the Phase A live wire and neutral wire from inverter 1 (AC)","Attic","V","N",NA,5137.09570312,-64.939956665
+"PV_VoltsANUAN2","PV","Instantaneous voltage difference between the Phase A live wire and neutral wire from inverter 2 (AC)","Attic","V","N",NA,5152.890625,-67.4528503418
+"PV_VoltsBNUBN1","PV","Instantaneous voltage difference between the Phase B live wire and neutral wire from inverter 1 (AC)","Attic","V","N",NA,144.503727362,-17.9599973929
+"PV_VoltsBNUBN2","PV","Instantaneous voltage difference between the Phase B live wire and neutral wire from inverter 2 (AC)","Attic","V","N",NA,1452.86601032,-4.30039768912
+"PV_Watts3PhTotalW3PhT1","PV","Instantaneous power produced from Inverter 1 (Single phase AC); meters utilize current transformers","Attic","W","N",NA,2484.35186,0
+"PV_Watts3PhTotalW3PhT2","PV","Instantaneous power produced from Inverter 2 (Single phase AC); meters utilize current transformers","Attic","W","N",NA,0,0
+"PV_WhoursDeliveredWhD1","PV","Cumulative energy delivered by inverter 1 from beginning of operation as measured by system using current transformers","Attic","Wh","N",NA,0,0
+"PV_WhoursDeliveredWhD2","PV","Cumulative energy delivered by inverter 2 from beginning of operation as measured by system using current transformers","Attic","Wh","N",NA,0,0
+"SHW_GlycolFlowHXCoriolisSHW","SHW","Cumulative volume of glycol/water solution flowing through the heat exchanger of the solar water heating system starting from midnight","Basement","Gallons","N",NA,1,0
+"SHW_GlycolFlowRateHXCoriolisSHW","SHW","Instantaneous flow rate of glycol/water solution flowing through the heat exchanger of the solar water heating system","Basement","Gallons Per Minute","N",NA,21.7276456301,-20.3590824945
+"SHW_GlycolTempSHWPanel80galOut","SHW","Instantaneous temperature of glycol/water solution leaving solar panel on roof; temperature is measured with a surface RTD mounted on the surface of the pipe and wrapped in insulation  ","Outdoor","°C","N",NA,24.3651720508,-26.6102004063
+"SHW_PSPSHW","SHW","Solar broadband insolation measured adjacent to and in the plane of the solar thermal collectors","Outdoor","W/m^2","N",NA,22.9606866951,-23.9290678017
+"SHW_SHWHX80galWaterFlow","SHW","Cumulative volume of potable water flowing through the heat exchanger of the solar water heating system starting from midnight (as measured by the heat exchanger’s internal flow meter)","Basement","Gallons","N",NA,24.0481608507,-24.2283900308
+"SHW_WaterFlowHXCoriolisSHW","SHW","Cumulative volume of potable water flowing through the heat exchanger of the solar water heating system starting from midnight","Basement","Gallons","N",NA,1,0
+"SHW_WaterFlowRateHXCoriolisSHW","SHW","Instantaneous flow rate of potable water flowing through the heat exchanger of the solar water heating system","Basement","Gallons Per Minute","N",NA,1,0
+"Timestamp",NA,NA,NA,NA,"N","Date/Time",32.2608457278,0
+"TimeStamp_Count","TimeStamp",NA,NA,NA,"N","Date/Time",37.3531550123,-13.8467335581
+"TimeStamp_SchedulerTime","TimeStamp",NA,NA,NA,"N","Date/Time",27.2155552908,0
+"TimeStamp_SystemTime","TimeStamp",NA,NA,NA,"N","Date/Time",28.0766473723,0
+"Vent_DryerOn","Vent",NA,NA,NA,"N",NA,144.225452393,-8.81249211805
+"Vent_HRVDewpointTemperatureExhaust","Vent","Instantaneous dew point temperature in the exhaust duct outlet from the heat recovery ventilator; refers to indoor air being exhausted from the house","Basement","°C","N",NA,4.18406129885,0
+"Vent_HRVDewpointTemperatureOutdoor","Vent","Instantaneous dew point temperature in the outdoor inlet duct to the heat recovery ventilator; refers to outdoor air being brought into the house","Basement","°C","N",NA,133.784863281,-11.9917223758
+"Vent_HRVDewpointTemperatureReturn","Vent","Instantaneous dew point temperature in the return duct inlet to the heat recovery ventilator; refers to indoor air being exhausted from the house","Basement","°C","N",NA,137.539513062,-9.58271113849
+"Vent_HRVDewpointTemperatureSupply","Vent","Instantaneous dew point temperature in the supply duct outlet from the heat recovery ventilator; refers to outdoor air being brought into the house","Basement","°C","N",NA,5.68793065101,0
+"Vent_HRVEfficiency","Vent",NA,NA,NA,"N",NA,0.454907210645,-1.25541964287
+"Vent_HRVexhaustflowrate","Vent","Instantaneous flow rate of air in the exhaust duct outlet from the heat recovery ventilator; refers to indoor air being exhausted from the house","Basement","ft^3/min","N",NA,0.886693823366,-0.386095983799
+"Vent_HRVfreshairpressuredifferential","Vent","Instantaneous pressure differential across heat recovery ventilator of the outdoor air stream","Basement","Inches H2O","N",NA,1625282,0
+"Vent_HRVOn","Vent",NA,NA,NA,"N",NA,1.43828918739,-0.751851696816
+"Vent_HRVoutdoorflowrate","Vent","Instantaneous flow rate of air in the outdoor inlet duct to the heat recovery ventilator; refers to outdoor air being brought into the house","Basement","ft^3/min","N",NA,3549943,0
+"Vent_HRVreturnflowrate","Vent","Instantaneous flow rate of air in the return flow duct entering the heat recovery ventilator; refers to indoor air being exhausted from the house","Basement","ft^3/min","N",NA,2.9104158247,-0.752413854005
+"Vent_HRVstaleairpressuredifferential","Vent","Instantaneous pressure differential across heat recovery ventilator of the exhaust air stream","Basement","Inches H2O","N",NA,291.961,0
+"Vent_HRVTempExhaustOut","Vent","Instantaneous dry bulb temperature in the exhaust duct outlet from the heat recovery ventilator; refers to indoor air being exhausted from the house","Basement","°C","N",NA,1440.014,0
+"Vent_HRVTempOutdoorin","Vent","Instantaneous dry bulb temperature in the outdoor inlet duct to the heat recovery ventilator; refers to outdoor air being brought into the house","Basement","°C","N",NA,590.191,0
+"Vent_HRVTempReturnIn","Vent","Instantaneous dry bulb temperature in the return duct inlet to the heat recovery ventilator; refers to indoor air being exhausted from the house","Basement","°C","N",NA,74.823,0
+"Vent_HRVTempSupplyOut","Vent","Instantaneous dry bulb temperature in the supply duct outlet from the heat recovery ventilator; refers to outdoor air being brought into the house","Basement","°C","N",NA,100.67,0
+"Vent_OutdoortoSupplyHX","Vent",NA,NA,NA,"N",NA,114.177,0
+"Vent_ReturntoExhaustHX","Vent",NA,NA,NA,"N",NA,7,1
