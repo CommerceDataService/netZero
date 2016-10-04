@@ -1,0 +1,913 @@
+Channel,Datatype,Unit,Length,Minimum,Maximum,Description,Hourly_Calc,Index,Location,Slot,System,Type,Units,Remove
+Manifold-Hot Flow,DT_DOUBLE,,1438,,,,Diff,0,Base,3,DHW,Flw,Gal,
+Manifold-Cold Flow,DT_DOUBLE,,1438,,,,Diff,1,Base,3,DHW,Flw,Gal,
+MixValve - Cold Flow,DT_DOUBLE,,1438,,,,Diff,2,Base,3,DHW,Flw,Gal,
+Clothes Washer - Hot Flow,DT_DOUBLE,,1438,,,,Diff,3,Base,3,DHW,Flw,Gal,
+Clothes Washer  - Cold Flow,DT_DOUBLE,,1438,,,,Diff,4,Base,3,DHW,Flw,Gal,
+Dishwasher - Hot Flow,DT_DOUBLE,,1438,,,,Diff,5,Base,3,DHW,Flw,Gal,
+Room Temp - Basement HPWH ,DT_DOUBLE,,1438,,,,Avg,4,Base,6,DHW,T,C,
+Water Temp - Manifold Cold In,DT_DOUBLE,,1438,,,,Min,0,Base,8,DHW,T,C,
+Water Temp - Manifold Hot In,DT_DOUBLE,,1438,,,,Max,1,Base,8,DHW,T,C,
+Water Temp - K Sink - Cold,DT_DOUBLE,,1438,,,,Min,2,K,8,DHW,T,C,
+Water Temp - K Sink - Hot,DT_DOUBLE,,1438,,,,Max,3,K,8,DHW,T,C,
+Water Temp - Dishwasher,DT_DOUBLE,,1438,,,,Max,4,K,8,DHW,T,C,
+Water Temp - Washer Cold,DT_DOUBLE,,1438,,,,Min,9,K,8,DHW,T,C,
+Water Temp - Washer Hot,DT_DOUBLE,,1438,,,,Max,10,K,8,DHW,T,C,
+Water Temp - MBA SinkR Hot,DT_DOUBLE,,1438,,,,Max,13,MBA,8,DHW,T,C,
+Water Temp - MBA SinkR Cold,DT_DOUBLE,,1438,,,,Min,14,MBA,8,DHW,T,C,
+Water Temp - MBA Shw Hot,DT_DOUBLE,,1438,,,,Max,15,MBA,8,DHW,T,C,
+Water Temp - MBA Shw Cold,DT_DOUBLE,,1438,,,,Min,16,MBA,8,DHW,T,C,
+Water Temp - MBA Tub Hot,DT_DOUBLE,,1438,,,,Max,17,MBA,8,DHW,T,C,
+Water Temp - MBA Tub Cold,DT_DOUBLE,,1438,,,,Min,18,MBA,8,DHW,T,C,
+Water Temp - BA2 Sink Hot,DT_DOUBLE,,1438,,,,Max,19,BA2,8,DHW,T,C,
+Water Temp - BA2 Sink Cold,DT_DOUBLE,,1438,,,,Min,20,BA2,8,DHW,T,C,
+Water Temp - BA2 Shw Hot,DT_DOUBLE,,1438,,,,Max,21,BA2,8,DHW,T,C,
+Water Temp - BA2 Shw Cold,DT_DOUBLE,,1438,,,,Min,22,BA2,8,DHW,T,C,
+Water Temp - K Sink - Mix,DT_DOUBLE,,1438,,,,Max,23,K,8,DHW,T,C,
+Water Temp - MBA Shw Mix,DT_DOUBLE,,1438,,,,Max,24,MBA,8,DHW,T,C,
+Water Temp - MBA Tub Mix,DT_DOUBLE,,1438,,,,Max,25,MBA,8,DHW,T,C,
+Water Temp - BA2 Sink Mixed,DT_DOUBLE,,1438,,,,Max,26,BA2,8,DHW,T,C,
+Water Temp - BA2 Shower Mixed,DT_DOUBLE,,1438,,,,Min,27,BA2,8,DHW,T,C,
+Water Temp - MBA Sink-R Mixed,DT_DOUBLE,,1438,,,,Max,28,MBA,8,DHW,T,C,
+Water Temp - Solar Preheat Tank (80 gal) In,DT_DOUBLE,,1438,,,,Min,0,Base,9,DHW,T,C,
+Water Temp - Solar Preheat Tank (80 gal) Out,DT_DOUBLE,,1438,,,,Max,1,Base,9,DHW,T,C,
+Water Temp - MixValve Cold In,DT_DOUBLE,,1438,,,,Min,4,Base,9,DHW,T,C,
+Water Temp - MixValve Hot In,DT_DOUBLE,,1438,,,,Max,5,Base,9,DHW,T,C,
+Water Temp - SHW HX (80 gal) HX In,DT_DOUBLE,,1438,,,,Max,6,Base,9,DHW,T,C,
+Water Temp - SHW HX (80 gal) HX Out,DT_DOUBLE,,1438,,,,Max,7,Base,9,DHW,T,C,
+Water Temp - HPWH In,DT_DOUBLE,,1438,,,,Max,10,Base,9,DHW,T,C,
+Water Temp - HPWH Out,DT_DOUBLE,,1438,,,,Max,11,Base,9,DHW,T,C,
+Glycol Temp - SHW HX (80 gal) HX In,DT_DOUBLE,,1438,,,,Max,12,Base,9,DHW,T,C,
+Glycol Temp - SHW HX (80 gal) HX Out,DT_DOUBLE,,1438,,,,Max,13,Base,9,DHW,T,C,
+Kitchen Scale (lb),DT_DOUBLE,,1438,,,,Max,1,K,15,DHW,mA,lb,0
+MBA Scale (lb),DT_DOUBLE,,1438,,,,Max,15,MBA,17,DHW,V,lb,0
+Status?  Solenoid Hot #9 - MBA Shower,DT_DOUBLE,,1438,,,,Sum,4,Base,18,DHW,Rel,0_1,
+Status?  Solenoid Cold #12 - MBA Shower,DT_DOUBLE,,1438,,,,Sum,5,Base,18,DHW,Rel,0_1,
+Status?  Solenoid Hot #8 - MBA Tub,DT_DOUBLE,,1438,,,,Sum,6,Base,18,DHW,Rel,0_1,
+Status?  Solenoid Cold #11 - MBA Tub,DT_DOUBLE,,1438,,,,Sum,7,Base,18,DHW,Rel,0_1,
+Status?  Solenoid Hot #3 - Kitchen Sink,DT_DOUBLE,,1438,,,,Sum,8,Base,18,DHW,Rel,0_1,
+Status?  Solenoid Cold #4 - Kitchen Sink,DT_DOUBLE,,1438,,,,Sum,9,Base,18,DHW,Rel,0_1,
+Status? Drain Tank Solenoid - Kitchen,DT_DOUBLE,,1438,,,,Sum,21,K,18,DHW,Rel,0_1,0
+Status? Drain Tank Solenoid - MBA,DT_DOUBLE,,1438,,,,Sum,23,MBA,18,DHW,Rel,0_1,0
+Delivery Temp - Kitchen Sink,DT_DOUBLE,,1438,,,,Avg_0,0,K,PXI Calc,DHW,T,Wh,0
+Draw Volume - Kitchen Sink,DT_DOUBLE,,1438,,,,Sum,1,K,PXI Calc,DHW,V,Wh,0
+Hot Water Load - Kitchen Sink,DT_DOUBLE,,1438,,,,Sum,2,K,PXI Calc,DHW,Wh,Wh,0
+Delivery Temp - MBA Sink,DT_DOUBLE,,1438,,,,Avg_0,3,MBA,PXI Calc,DHW,T,Wh,0
+Draw Volume - MBA Sink,DT_DOUBLE,,1438,,,,Sum,4,MBA,PXI Calc,DHW,V,Wh,0
+Hot Water Load - MBA Sink,DT_DOUBLE,,1438,,,,Sum,5,MBA,PXI Calc,DHW,Wh,Wh,0
+Delivery Temp - Shower,DT_DOUBLE,,1438,,,,Avg_0,6,MBA,PXI Calc,DHW,T,Wh,0
+Draw Volume - Shower,DT_DOUBLE,,1438,,,,Sum,7,MBA,PXI Calc,DHW,V,Wh,0
+Hot Water Load - Shower,DT_DOUBLE,,1438,,,,Sum,8,MBA,PXI Calc,DHW,Wh,Wh,0
+Delivery Temp - Tub,DT_DOUBLE,,1438,,,,Avg_0,9,MBA,PXI Calc,DHW,T,Wh,0
+Draw Volume - Tub,DT_DOUBLE,,1438,,,,Sum,10,MBA,PXI Calc,DHW,V,Wh,0
+Hot Water Load - Tub,DT_DOUBLE,,1438,,,,Sum,11,MBA,PXI Calc,DHW,Wh,Wh,0
+Mains Temp - DHW,DT_DOUBLE,,1438,,,,Avg_0,12,Base,PXI Calc,DHW,T,Wh,0
+Delivery Temp - DW,DT_DOUBLE,,1438,,,,Avg_0,13,K,PXI Calc,DHW,T,Wh,0
+Draw Volume - DW,DT_DOUBLE,,1438,,,,Sum,14,K,PXI Calc,DHW,V,Wh,0
+Hot Water Load - DW,DT_DOUBLE,,1438,,,,Sum,15,K,PXI Calc,DHW,Wh,Wh,0
+Delivery Temp - CW,DT_DOUBLE,,1438,,,,Avg_0,16,Prch,PXI Calc,DHW,T,Wh,0
+Draw Volume - CW,DT_DOUBLE,,1438,,,,Sum,17,Prch,PXI Calc,DHW,V,Wh,0
+Hot Water Load - CW,DT_DOUBLE,,1438,,,,Sum,18,Prch,PXI Calc,DHW,Wh,Wh,0
+Mains Temp - DW/CW,DT_DOUBLE,,1438,,,,Avg_0,19,Base,PXI Calc,DHW,T,Wh,0
+Total Hot Water Load,DT_DOUBLE,,1438,,,,Diff,10,Base,Calc,DHW,kWh,BTU,0
+"Daily Total Hot Water Load, QL",DT_DOUBLE,,1438,,,,Diff,11,Base,Calc,DHW,kWh,BTU,0
+"Solar tank energy, QSOLAR",DT_DOUBLE,,1438,,,,Diff,12,,Calc,DHW,kWh,BTU/day,0
+"Heat pump water heater energy, QAUX",DT_DOUBLE,,1438,,,,Diff,13,,Calc,DHW,kWh,BTU/day,0
+"Daily Solar fraction, f",DT_DOUBLE,,1438,,,,Avg,14,,Calc,DHW,Eff,-,0
+Over-/ Under-draw,DT_DOUBLE,,1438,,,,Avg,15,,Calc,DHW,V,gal,0
+Heat Pump Water Heater Energy - Total,DT_DOUBLE,,1438,,,,Diff,101,Base,Calc,DHW,Wh,Wh,
+Heat Pump Water Heater Power - Total,DT_DOUBLE,,1438,,,,Avg_0,102,Base,Calc,DHW,Pwr,W,
+SHW Pumps Energy - with Standby,DT_DOUBLE,,1438,,,,Diff,129,K,Calc,DHW,Wh,Wh,
+SHW Pumps Power - With Standby,DT_DOUBLE,,1438,,,,Avg_0,130,K,Calc,DHW,Pwr,W,
+Solar Preheat Tank (80 gal) Water Flow,DT_DOUBLE,,1438,,,,Diff,6,Base,3,SHW,Flw,Gal,0
+SHW HX (80 gal) Water Flow,DT_DOUBLE,,1438,,,,Diff,7,Base,3,SHW,Flw,Gal,
+Glycol Flow HX - Coriolis SHW,DT_DOUBLE,,1438,,,,Diff,2,Base,5,SHW,Flw,Gal,
+Water Flow HX - Coriolis SHW,DT_DOUBLE,,1438,,,,Diff,3,Base,5,SHW,Flw,Gal,
+Glycol Temp - SHW Panel (80 gal) Out,DT_DOUBLE,,1438,,,,Max,2,Prch,10,SHW,T,C,
+Glycol Flow Rate HX - Coriolis SHW,DT_DOUBLE,,1438,,,,Max,6,Base,15,SHW,Flw,GPM,
+Water Flow Rate HX - Coriolis SHW,DT_DOUBLE,,1438,,,,Max,7,Base,15,SHW,Flw,GPM,
+PSP - SHW,DT_DOUBLE,,1438,,,,Avg,0,Prch,17,SHW,V,W/m2,
+Glycol Temp - SHW HX (80 gal) In,DT_DOUBLE,,1438,,,,Max,20,Base,17,SHW,T,C,0
+Glycol Flow - SHW HX (80 gal) In,DT_DOUBLE,,1438,,,,Max,22,Base,17,SHW,Flw,GPM,0
+Dryer Water Flow,DT_DOUBLE,,1438,,,,Diff,2,WD,4,Load,Flw,Gal,0
+Latent Heat Water Volume,DT_DOUBLE,,1438,,,,Diff,7,K,4,Load,Flw,Gal,
+Refrigerator Temp,DT_DOUBLE,,1438,,,,Avg,23,K,7,Load,T,C,0
+Freezer Temp,DT_DOUBLE,,1438,,,,Avg,24,K,7,Load,T,C,
+Status?  RP S-1 BA1 Lights (RP BA-34),DT_DOUBLE,,1438,,,,Sum,0,BA1,12.1,Load,OnOff,0_1,
+Status?  RP S-2 Kitchen Lights A (RP BA-34),DT_DOUBLE,,1438,,,,Sum,1,K,12.1,Load,OnOff,0_1,
+Status?  RP S-3 Kitchen Lights B (RP BA-34),DT_DOUBLE,,1438,,,,Sum,2,K,12.1,Load,OnOff,0_1,
+Status?  RP S-5 Kitchen Lights C (RP BA-34),DT_DOUBLE,,1438,,,,Sum,4,K,12.1,Load,OnOff,0_1,
+Status?  RP S-7 DR Lights (RP BA-34),DT_DOUBLE,,1438,,,,Sum,6,DR,12.1,Load,OnOff,0_1,
+Status?  RP S-8 LR Lights (RP BA-32),DT_DOUBLE,,1438,,,,Sum,7,LR,12.1,Load,OnOff,0_1,
+Status?  RP S-9 Entry Hall Lights (RP BA-32),DT_DOUBLE,,1438,,,,Sum,8,Hall,12.1,Load,OnOff,0_1,
+Status?  RP S-10 BR4  Lights (RP BA-32),DT_DOUBLE,,1438,,,,Sum,9,BR4,12.1,Load,OnOff,0_1,
+Status?  RP S-14 MBA Lights (RP BA-2),DT_DOUBLE,,1438,,,,Sum,13,MBA,12.1,Load,OnOff,0_1,
+Status?  RP S-15 MBR Lights (RP BA-2),DT_DOUBLE,,1438,,,,Sum,14,MBR,12.1,Load,OnOff,0_1,
+Status?  RP S-16 MBR Lights (RP BA-2),DT_DOUBLE,,1438,,,,Sum,15,MBR,12.1,Load,OnOff,0_1,
+Status?  RP S-17 BA2 Lights (RP BA-2),DT_DOUBLE,,1438,,,,Sum,16,BA2,12.1,Load,OnOff,0_1,
+Status?  RP S-18 BR2 Lights (RP BA-2),DT_DOUBLE,,1438,,,,Sum,17,BR2,12.1,Load,OnOff,0_1,
+Status?  RP S-20 BR3 Lights (RP BA-2),DT_DOUBLE,,1438,,,,Sum,19,BR3,12.1,Load,OnOff,0_1,
+Status?  RP S-22 Sens. Heat - Prnt B DOWN (RP BB-39),DT_DOUBLE,,1438,,,,Sum,21,DR,12.1,Load,OnOff,0_1,
+Status?  RP S-23 Sens. Heat - Prnt A UP (RP BB-23),DT_DOUBLE,,1438,,,,Sum,22,MBR,12.1,Load,OnOff,0_1,
+Status?  RP S-31 Sens. Heat - Prnt B UP (RP BB-34),DT_DOUBLE,,1438,,,,Sum,30,MBR,12.1,Load,OnOff,0_1,
+Status?  RP S-32 Sens. Heat - Child A UP (RP BB-27),DT_DOUBLE,,1438,,,,Sum,31,BR2,12.1,Load,OnOff,0_1,
+Status?  RP S-35 Sens. Heat - Child B UP (RP BB-28),DT_DOUBLE,,1438,,,,Sum,34,BR3,12.1,Load,OnOff,0_1,
+Status?  RP S-40 Sens. Heat - Child B DOWN (RP BB-11),DT_DOUBLE,,1438,,,,Sum,39,DR,12.1,Load,OnOff,0_1,
+Status?  RP S-47 LR Lights (RP BA-32),DT_DOUBLE,,1438,,,,Sum,46,LR,12.1,Load,OnOff,0_1,
+Status?  RP S-49 Sens. Heat - Prnt A DOWN (RP BB-8),DT_DOUBLE,,1438,,,,Sum,48,K,12.1,Load,OnOff,0_1,
+Status?  RP S-53 Sens. Heat - Child A DOWN (RP BB-15),DT_DOUBLE,,1438,,,,Sum,52,LR,12.1,Load,OnOff,0_1,
+Status?  RP S-62 LR Lights (RP BA-32),DT_DOUBLE,,1438,,,,Sum,61,LR,12.1,Load,OnOff,0_1,
+Status? Make-up Air Damper,DT_DOUBLE,,1438,,,,Sum,32,Att,17,Load,OnOff,0_1,0
+Status? Plug Load - Blender,DT_DOUBLE,,1438,,,,Sum,16,K,18,Load,Rel,0_1,
+Status? Plug Load - ToasterOven,DT_DOUBLE,,1438,,,,Sum,17,K,18,Load,Rel,0_1,
+Status? Appliance - Range Hood,DT_DOUBLE,,1438,,,,Sum,18,K,18,Load,Rel,0_1,
+Status? Appliance - Cooktop,DT_DOUBLE,,1438,,,,Sum,19,K,18,Load,Rel,0_1,
+Status? Appliance - Oven,DT_DOUBLE,,1438,,,,Sum,22,K,18,Load,Rel,0_1,
+Status? Plug Load - SlowCooker,DT_DOUBLE,,1438,,,,Sum,24,K,18,Load,Rel,0_1,
+Status? Plug Load - Toaster,DT_DOUBLE,,1438,,,,Sum,25,K,18,Load,Rel,0_1,
+Status? Appliance - Dishwasher,DT_DOUBLE,,1438,,,,Sum,26,K,18,Load,Rel,0_1,
+Status? Plug Load - HandMixer,DT_DOUBLE,,1438,,,,Sum,27,K,18,Load,Rel,0_1,
+Status? Plug Load - CanOpener,DT_DOUBLE,,1438,,,,Sum,28,K,18,Load,Rel,0_1,
+Status? Appliances - Dryer Water,DT_DOUBLE,,1438,,,,Sum,29,WD,18,Load,Rel,0_1,0
+Status? Latent load,DT_DOUBLE,,1438,,,,Sum,32,K,18,Load,Rel,0_1,
+Status? Plug Load - CoffeeMaker,DT_DOUBLE,,1438,,,,Sum,33,DR,18,Load,Rel,0_1,
+Status? Plug Load - LR TV,DT_DOUBLE,,1438,,,,Sum,34,LR,18,Load,Rel,0_1,
+Status? Plug Load - LR BlueRay,DT_DOUBLE,,1438,,,,Sum,35,LR,18,Load,Rel,0_1,
+Status? Plug Load - Video Game,DT_DOUBLE,,1438,,,,Sum,36,LR,18,Load,Rel,0_1,
+Status? Plug Load - Vacuum,DT_DOUBLE,,1438,,,,Sum,40,BR4,18,Load,Rel,0_1,
+Status? Plug Load - Desktop PC/Monitor,DT_DOUBLE,,1438,,,,Sum,41,BR4,18,Load,Rel,0_1,
+Status? Plug Load - Hair Dryer/Curl. Iron,DT_DOUBLE,,1438,,,,Sum,42,MBA,18,Load,Rel,0_1,
+Status? Plug Load - BR2 Laptop,DT_DOUBLE,,1438,,,,Sum,43,BR2,18,Load,Rel,0_1,
+Status? Plug Load - BR3 Laptop,DT_DOUBLE,,1438,,,,Sum,44,BR3,18,Load,Rel,0_1,
+Status? Plug Load - MBR TV,DT_DOUBLE,,1438,,,,Sum,48,MBR,18,Load,Rel,0_1,
+Status? Plug Load - MBR BlueRay,DT_DOUBLE,,1438,,,,Sum,49,MBR,18,Load,Rel,0_1,
+Status? Plug Load - Fan,DT_DOUBLE,,1438,,,,Sum,50,MBR,18,Load,Rel,0_1,
+Status? Plug Load - Heating Pad,DT_DOUBLE,,1438,,,,Sum,51,MBR,18,Load,Rel,0_1,
+Status? Plug Load - Iron,DT_DOUBLE,,1438,,,,Sum,52,MBR,18,Load,Rel,0_1,
+LR Plug Loads Power Usage,DT_DOUBLE,,1438,,,,Avg_0,44,LR,Calc,Load,Pwr,W,
+LR Plug Loads Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,45,LR,Calc,Load,Pwr,W,0
+K Plug Loads Power Usage,DT_DOUBLE,,1438,,,,Avg_0,46,K,Calc,Load,Pwr,W,
+K Plug Loads Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,47,K,Calc,Load,Pwr,W,0
+MBR Plug Loads Power Usage,DT_DOUBLE,,1438,,,,Avg_0,48,MBR,Calc,Load,Pwr,W,
+MBR Plug Loads Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,49,MBR,Calc,Load,Pwr,W,0
+BR2 Plug Loads Power Usage,DT_DOUBLE,,1438,,,,Avg_0,50,BR2,Calc,Load,Pwr,W,
+BR2 Plug Loads Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,51,BR2,Calc,Load,Pwr,W,0
+BR3 Plug Loads Power Usage,DT_DOUBLE,,1438,,,,Avg_0,52,BR3,Calc,Load,Pwr,W,
+BR3 Plug Loads Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,53,BR3,Calc,Load,Pwr,W,0
+BR4 Plug Loads Power Usage,DT_DOUBLE,,1438,,,,Avg_0,54,BR4,Calc,Load,Pwr,W,
+BR4 Plug Loads Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,55,BR4,Calc,Load,Pwr,W,0
+1st Floor Sens. Heat Power Usage,DT_DOUBLE,,1438,,,,Avg_0,56,1st,Calc,Load,Pwr,W,
+1st Floor Sens. Heat Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,57,1st,Calc,Load,Pwr,W,0
+2nd Floor Sens. Heat Power Usage,DT_DOUBLE,,1438,,,,Avg_0,58,1st,Calc,Load,Pwr,W,
+2nd Floor Sens. Heat Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,59,1st,Calc,Load,Pwr,W,0
+1st Floor Lights Power Usage,DT_DOUBLE,,1438,,,,Avg_0,60,1st,Calc,Load,Pwr,W,
+1st Floor Lights Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,61,1st,Calc,Load,Pwr,W,0
+2nd Floor Lights Power Usage,DT_DOUBLE,,1438,,,,Avg_0,62,2nd,Calc,Load,Pwr,W,
+2nd Floor Lights Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,63,2nd,Calc,Load,Pwr,W,0
+Latent Heat Power Usage,DT_DOUBLE,,1438,,,,Avg_0,64,K,Calc,Load,Pwr,W,
+Latent Heat Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,65,K,Calc,Load,Pwr,W,0
+Appliances Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,66,K,Calc,Load,Pwr,W,0
+LR Plug Loads Energy Usage,DT_DOUBLE,,1438,,,,Diff,67,LR,Calc,Load,kWh,Wh,
+LR Plug Loads Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,68,LR,Calc,Load,kWh,Wh,0
+K Plug Loads Energy Usage,DT_DOUBLE,,1438,,,,Diff,69,K,Calc,Load,kWh,Wh,
+K Plug Loads Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,70,K,Calc,Load,kWh,Wh,0
+MBR Plug Loads Energy Usage,DT_DOUBLE,,1438,,,,Diff,71,MBR,Calc,Load,kWh,Wh,
+MBR Plug Loads Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,72,MBR,Calc,Load,kWh,Wh,0
+BR2 Plug Loads Energy Usage,DT_DOUBLE,,1438,,,,Diff,73,BR2,Calc,Load,kWh,Wh,
+BR2 Plug Loads Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,74,BR2,Calc,Load,kWh,Wh,0
+BR3 Plug Loads Energy Usage,DT_DOUBLE,,1438,,,,Diff,75,BR3,Calc,Load,kWh,Wh,
+BR3 Plug Loads Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,76,BR3,Calc,Load,kWh,Wh,0
+BR4 Plug Loads Energy Usage,DT_DOUBLE,,1438,,,,Diff,77,BR4,Calc,Load,kWh,Wh,
+BR4 Plug Loads Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,78,BR4,Calc,Load,kWh,Wh,0
+1st Floor Sens. Heat Energy Usage,DT_DOUBLE,,1438,,,,Diff,79,1st,Calc,Load,kWh,Wh,
+1st Floor Sens. Heat Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,80,1st,Calc,Load,kWh,Wh,0
+2nd Floor Sens. Heat Energy Usage,DT_DOUBLE,,1438,,,,Diff,81,1st,Calc,Load,kWh,Wh,
+2nd Floor Sens. Heat Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,82,1st,Calc,Load,kWh,Wh,0
+1st Floor Lights Energy Usage,DT_DOUBLE,,1438,,,,Diff,83,1st,Calc,Load,kWh,Wh,
+1st Floor Lights Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,84,1st,Calc,Load,kWh,Wh,0
+2nd Floor Lights Energy Usage,DT_DOUBLE,,1438,,,,Diff,85,2nd,Calc,Load,kWh,Wh,
+2nd Floor Lights Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,86,2nd,Calc,Load,kWh,Wh,0
+Latent Heat Energy Usage,DT_DOUBLE,,1438,,,,Diff,87,K,Calc,Load,kWh,Wh,
+Latent Heat Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,88,K,Calc,Load,kWh,Wh,0
+Appliances Expected Energy Usage,DT_DOUBLE,,1438,,,,Diff,89,K,Calc,Load,kWh,Wh,0
+Dryer Energy - Total,DT_DOUBLE,,1438,,,,Diff,95,K,Calc,Load,Wh,Wh,
+Dryer Power - Total,DT_DOUBLE,,1438,,,,Avg_0,96,K,Calc,Load,Pwr,W,
+Oven Energy - Total,DT_DOUBLE,,1438,,,,Diff,103,K,Calc,Load,Wh,Wh,
+Oven Power - Total,DT_DOUBLE,,1438,,,,Avg_0,104,K,Calc,Load,Pwr,W,
+Basement Plug Loads Power Usage,DT_DOUBLE,,1438,,,,Avg_0,119,Base,Calc,Load,Pwr,W,
+Basement Plug Loads Expected Power Usage,DT_DOUBLE,,1438,,,,Avg_0,120,Base,Calc,Load,Pwr,W,0
+Basement Plug Loads Energy Usage,DT_DOUBLE,,1438,,,,Sum,121,Base,Calc,Load,Wh,Wh,
+Basement Plug Loads Expected Energy Usage,DT_DOUBLE,,1438,,,,Sum,122,Base,Calc,Load,Wh,Wh,0
+Clothes Washer Energy - with Standby,DT_DOUBLE,,1438,,,,Diff,123,K,Calc,Load,Wh,Wh,
+Clothes Washer Power - With Standby,DT_DOUBLE,,1438,,,,Avg_0,124,K,Calc,Load,Pwr,W,
+Refrigerator Energy - with Standby,DT_DOUBLE,,1438,,,,Diff,125,K,Calc,Load,Wh,Wh,
+Refrigerator Power - With Standby,DT_DOUBLE,,1438,,,,Avg_0,126,K,Calc,Load,Pwr,W,
+Microwave Energy - with Standby,DT_DOUBLE,,1438,,,,Diff,127,K,Calc,Load,Wh,Wh,
+Microwave Power - With Standby,DT_DOUBLE,,1438,,,,Avg_0,128,K,Calc,Load,Pwr,W,
+Heat Pump Energy - Indoor unit,DT_DOUBLE,,1438,,,,Diff,4,Base,4,HVAC,Pul,Wh,
+Heat Pump Energy - Outdoor Unit,DT_DOUBLE,,1438,,,,Diff,5,Base,4,HVAC,Pul,Wh,
+HVAC Temp - Return Air,DT_DOUBLE,,1438,,,,Avg,16,Base,17,HVAC,T,C,
+HVAC Dewpoint - Return Air,DT_DOUBLE,,1438,,,,Avg,17,Base,17,HVAC,RH,C,
+HVAC Temp - Supply Air,DT_DOUBLE,,1438,,,,Avg,18,Base,17,HVAC,T,C,
+HVAC Dewpoint - Supply Air,DT_DOUBLE,,1438,,,,Avg,19,Base,17,HVAC,RH,C,
+HVAC Delta P - Pressure Diff across Indoor Unit,DT_DOUBLE,,1438,,,,Avg,24,Base,17,HVAC,Pres,GPM,
+HVAC Sensible Heat Ratio,DT_DOUBLE,,1438,,,,Avg,90,Base,Calc,HVAC,Ratio,-,0
+HVAC Heat Pump Sensible Capacity,DT_DOUBLE,,1438,,,,Avg_0,91,Base,Calc,HVAC,Pwr,W,0
+HVAC Heat Pump Latent Capacity,DT_DOUBLE,,1438,,,,Avg_0,92,Base,Calc,HVAC,Pwr,W,0
+HVAC Heat Pump Total Capacity,DT_DOUBLE,,1438,,,,Avg_0,93,Base,Calc,HVAC,Pwr,W,0
+HVAC Heat Pump Air Flow Rate,DT_DOUBLE,,1438,,,,Avg_0,94,Base,Calc,HVAC,Flw,CFM,0
+Heat Pump (Indoor) Energy - Total,DT_DOUBLE,,1438,,,,Diff,97,Base,Calc,HVAC,Wh,Wh,
+Heat Pump (Indoor) Power - Total,DT_DOUBLE,,1438,,,,Avg_0,98,Base,Calc,HVAC,Pwr,W,
+Heat Pump (Outdoor) Energy - Total,DT_DOUBLE,,1438,,,,Diff,99,Base,Calc,HVAC,Wh,Wh,
+Heat Pump (Outdoor) Power - Total,DT_DOUBLE,,1438,,,,Avg_0,100,Base,Calc,HVAC,Pwr,W,
+Room Temp - Basement NW,DT_DOUBLE,,1438,,,,Avg,0,Base,6,IndEnv,T,C,
+Room Temp - Basement NE,DT_DOUBLE,,1438,,,,Avg,1,Base,6,IndEnv,T,C,
+Room Temp - Basement SE,DT_DOUBLE,,1438,,,,Avg,2,Base,6,IndEnv,T,C,
+Room Temp - Basement SW,DT_DOUBLE,,1438,,,,Avg,3,Base,6,IndEnv,T,C,
+Room Temp - Kitchen Temp,DT_DOUBLE,,1438,,,,Avg,5,K,6,IndEnv,T,C,
+Room Temp - DR Temp,DT_DOUBLE,,1438,,,,Avg,6,DR,6,IndEnv,T,C,
+Room Temp - LR Temp,DT_DOUBLE,,1438,,,,Avg,7,LR,6,IndEnv,T,C,
+Room Temp - Hall Lowest,DT_DOUBLE,,1438,,,,Avg,8,Hall,6,IndEnv,T,C,
+Room Temp - Hall Lower Mid,DT_DOUBLE,,1438,,,,Avg,9,Hall,6,IndEnv,T,C,
+Room Temp - Hall Middle,DT_DOUBLE,,1438,,,,Avg,10,Hall,6,IndEnv,T,C,
+Room Temp - Hall Upper Mid,DT_DOUBLE,,1438,,,,Avg,11,Hall,6,IndEnv,T,C,
+Room Temp - Hall Upper,DT_DOUBLE,,1438,,,,Avg,12,Hall,6,IndEnv,T,C,
+Room Temp - BR4 Temp,DT_DOUBLE,,1438,,,,Avg,13,BR4,6,IndEnv,T,C,
+Room Temp - BA1 Temp,DT_DOUBLE,,1438,,,,Avg,14,BA1,6,IndEnv,T,C,
+Room Temp - WD Temp,DT_DOUBLE,,1438,,,,Avg,15,WD,6,IndEnv,T,C,
+Room Temp - MBA Temp,DT_DOUBLE,,1438,,,,Avg,16,MBA,6,IndEnv,T,C,
+Room Temp - MBR Temp,DT_DOUBLE,,1438,,,,Avg,17,MBR,6,IndEnv,T,C,
+Room Temp - BR2 Temp,DT_DOUBLE,,1438,,,,Avg,18,BR2,6,IndEnv,T,C,
+Room Temp - BR3 Temp,DT_DOUBLE,,1438,,,,Avg,19,BR3,6,IndEnv,T,C,
+Room Temp - BA2 Temp,DT_DOUBLE,,1438,,,,Avg,20,BA2,6,IndEnv,T,C,
+Room Temp - Attic NW,DT_DOUBLE,,1438,,,,Avg,21,Att,6,IndEnv,T,C,
+Room Temp - Attic NE,DT_DOUBLE,,1438,,,,Avg,22,Att,6,IndEnv,T,C,
+Room Temp - Attic SE,DT_DOUBLE,,1438,,,,Avg,23,Att,6,IndEnv,T,C,
+Room Temp - Attic SW,DT_DOUBLE,,1438,,,,Avg,24,Att,6,IndEnv,T,C,
+Radiant Temp - Kitchen ,DT_DOUBLE,,1438,,,,Avg,0,K,7,IndEnv,T,C,
+Radiant Temp - LR,DT_DOUBLE,,1438,,,,Avg,1,LR,7,IndEnv,T,C,
+Radiant Temp - MBR,DT_DOUBLE,,1438,,,,Avg,2,MBR,7,IndEnv,T,C,
+Radiant Temp - BR2,DT_DOUBLE,,1438,,,,Avg,3,BR2,7,IndEnv,T,C,
+Radiant Temp - BR3,DT_DOUBLE,,1438,,,,Avg,4,BR3,7,IndEnv,T,C,
+Kitchen RH,DT_DOUBLE,,1438,,,,Avg,8,K,17,IndEnv,RH,%,
+Living Rm RH,DT_DOUBLE,,1438,,,,Avg,9,LR,17,IndEnv,RH,%,
+Mast. Bed Rm RH,DT_DOUBLE,,1438,,,,Avg,10,MBR,17,IndEnv,RH,%,
+Bedroom 3 RH,DT_DOUBLE,,1438,,,,Avg,11,BR3,17,IndEnv,RH,%,
+Bedroom 2 RH,DT_DOUBLE,,1438,,,,Avg,12,BR2,17,IndEnv,RH,%,
+MBA RH,DT_DOUBLE,,1438,,,,Avg,13,MBA,17,IndEnv,RH,%,
+Basement RH,DT_DOUBLE,,1438,,,,Avg,14,Base,17,IndEnv,RH,%,
+Kitchen Operative Temperature,DT_DOUBLE,,1438,,,,Avg,0,K,Calc,IndEnv,OpTemp,Wh,0
+LR Operative Temperature,DT_DOUBLE,,1438,,,,Avg,1,LR,Calc,IndEnv,OpTemp,C,0
+MBR Operative Temperature,DT_DOUBLE,,1438,,,,Avg,2,MBR,Calc,IndEnv,OpTemp,C,0
+BR2 Operative Temperature,DT_DOUBLE,,1438,,,,Avg,3,BR2,Calc,IndEnv,OpTemp,C,0
+BR3 Operative Temperature,DT_DOUBLE,,1438,,,,Avg,4,BR3,Calc,IndEnv,OpTemp,C,0
+PV System 1 AC Energy OS;Ê E_AC_PV1_OS,DT_DOUBLE,,1438,,,,Diff,0,Att,5,PV,Wh,Wh,
+PV System 2 AC Energy OS;Ê E_AC_PV2_OS,DT_DOUBLE,,1438,,,,Diff,1,Att,5,PV,Wh,Wh,
+PV Backside Temp 2,DT_DOUBLE,,1438,,,,Avg,9,Prch,7,PV,T,C,
+PV Backside Temp 3,DT_DOUBLE,,1438,,,,Avg,10,Prch,7,PV,T,C,
+PV Backside Temp 4,DT_DOUBLE,,1438,,,,Avg,11,Prch,7,PV,T,C,
+PV Backside Temp 7,DT_DOUBLE,,1438,,,,Avg,14,Prch,7,PV,T,C,
+Attic DAS Temp. [T_DAS],DT_DOUBLE,,1438,,,,Avg,0,Att,11.2,PV,T,C,0
+String Voltage [U_Str2],DT_DOUBLE,,1438,,,,Avg,1,Att,11.2,PV,V,V,
+String Voltage [U_Str4],DT_DOUBLE,,1438,,,,Avg,2,Att,11.2,PV,V,V,
+Attic DAS TC Burnout [IsBurned],DT_DOUBLE,,1438,,,,max,3,Att,11.2,PV,Rel,0_1,0
+Volts A-N [U_AN_1=],DT_DOUBLE,,1438,,,,Avg,4,Att,11.2,PV,V,V,
+Volts B-N [U_BN_1],DT_DOUBLE,,1438,,,,Avg,5,Att,11.2,PV,V,V,
+Amps A [I_A_1],DT_DOUBLE,,1438,,,,Avg,6,Att,11.2,PV,Cur,A,
+Amps B [I_B_1],DT_DOUBLE,,1438,,,,Avg,7,Att,11.2,PV,Cur,A,
+"Watts, 3-Ph Total [W_3PhT_1]",DT_DOUBLE,,1438,,,,Avg,8,Att,11.2,PV,Pwr,W,
+"VARs, 3-Ph Total [VAR_3PhT_1]",DT_DOUBLE,,1438,,,,Avg,9,Att,11.2,PV,VAR,VAR,0
+"VAs,3-Ph Total [VA_3PhT_1]",DT_DOUBLE,,1438,,,,Avg,10,Att,11.2,PV,VA,VA,0
+"Power Factor, 3-Ph Total [PF_3PhT_1]",DT_DOUBLE,,1438,,,,Avg,11,Att,11.2,PV,PF,-,
+Frequency [F_1],DT_DOUBLE,,1438,,,,Avg,12,Att,11.2,PV,Freq,Hz,
+Neutral Current [I_N_1],DT_DOUBLE,,1438,,,,Avg,13,Att,11.2,PV,Cur,A,0
+"W-hours, Delivered [Wh_D_1]",DT_DOUBLE,,1438,,,,Diff,14,Att,11.2,PV,Wh,Wh,
+"VAR-hours, Positive [VARh_P_1]",DT_DOUBLE,,1438,,,,Diff,15,Att,11.2,PV,VARh,VARh,0
+"VAR-hours, Negative [VARh_N_1]",DT_DOUBLE,,1438,,,,Diff,16,Att,11.2,PV,VARh,VARh,0
+"VA-hours, Total [VAh_T_1]",DT_DOUBLE,,1438,,,,Diff,17,Att,11.2,PV,VAh,VAh,0
+"Volts A-N, Minimum [U_ANmin_1]",DT_DOUBLE,,1438,,,,Min,18,Att,11.2,PV,V,V,0
+"Volts B-N, Minimum [U_BNmin_1]",DT_DOUBLE,,1438,,,,Min,19,Att,11.2,PV,V,V,0
+Frequency Minimum [F_min_1],DT_DOUBLE,,1438,,,,Min,20,Att,11.2,PV,Freq,Hz,0
+"Volts A-N, Maximum [U_ANmax_1]",DT_DOUBLE,,1438,,,,Max,21,Att,11.2,PV,V,V,0
+"Volts B-N, Maximum [U_BNmax_1]",DT_DOUBLE,,1438,,,,Max,22,Att,11.2,PV,V,V,0
+"Frequency, Maximum [F_max_1]",DT_DOUBLE,,1438,,,,Max,23,Att,11.2,PV,Freq,Hz,0
+"Volts A-N, %THD [U_ANTHD_1]",DT_DOUBLE,,1438,,,,Avg,24,Att,11.2,PV,V,V,0
+"Volts B-N, %THD [U_BNTHD_1]",DT_DOUBLE,,1438,,,,Avg,25,Att,11.2,PV,V,V,0
+Volts A-N [U_AN_2=],DT_DOUBLE,,1438,,,,Avg,26,Att,11.2,PV,V,V,
+Volts B-N [U_BN_2],DT_DOUBLE,,1438,,,,Avg,27,Att,11.2,PV,V,V,
+Amps A [I_A_2],DT_DOUBLE,,1438,,,,Avg,28,Att,11.2,PV,Cur,A,
+Amps B [I_B_2],DT_DOUBLE,,1438,,,,Avg,29,Att,11.2,PV,Cur,A,
+"Watts, 3-Ph Total [W_3PhT_2]",DT_DOUBLE,,1438,,,,Avg,30,Att,11.2,PV,Pwr,W,
+"VARs, 3-Ph Total [VAR_3PhT_2]",DT_DOUBLE,,1438,,,,Avg,31,Att,11.2,PV,VAR,VAR,0
+"VAs,3-Ph Total [VA_3PhT_2]",DT_DOUBLE,,1438,,,,Avg,32,Att,11.2,PV,VA,VA,0
+"Power Factor, 3-Ph Total [PF_3PhT_2]",DT_DOUBLE,,1438,,,,Avg,33,Att,11.2,PV,PF,-,
+Frequency [F_2],DT_DOUBLE,,1438,,,,Avg,34,Att,11.2,PV,Freq,Hz,
+Neutral Current [I_N_2],DT_DOUBLE,,1438,,,,Avg,35,Att,11.2,PV,Cur,A,0
+"W-hours, Delivered [Wh_D_2]",DT_DOUBLE,,1438,,,,Diff,36,Att,11.2,PV,Wh,Wh,
+"VAR-hours, Positive [VARh_P_2]",DT_DOUBLE,,1438,,,,Diff,37,Att,11.2,PV,VARh,VARh,0
+"VAR-hours, Negative [VARh_N_2]",DT_DOUBLE,,1438,,,,Diff,38,Att,11.2,PV,VARh,VARh,0
+"VA-hours, Total [VAh_T_2]",DT_DOUBLE,,1438,,,,Diff,39,Att,11.2,PV,VAh,VAh,0
+"Volts A-N, Minimum [U_ANmin_2]",DT_DOUBLE,,1438,,,,Min,40,Att,11.2,PV,V,V,0
+"Volts B-N, Minimum [U_BNmin_2]",DT_DOUBLE,,1438,,,,Min,41,Att,11.2,PV,V,V,0
+Frequency Minimum [F_min_2],DT_DOUBLE,,1438,,,,Min,42,Att,11.2,PV,Freq,Hz,0
+"Volts A-N, Maximum [U_ANmax_2]",DT_DOUBLE,,1438,,,,Max,43,Att,11.2,PV,V,V,0
+"Volts B-N, Maximum [U_BNmax_2]",DT_DOUBLE,,1438,,,,Max,44,Att,11.2,PV,V,V,0
+"Frequency, Maximum [F_max_2]",DT_DOUBLE,,1438,,,,Max,45,Att,11.2,PV,Freq,Hz,0
+"Volts A-N, %THD [U_ANTHD_2]",DT_DOUBLE,,1438,,,,Avg,46,Att,11.2,PV,V,V,0
+"Volts B-N, %THD [U_BNTHD_2]",DT_DOUBLE,,1438,,,,Avg,47,Att,11.2,PV,V,V,0
+String Current [I_Str1],DT_DOUBLE,,1438,,,,Avg,48,Att,11.2,PV,Cur,A,
+String Current [I_Str2],DT_DOUBLE,,1438,,,,Avg,49,Att,11.2,PV,Cur,A,
+String Current [I_Str3],DT_DOUBLE,,1438,,,,Avg,50,Att,11.2,PV,Cur,A,
+String Current [I_Str4],DT_DOUBLE,,1438,,,,Avg,51,Att,11.2,PV,Cur,A,
+PV System 1 AC Power OS; ÊP_AC_PV1_OS,DT_DOUBLE,,1438,,,,Avg,52,Att,11.2,PV,Cur,W,
+PV System 2 AC Power OS; ÊP_AC_PV2_OS,DT_DOUBLE,,1438,,,,Avg,53,Att,11.2,PV,Cur,W,
+PV Ref. Cell (mA),DT_DOUBLE,,1438,,,,Avg,0,Prch,15,PV,mA,mA,0
+PV Insolation (H_Array),DT_DOUBLE,,1438,,,,Sum,30,Prch,Calc,PV,kWh,kWh,
+Backside Temp Array (T_bar_array),DT_DOUBLE,,1438,,,,Avg,31,Prch,Calc,PV,T,C,0
+Array DC Energy (E_DC_array),DT_DOUBLE,,1438,,,,Sum,32,Prch,Calc,PV,kWh,kWh,0
+Array Efficiency (Eta_bar_array),DT_DOUBLE,,1438,,,,Avg,33,Prch,Calc,PV,Eff,%,0
+Array AC Energy (E_AC_array),DT_DOUBLE,,1438,,,,Sum,34,Prch,Calc,PV,kWh,kWh,0
+Inverter Efficiency (Eta_bar_inv),DT_DOUBLE,,1438,,,,Avg,35,Att,Calc,PV,Eff,%,0
+Specific Yield Day (SY),DT_DOUBLE,,1438,,,,Avg,36,Prch,Calc,PV,Yld,kWh/kW,0
+Array DC Power Percent of STC (P_DC_array_PercSTC),DT_DOUBLE,,1438,,,,Avg,37,Prch,Calc,PV,Pwr,%,0
+Inverter 1 Efficiency (Eta_inv1),DT_DOUBLE,,1438,,,,Avg,38,Att,Calc,PV,Eff,%,0
+Inverter 2 Efficiency (Eta_inv2),DT_DOUBLE,,1438,,,,Avg,39,Att,Calc,PV,Eff,%,0
+Array AC Power Inv1 (P_AC_array_PercRated1),DT_DOUBLE,,1438,,,,Avg,40,Prch,Calc,PV,Pwr,kWh,0
+Array AC Power Inv2 (P_AC_array_PercRated2),DT_DOUBLE,,1438,,,,Avg,41,Prch,Calc,PV,Pwr,kWh,0
+Irradiance Percent Difference (G_PercDiff),DT_DOUBLE,,1438,,,,Avg,42,Prch,Calc,PV,Eff,%,0
+Are Inverters On? (B_AreInvertersOn),DT_DOUBLE,,1438,,,,max,43,Att,Calc,PV,OnOff,0_1,0
+Outdoor Amb. Temp,DT_DOUBLE,,1438,,,,Avg,17,Prch,7,OutEnv,T,C,
+Rooftop Wind Speed,DT_DOUBLE,,1438,,,,Avg,0,Roof,11.3,OutEnv,WndSpd,m/s,
+Rooftop Wind Direction,DT_DOUBLE,,1438,,,,Avg,1,Roof,11.3,OutEnv,WndDir,deg,
+HRV Temp - Supply Out,DT_DOUBLE,,1438,,,,Avg,26,Base,7,Vent,T,C,
+HRV Temp - Return In,DT_DOUBLE,,1438,,,,Avg,27,Base,7,Vent,T,C,
+HRV Temp - Exhaust Out,DT_DOUBLE,,1438,,,,Avg,28,Base,7,Vent,T,C,
+HRV Temp - Outdoor in,DT_DOUBLE,,1438,,,,Avg,29,Base,7,Vent,T,C,
+HRV Dewpoint Temperature - Supply,DT_DOUBLE,,1438,,,,Avg,2,Base,15,Vent,Den,C,
+HRV Dewpoint Temperature - Return,DT_DOUBLE,,1438,,,,Avg,3,Base,15,Vent,Den,C,
+HRV Dewpoint Temperature - Exhaust,DT_DOUBLE,,1438,,,,Avg,4,Base,15,Vent,Den,C,
+HRV Dewpoint Temperature - Outdoor,DT_DOUBLE,,1438,,,,Avg,5,Base,15,Vent,Den,C,
+HRV fresh air pressure differential,DT_DOUBLE,,1438,,,,Avg_0,25,Base,17,Vent,Pres,in. H2O,
+HRV stale air pressure differential,DT_DOUBLE,,1438,,,,Avg_0,26,Base,17,Vent,Pres,in. H2O,
+HRV return flow rate,DT_DOUBLE,,1438,,,,Avg,27,Base,17,Vent,Flw,cfm,
+HRV exhaust flow rate,DT_DOUBLE,,1438,,,,Avg,28,Base,17,Vent,Flw,cfm,
+HRV outdoor flow rate,DT_DOUBLE,,1438,,,,Avg,29,Base,17,Vent,Flw,cfm,
+HRV On?,DT_DOUBLE,,1438,,,,Sum,5,Base,Calc,Vent,OnOff,0_1,
+Dryer On?,DT_DOUBLE,,1438,,,,Sum,6,Prch,Calc,Vent,OnOff,0_1,
+HRV Efficiency,DT_DOUBLE,,1438,,,,Avg,7,Base,Calc,Vent,Eff,%,
+Outdoor to Supply HX,DT_DOUBLE,,1438,,,,Avg,8,Base,Calc,Vent,Pwr,W,
+Return to Exhaust HX,DT_DOUBLE,,1438,,,,Avg,9,Base,Calc,Vent,Pwr,W,
+UTR-1 Temperature,DT_DOUBLE,,1438,,,,Avg,0,Gar,10,Misc,T,C,
+UTR-2 Temperature,DT_DOUBLE,,1438,,,,Avg,1,Gar,10,Misc,T,C,
+Energy - RP B-1 Plugs - Base A (Heliodyne HXs),DT_DOUBLE,,1438,,,,Diff,0,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-2 Plugs - Base B,DT_DOUBLE,,1438,,,,Diff,1,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-3 Plugs - Base C,DT_DOUBLE,,1438,,,,Diff,2,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-4 Sump Pump,DT_DOUBLE,,1438,,,,Diff,3,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-5 Lights - Basement Stair,DT_DOUBLE,,1438,,,,Diff,4,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-6 Spare,DT_DOUBLE,,1438,,,,Diff,5,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-7 Plugs - Center Hall,DT_DOUBLE,,1438,,,,Diff,6,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-8 Plugs - BA1,DT_DOUBLE,,1438,,,,Diff,7,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-9 Plugs - Outside North,DT_DOUBLE,,1438,,,,Diff,8,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-10 Plugs - Outdoor A,DT_DOUBLE,,1438,,,,Diff,9,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-11 Plugs - Outside East,DT_DOUBLE,,1438,,,,Diff,10,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-12 Plugs - Outdoor B,DT_DOUBLE,,1438,,,,Diff,11,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-13 Plugs - DR,DT_DOUBLE,,1438,,,,Diff,12,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-14 Plugs - BR4,DT_DOUBLE,,1438,,,,Diff,13,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-15 Plugs - Entry Hall,DT_DOUBLE,,1438,,,,Diff,14,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-16 Plugs - LR,DT_DOUBLE,,1438,,,,Diff,15,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-17 Clothes Washer,DT_DOUBLE,,1438,,,,Diff,16,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-18 Dryer (1of2),DT_DOUBLE,,1438,,,,Diff,17,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-19 Dehumidifier,DT_DOUBLE,,1438,,,,Diff,18,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-20 Dryer (2of2),DT_DOUBLE,,1438,,,,Diff,19,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-21 Heat Pump (1of2),DT_DOUBLE,,1438,,,,Diff,20,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-22 AHU-2  (1of2),DT_DOUBLE,,1438,,,,Diff,21,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-23 Heat Pump (2of2),DT_DOUBLE,,1438,,,,Diff,22,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-24 AHU-2  (2of2),DT_DOUBLE,,1438,,,,Diff,23,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-25 HRV,DT_DOUBLE,,1438,,,,Diff,24,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-26 Heat Pump WH (1of2),DT_DOUBLE,,1438,,,,Diff,25,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-27 RP B-BA BCPM Power/Voltage,DT_DOUBLE,,1438,,,,Diff,26,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-28 Heat Pump WH (2of2),DT_DOUBLE,,1438,,,,Diff,27,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-29 Plugs - Vehicle - 240V (1of2),DT_DOUBLE,,1438,,,,Diff,28,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-30 AHU-2 Alternate,DT_DOUBLE,,1438,,,,Diff,29,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-31 Plugs - Vehicle - 240V (2of2),DT_DOUBLE,,1438,,,,Diff,30,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-32 AHU-1,DT_DOUBLE,,1438,,,,Diff,31,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-33 PV (1of2),DT_DOUBLE,,1438,,,,Diff,32,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-34 Plugs - Vehicle - 120V,DT_DOUBLE,,1438,,,,Diff,33,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-35 PV (2of2),DT_DOUBLE,,1438,,,,Diff,34,Base,11.1,Elec,Wh,Wh,
+Energy - RP B-36 Plugs - Garage,DT_DOUBLE,,1438,,,,Diff,35,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-37 FCU-1 Future (1of2),DT_DOUBLE,,1438,,,,Diff,36,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-38 Space,DT_DOUBLE,,1438,,,,Diff,37,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-39 FCU-1 Future (1of2),DT_DOUBLE,,1438,,,,Diff,38,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-40 Space,DT_DOUBLE,,1438,,,,Diff,39,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-41 Spare,DT_DOUBLE,,1438,,,,Diff,40,Base,11.1,Elec,Wh,Wh,0
+Energy - RP B-42 Space,DT_DOUBLE,,1438,,,,Diff,41,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-1 Make-Up Air Damper,DT_DOUBLE,,1438,,,,Diff,42,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-2 Lights - 2nd Floor,DT_DOUBLE,,1438,,,,Diff,43,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-3 Plugs - MBA (East),DT_DOUBLE,,1438,,,,Diff,44,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-4 Plugs - BA2 (South),DT_DOUBLE,,1438,,,,Diff,45,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-5 Plugs - MBA (West),DT_DOUBLE,,1438,,,,Diff,46,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-6 Plugs - BA2 (North),DT_DOUBLE,,1438,,,,Diff,47,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-7 Plugs - BR3,DT_DOUBLE,,1438,,,,Diff,48,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-8 Refrigerator,DT_DOUBLE,,1438,,,,Diff,49,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-9 Plugs - Kit (Sink),DT_DOUBLE,,1438,,,,Diff,50,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-10 Garbage Disposal,DT_DOUBLE,,1438,,,,Diff,51,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-11 Plugs - Kit (Range),DT_DOUBLE,,1438,,,,Diff,52,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-12 Plugs - Kit Peninsula,DT_DOUBLE,,1438,,,,Diff,53,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-13 Range  (1of2),DT_DOUBLE,,1438,,,,Diff,54,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-14 Microwave,DT_DOUBLE,,1438,,,,Diff,55,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-15 Range  (2of2),DT_DOUBLE,,1438,,,,Diff,56,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-16 FCU-2 Future  (1of2),DT_DOUBLE,,1438,,,,Diff,57,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-17 Solar Hot Water #1  -  (1of2),DT_DOUBLE,,1438,,,,Diff,58,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-18 FCU-2 Future  (2of2),DT_DOUBLE,,1438,,,,Diff,59,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-19 Solar Hot Water #1  -  (2of2),DT_DOUBLE,,1438,,,,Diff,60,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-20 HPU-4 Future (1of2),DT_DOUBLE,,1438,,,,Diff,61,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-21 Plugs - 2nd Floor,DT_DOUBLE,,1438,,,,Diff,62,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-22 HPU-4 Future (2of2),DT_DOUBLE,,1438,,,,Diff,63,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-23 Spare,DT_DOUBLE,,1438,,,,Diff,64,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-24 ACCU-1  (1of2),DT_DOUBLE,,1438,,,,Diff,65,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-25 Solar Hot Water #2  -  (1of2),DT_DOUBLE,,1438,,,,Diff,66,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-26 ACCU-1  (2of2),DT_DOUBLE,,1438,,,,Diff,67,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-27 Solar Hot Water #2  -  (2of2),DT_DOUBLE,,1438,,,,Diff,68,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-28 ACCU-2  (1of2),DT_DOUBLE,,1438,,,,Diff,69,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-29 Plugs - BR2,DT_DOUBLE,,1438,,,,Diff,70,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-30 ACCU-2  (2of2),DT_DOUBLE,,1438,,,,Diff,71,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-31 Plugs - MBR,DT_DOUBLE,,1438,,,,Diff,72,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-32 Lights - 1st FloorA,DT_DOUBLE,,1438,,,,Diff,73,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-33 Cooktop,DT_DOUBLE,,1438,,,,Diff,74,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-34 Lights - 1st FloorB,DT_DOUBLE,,1438,,,,Diff,75,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-35 Space,DT_DOUBLE,,1438,,,,Diff,76,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-36 FCU-2 Future (1of2),DT_DOUBLE,,1438,,,,Diff,77,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-37 Space,DT_DOUBLE,,1438,,,,Diff,78,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-38 FCU-2 Future (2of2),DT_DOUBLE,,1438,,,,Diff,79,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-39 Space,DT_DOUBLE,,1438,,,,Diff,80,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-40 Dishwasher,DT_DOUBLE,,1438,,,,Diff,81,Base,11.1,Elec,Wh,Wh,
+Energy - RP BA-41 Space,DT_DOUBLE,,1438,,,,Diff,82,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BA-42 Space,DT_DOUBLE,,1438,,,,Diff,83,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-1 Plugs - GSHP Instrumentation,DT_DOUBLE,,1438,,,,Diff,84,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-2 Plugs - Inst Mudroom A,DT_DOUBLE,,1438,,,,Diff,85,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-3 Plugs - HVAC Instrumentation,DT_DOUBLE,,1438,,,,Diff,86,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-4 Plugs - Inst BA1,DT_DOUBLE,,1438,,,,Diff,87,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-5 Lights - Attic,DT_DOUBLE,,1438,,,,Diff,88,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-6 Plugs - Inst Kit A,DT_DOUBLE,,1438,,,,Diff,89,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-7 Plugs - Inst Mudroom B,DT_DOUBLE,,1438,,,,Diff,90,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-8 Parent A - Downstairs,DT_DOUBLE,,1438,,,,Diff,91,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-9 Plugs - Inst DR A,DT_DOUBLE,,1438,,,,Diff,92,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-10 Plugs - Inst BR4 A,DT_DOUBLE,,1438,,,,Diff,93,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-11 Child B - Downstairs,DT_DOUBLE,,1438,,,,Diff,94,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-12 Plugs - Inst BR4 A,DT_DOUBLE,,1438,,,,Diff,95,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-13 Plugs - Inst LR A,DT_DOUBLE,,1438,,,,Diff,96,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-14 Spare,DT_DOUBLE,,1438,,,,Diff,97,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-15 Child A - Downstairs,DT_DOUBLE,,1438,,,,Diff,98,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-16 Plugs - Inst LR B,DT_DOUBLE,,1438,,,,Diff,99,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-17 Plugs - Inst MBA A (Scale),DT_DOUBLE,,1438,,,,Diff,100,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-18 Plugs - Inst BA2,DT_DOUBLE,,1438,,,,Diff,101,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-19 Plugs - Inst MBA B,DT_DOUBLE,,1438,,,,Diff,102,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-20 Leak Detection System,DT_DOUBLE,,1438,,,,Diff,103,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-21 Plugs - Inst MBR A,DT_DOUBLE,,1438,,,,Diff,104,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-22 Plugs - Inst BR2/Hall,DT_DOUBLE,,1438,,,,Diff,105,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-23 Parent A - Upstairs,DT_DOUBLE,,1438,,,,Diff,106,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-24 Plugs - Inst Hall,DT_DOUBLE,,1438,,,,Diff,107,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-25 Lighting Control Panel (RP-S #1),DT_DOUBLE,,1438,,,,Diff,108,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-26 Plugs - Inst BR3,DT_DOUBLE,,1438,,,,Diff,109,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-27 Child A - Upstairs,DT_DOUBLE,,1438,,,,Diff,110,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-28 Child B - Upstairs,DT_DOUBLE,,1438,,,,Diff,111,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-29 Heat Load for Refrigerator,DT_DOUBLE,,1438,,,,Diff,112,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-30 Plugs - Inst,DT_DOUBLE,,1438,,,,Diff,113,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-31 Lighting Control Panel (RP-S #2),DT_DOUBLE,,1438,,,,Diff,114,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-32 Plugs - Inst Control Power,DT_DOUBLE,,1438,,,,Diff,115,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-33 Lights - Basement,DT_DOUBLE,,1438,,,,Diff,116,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-34 Parent B - Upstairs,DT_DOUBLE,,1438,,,,Diff,117,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-35 Spare,DT_DOUBLE,,1438,,,,Diff,118,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-36 Plugs - Inst Network/Cable Box,DT_DOUBLE,,1438,,,,Diff,119,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-37 BCPM Power/Voltage,DT_DOUBLE,,1438,,,,Diff,120,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-38 Plugs - Inst Phone/Data,DT_DOUBLE,,1438,,,,Diff,121,Base,11.1,Elec,Wh,Wh,0
+Energy - RP BB-39 Parent B - Downstairs,DT_DOUBLE,,1438,,,,Diff,122,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-40 Plugs - Inst Kit D,DT_DOUBLE,,1438,,,,Diff,123,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-41 Plugs - DR B,DT_DOUBLE,,1438,,,,Diff,124,Base,11.1,Elec,Wh,Wh,
+Energy - RP BB-42 Plugs - Attic,DT_DOUBLE,,1438,,,,Diff,125,Base,11.1,Elec,Wh,Wh,
+Power - RP B-1 Plugs - Base A (Heliodyne HXs),DT_DOUBLE,,1438,,,,Max,126,Base,11.1,Elec,Pwr,W,
+Power - RP B-2 Plugs - Base B,DT_DOUBLE,,1438,,,,Max,127,Base,11.1,Elec,Pwr,W,
+Power - RP B-3 Plugs - Base C,DT_DOUBLE,,1438,,,,Max,128,Base,11.1,Elec,Pwr,W,
+Power - RP B-4 Sump Pump,DT_DOUBLE,,1438,,,,Max,129,Base,11.1,Elec,Pwr,W,
+Power - RP B-5 Lights - Basement Stair,DT_DOUBLE,,1438,,,,Max,130,Base,11.1,Elec,Pwr,W,
+Power - RP B-6 Spare,DT_DOUBLE,,1438,,,,Max,131,Base,11.1,Elec,Pwr,W,
+Power - RP B-7 Plugs - Center Hall,DT_DOUBLE,,1438,,,,Max,132,Base,11.1,Elec,Pwr,W,0
+Power - RP B-8 Plugs - BA1,DT_DOUBLE,,1438,,,,Max,133,Base,11.1,Elec,Pwr,W,
+Power - RP B-9 Plugs - Outside North,DT_DOUBLE,,1438,,,,Max,134,Base,11.1,Elec,Pwr,W,0
+Power - RP B-10 Plugs - Outdoor A,DT_DOUBLE,,1438,,,,Max,135,Base,11.1,Elec,Pwr,W,0
+Power - RP B-11 Plugs - Outside East,DT_DOUBLE,,1438,,,,Max,136,Base,11.1,Elec,Pwr,W,0
+Power - RP B-12 Plugs - Outdoor B,DT_DOUBLE,,1438,,,,Max,137,Base,11.1,Elec,Pwr,W,0
+Power - RP B-13 Plugs - DR,DT_DOUBLE,,1438,,,,Max,138,Base,11.1,Elec,Pwr,W,
+Power - RP B-14 Plugs - BR4,DT_DOUBLE,,1438,,,,Max,139,Base,11.1,Elec,Pwr,W,
+Power - RP B-15 Plugs - Entry Hall,DT_DOUBLE,,1438,,,,Max,140,Base,11.1,Elec,Pwr,W,
+Power - RP B-16 Plugs - LR,DT_DOUBLE,,1438,,,,Max,141,Base,11.1,Elec,Pwr,W,
+Power - RP B-17 Clothes Washer,DT_DOUBLE,,1438,,,,Max,142,Base,11.1,Elec,Pwr,W,
+Power - RP B-18 Dryer (1of2),DT_DOUBLE,,1438,,,,Max,143,Base,11.1,Elec,Pwr,W,
+Power - RP B-19 Dehumidifier,DT_DOUBLE,,1438,,,,Max,144,Base,11.1,Elec,Pwr,W,
+Power - RP B-20 Dryer (2of2),DT_DOUBLE,,1438,,,,Max,145,Base,11.1,Elec,Pwr,W,
+Power - RP B-21 Heat Pump (1of2),DT_DOUBLE,,1438,,,,Max,146,Base,11.1,Elec,Pwr,W,
+Power - RP B-22 AHU-2  (1of2),DT_DOUBLE,,1438,,,,Max,147,Base,11.1,Elec,Pwr,W,
+Power - RP B-23 Heat Pump (2of2),DT_DOUBLE,,1438,,,,Max,148,Base,11.1,Elec,Pwr,W,
+Power - RP B-24 AHU-2  (2of2),DT_DOUBLE,,1438,,,,Max,149,Base,11.1,Elec,Pwr,W,
+Power - RP B-25 HRV,DT_DOUBLE,,1438,,,,Max,150,Base,11.1,Elec,Pwr,W,
+Power - RP B-26 Heat Pump WH (1of2),DT_DOUBLE,,1438,,,,Max,151,Base,11.1,Elec,Pwr,W,
+Power - RP B-27 RP B-BA BCPM Power/Voltage,DT_DOUBLE,,1438,,,,Max,152,Base,11.1,Elec,Pwr,W,0
+Power - RP B-28 Heat Pump WH (2of2),DT_DOUBLE,,1438,,,,Max,153,Base,11.1,Elec,Pwr,W,
+Power - RP B-29 Plugs - Vehicle - 240V (1of2),DT_DOUBLE,,1438,,,,Max,154,Base,11.1,Elec,Pwr,W,0
+Power - RP B-30 AHU-2 Alternate,DT_DOUBLE,,1438,,,,Max,155,Base,11.1,Elec,Pwr,W,0
+Power - RP B-31 Plugs - Vehicle - 240V (2of2),DT_DOUBLE,,1438,,,,Max,156,Base,11.1,Elec,Pwr,W,0
+Power - RP B-32 AHU-1,DT_DOUBLE,,1438,,,,Max,157,Base,11.1,Elec,Pwr,W,0
+Power - RP B-33 PV (1of2),DT_DOUBLE,,1438,,,,Max,158,Base,11.1,Elec,Pwr,W,
+Power - RP B-34 Plugs - Vehicle - 120V,DT_DOUBLE,,1438,,,,Max,159,Base,11.1,Elec,Pwr,W,0
+Power - RP B-35 PV (2of2),DT_DOUBLE,,1438,,,,Max,160,Base,11.1,Elec,Pwr,W,
+Power - RP B-36 Plugs - Garage,DT_DOUBLE,,1438,,,,Max,161,Base,11.1,Elec,Pwr,W,0
+Power - RP B-37 FCU-1 Future (1of2),DT_DOUBLE,,1438,,,,Max,162,Base,11.1,Elec,Pwr,W,0
+Power - RP B-38 Space,DT_DOUBLE,,1438,,,,Max,163,Base,11.1,Elec,Pwr,W,0
+Power - RP B-39 FCU-1 Future (1of2),DT_DOUBLE,,1438,,,,Max,164,Base,11.1,Elec,Pwr,W,0
+Power - RP B-40 Space,DT_DOUBLE,,1438,,,,Max,165,Base,11.1,Elec,Pwr,W,0
+Power - RP B-41 Spare,DT_DOUBLE,,1438,,,,Max,166,Base,11.1,Elec,Pwr,W,0
+Power - RP B-42 Space,DT_DOUBLE,,1438,,,,Max,167,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-1 Make-Up Air Damper,DT_DOUBLE,,1438,,,,Max,168,Base,11.1,Elec,Pwr,W,
+Power - RP BA-2 Lights - 2nd Floor,DT_DOUBLE,,1438,,,,Max,169,Base,11.1,Elec,Pwr,W,
+Power - RP BA-3 Plugs - MBA (East),DT_DOUBLE,,1438,,,,Max,170,Base,11.1,Elec,Pwr,W,
+Power - RP BA-4 Plugs - BA2 (South),DT_DOUBLE,,1438,,,,Max,171,Base,11.1,Elec,Pwr,W,
+Power - RP BA-5 Plugs - MBA (West),DT_DOUBLE,,1438,,,,Max,172,Base,11.1,Elec,Pwr,W,
+Power - RP BA-6 Plugs - BA2 (North),DT_DOUBLE,,1438,,,,Max,173,Base,11.1,Elec,Pwr,W,
+Power - RP BA-7 Plugs - BR3,DT_DOUBLE,,1438,,,,Max,174,Base,11.1,Elec,Pwr,W,
+Power - RP BA-8 Refrigerator,DT_DOUBLE,,1438,,,,Max,175,Base,11.1,Elec,Pwr,W,
+Power - RP BA-9 Plugs - Kit (Sink),DT_DOUBLE,,1438,,,,Max,176,Base,11.1,Elec,Pwr,W,
+Power - RP BA-10 Garbage Disposal,DT_DOUBLE,,1438,,,,Max,177,Base,11.1,Elec,Pwr,W,
+Power - RP BA-11 Plugs - Kit (Range),DT_DOUBLE,,1438,,,,Max,178,Base,11.1,Elec,Pwr,W,
+Power - RP BA-12 Plugs - Kit Peninsula,DT_DOUBLE,,1438,,,,Max,179,Base,11.1,Elec,Pwr,W,
+Power - RP BA-13 Range  (1of2),DT_DOUBLE,,1438,,,,Max,180,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-14 Microwave,DT_DOUBLE,,1438,,,,Max,181,Base,11.1,Elec,Pwr,W,
+Power - RP BA-15 Range  (2of2),DT_DOUBLE,,1438,,,,Max,182,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-16 FCU-2 Future  (1of2),DT_DOUBLE,,1438,,,,Max,183,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-17 Solar Hot Water #1  -  (1of2),DT_DOUBLE,,1438,,,,Max,184,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-18 FCU-2 Future  (2of2),DT_DOUBLE,,1438,,,,Max,185,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-19 Solar Hot Water #1  -  (2of2),DT_DOUBLE,,1438,,,,Max,186,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-20 HPU-4 Future (1of2),DT_DOUBLE,,1438,,,,Max,187,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-21 Plugs - 2nd Floor,DT_DOUBLE,,1438,,,,Max,188,Base,11.1,Elec,Pwr,W,
+Power - RP BA-22 HPU-4 Future (2of2),DT_DOUBLE,,1438,,,,Max,189,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-23 Spare,DT_DOUBLE,,1438,,,,Max,190,Base,11.1,Elec,Pwr,W,
+Power - RP BA-24 ACCU-1  (1of2),DT_DOUBLE,,1438,,,,Max,191,Base,11.1,Elec,Pwr,W,
+Power - RP BA-25 Solar Hot Water #2  -  (1of2),DT_DOUBLE,,1438,,,,Max,192,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-26 ACCU-1  (2of2),DT_DOUBLE,,1438,,,,Max,193,Base,11.1,Elec,Pwr,W,
+Power - RP BA-27 Solar Hot Water #2  -  (2of2),DT_DOUBLE,,1438,,,,Max,194,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-28 ACCU-2  (1of2),DT_DOUBLE,,1438,,,,Max,195,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-29 Plugs - BR2,DT_DOUBLE,,1438,,,,Max,196,Base,11.1,Elec,Pwr,W,
+Power - RP BA-30 ACCU-2  (2of2),DT_DOUBLE,,1438,,,,Max,197,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-31 Plugs - MBR,DT_DOUBLE,,1438,,,,Max,198,Base,11.1,Elec,Pwr,W,
+Power - RP BA-32 Lights - 1st FloorA,DT_DOUBLE,,1438,,,,Max,199,Base,11.1,Elec,Pwr,W,
+Power - RP BA-33 Cooktop,DT_DOUBLE,,1438,,,,Max,200,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-34 Lights - 1st FloorB,DT_DOUBLE,,1438,,,,Max,201,Base,11.1,Elec,Pwr,W,
+Power - RP BA-35 Space,DT_DOUBLE,,1438,,,,Max,202,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-36 FCU-2 Future (1of2),DT_DOUBLE,,1438,,,,Max,203,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-37 Space,DT_DOUBLE,,1438,,,,Max,204,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-38 FCU-2 Future (2of2),DT_DOUBLE,,1438,,,,Max,205,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-39 Space,DT_DOUBLE,,1438,,,,Max,206,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-40 Dishwasher,DT_DOUBLE,,1438,,,,Max,207,Base,11.1,Elec,Pwr,W,
+Power - RP BA-41 Space,DT_DOUBLE,,1438,,,,Max,208,Base,11.1,Elec,Pwr,W,0
+Power - RP BA-42 Space,DT_DOUBLE,,1438,,,,Max,209,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-1 Plugs - GSHP Instrumentation,DT_DOUBLE,,1438,,,,Max,210,Base,11.1,Elec,Pwr,W,
+Power - RP BB-2 Plugs - Inst Mudroom A,DT_DOUBLE,,1438,,,,Max,211,Base,11.1,Elec,Pwr,W,
+Power - RP BB-3 Plugs - HVAC Instrumentation,DT_DOUBLE,,1438,,,,Max,212,Base,11.1,Elec,Pwr,W,
+Power - RP BB-4 Plugs - Inst BA1,DT_DOUBLE,,1438,,,,Max,213,Base,11.1,Elec,Pwr,W,
+Power - RP BB-5 Lights - Attic,DT_DOUBLE,,1438,,,,Max,214,Base,11.1,Elec,Pwr,W,
+Power - RP BB-6 Plugs - Inst Kit A,DT_DOUBLE,,1438,,,,Max,215,Base,11.1,Elec,Pwr,W,
+Power - RP BB-7 Plugs - Inst Mudroom B,DT_DOUBLE,,1438,,,,Max,216,Base,11.1,Elec,Pwr,W,
+Power - RP BB-8 Parent A - Downstairs,DT_DOUBLE,,1438,,,,Max,217,Base,11.1,Elec,Pwr,W,
+Power - RP BB-9 Plugs - Inst DR A,DT_DOUBLE,,1438,,,,Max,218,Base,11.1,Elec,Pwr,W,
+Power - RP BB-10 Plugs - Inst BR4 A,DT_DOUBLE,,1438,,,,Max,219,Base,11.1,Elec,Pwr,W,
+Power - RP BB-11 Child B - Downstairs,DT_DOUBLE,,1438,,,,Max,220,Base,11.1,Elec,Pwr,W,
+Power - RP BB-12 Plugs - Inst BR4 A,DT_DOUBLE,,1438,,,,Max,221,Base,11.1,Elec,Pwr,W,
+Power - RP BB-13 Plugs - Inst LR A,DT_DOUBLE,,1438,,,,Max,222,Base,11.1,Elec,Pwr,W,
+Power - RP BB-14 Spare,DT_DOUBLE,,1438,,,,Max,223,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-15 Child A - Downstairs,DT_DOUBLE,,1438,,,,Max,224,Base,11.1,Elec,Pwr,W,
+Power - RP BB-16 Plugs - Inst LR B,DT_DOUBLE,,1438,,,,Max,225,Base,11.1,Elec,Pwr,W,
+Power - RP BB-17 Plugs - Inst MBA A (Scale),DT_DOUBLE,,1438,,,,Max,226,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-18 Plugs - Inst BA2,DT_DOUBLE,,1438,,,,Max,227,Base,11.1,Elec,Pwr,W,
+Power - RP BB-19 Plugs - Inst MBA B,DT_DOUBLE,,1438,,,,Max,228,Base,11.1,Elec,Pwr,W,
+Power - RP BB-20 Leak Detection System,DT_DOUBLE,,1438,,,,Max,229,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-21 Plugs - Inst MBR A,DT_DOUBLE,,1438,,,,Max,230,Base,11.1,Elec,Pwr,W,
+Power - RP BB-22 Plugs - Inst BR2/Hall,DT_DOUBLE,,1438,,,,Max,231,Base,11.1,Elec,Pwr,W,
+Power - RP BB-23 Parent A - Upstairs,DT_DOUBLE,,1438,,,,Max,232,Base,11.1,Elec,Pwr,W,
+Power - RP BB-24 Plugs - Inst Hall,DT_DOUBLE,,1438,,,,Max,233,Base,11.1,Elec,Pwr,W,
+Power - RP BB-25 Lighting Control Panel (RP-S #1),DT_DOUBLE,,1438,,,,Max,234,Base,11.1,Elec,Pwr,W,
+Power - RP BB-26 Plugs - Inst BR3,DT_DOUBLE,,1438,,,,Max,235,Base,11.1,Elec,Pwr,W,
+Power - RP BB-27 Child A - Upstairs,DT_DOUBLE,,1438,,,,Max,236,Base,11.1,Elec,Pwr,W,
+Power - RP BB-28 Child B - Upstairs,DT_DOUBLE,,1438,,,,Max,237,Base,11.1,Elec,Pwr,W,
+Power - RP BB-29 Heat Load for Refrigerator,DT_DOUBLE,,1438,,,,Max,238,Base,11.1,Elec,Pwr,W,
+Power - RP BB-30 Plugs - Inst,DT_DOUBLE,,1438,,,,Max,239,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-31 Lighting Control Panel (RP-S #2),DT_DOUBLE,,1438,,,,Max,240,Base,11.1,Elec,Pwr,W,
+Power - RP BB-32 Plugs - Inst Control Power,DT_DOUBLE,,1438,,,,Max,241,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-33 Lights - Basement,DT_DOUBLE,,1438,,,,Max,242,Base,11.1,Elec,Pwr,W,
+Power - RP BB-34 Parent B - Upstairs,DT_DOUBLE,,1438,,,,Max,243,Base,11.1,Elec,Pwr,W,
+Power - RP BB-35 Spare,DT_DOUBLE,,1438,,,,Max,244,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-36 Plugs - Inst Network/Cable Box,DT_DOUBLE,,1438,,,,Max,245,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-37 BCPM Power/Voltage,DT_DOUBLE,,1438,,,,Max,246,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-38 Plugs - Inst Phone/Data,DT_DOUBLE,,1438,,,,Max,247,Base,11.1,Elec,Pwr,W,0
+Power - RP BB-39 Parent B - Downstairs,DT_DOUBLE,,1438,,,,Max,248,Base,11.1,Elec,Pwr,W,
+Power - RP BB-40 Plugs - Inst Kit D,DT_DOUBLE,,1438,,,,Max,249,Base,11.1,Elec,Pwr,W,
+Power - RP BB-41 Plugs - DR B,DT_DOUBLE,,1438,,,,Max,250,Base,11.1,Elec,Pwr,W,
+Power - RP BB-42 Plugs - Attic,DT_DOUBLE,,1438,,,,Max,251,Base,11.1,Elec,Pwr,W,
+Power Factor - RP B-1 Plugs - Base A (Heliodyne HXs),DT_DOUBLE,,1438,,,,x,252,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-2 Plugs - Base B,DT_DOUBLE,,1438,,,,x,253,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-3 Plugs - Base C,DT_DOUBLE,,1438,,,,x,254,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-4 Sump Pump,DT_DOUBLE,,1438,,,,x,255,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-5 Lights - Basement Stair,DT_DOUBLE,,1438,,,,x,256,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-6 Spare,DT_DOUBLE,,1438,,,,x,257,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-7 Plugs - Center Hall,DT_DOUBLE,,1438,,,,x,258,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-8 Plugs - BA1,DT_DOUBLE,,1438,,,,x,259,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-9 Plugs - Outside North,DT_DOUBLE,,1438,,,,x,260,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-10 Plugs - Outdoor A,DT_DOUBLE,,1438,,,,x,261,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-11 Plugs - Outside East,DT_DOUBLE,,1438,,,,x,262,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-12 Plugs - Outdoor B,DT_DOUBLE,,1438,,,,x,263,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-13 Plugs - DR,DT_DOUBLE,,1438,,,,x,264,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-14 Plugs - BR4,DT_DOUBLE,,1438,,,,x,265,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-15 Plugs - Entry Hall,DT_DOUBLE,,1438,,,,x,266,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-16 Plugs - LR,DT_DOUBLE,,1438,,,,x,267,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-17 Clothes Washer,DT_DOUBLE,,1438,,,,x,268,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-18 Dryer (1of2),DT_DOUBLE,,1438,,,,x,269,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-19 Dehumidifier,DT_DOUBLE,,1438,,,,x,270,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-20 Dryer (2of2),DT_DOUBLE,,1438,,,,x,271,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-21 Heat Pump (1of2),DT_DOUBLE,,1438,,,,x,272,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-22 AHU-2  (1of2),DT_DOUBLE,,1438,,,,x,273,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-23 Heat Pump (2of2),DT_DOUBLE,,1438,,,,x,274,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-24 AHU-2  (2of2),DT_DOUBLE,,1438,,,,x,275,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-25 HRV,DT_DOUBLE,,1438,,,,x,276,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-26 Heat Pump WH (1of2),DT_DOUBLE,,1438,,,,x,277,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-27 RP B-BA BCPM Power/Voltage,DT_DOUBLE,,1438,,,,x,278,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-28 Heat Pump WH (2of2),DT_DOUBLE,,1438,,,,x,279,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-29 Plugs - Vehicle - 240V (1of2),DT_DOUBLE,,1438,,,,x,280,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-30 AHU-2 Alternate,DT_DOUBLE,,1438,,,,x,281,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-31 Plugs - Vehicle - 240V (2of2),DT_DOUBLE,,1438,,,,x,282,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-32 AHU-1,DT_DOUBLE,,1438,,,,x,283,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-33 PV (1of2),DT_DOUBLE,,1438,,,,x,284,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-34 Plugs - Vehicle - 120V,DT_DOUBLE,,1438,,,,x,285,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-35 PV (2of2),DT_DOUBLE,,1438,,,,x,286,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-36 Plugs - Garage,DT_DOUBLE,,1438,,,,x,287,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-37 FCU-1 Future (1of2),DT_DOUBLE,,1438,,,,x,288,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-38 Space,DT_DOUBLE,,1438,,,,x,289,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-39 FCU-1 Future (1of2),DT_DOUBLE,,1438,,,,x,290,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-40 Space,DT_DOUBLE,,1438,,,,x,291,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-41 Spare,DT_DOUBLE,,1438,,,,x,292,Base,11.1,Elec,PF,-,0
+Power Factor - RP B-42 Space,DT_DOUBLE,,1438,,,,x,293,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-1 Make-Up Air Damper,DT_DOUBLE,,1438,,,,x,294,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-2 Lights - 2nd Floor,DT_DOUBLE,,1438,,,,x,295,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-3 Plugs - MBA (East),DT_DOUBLE,,1438,,,,x,296,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-4 Plugs - BA2 (South),DT_DOUBLE,,1438,,,,x,297,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-5 Plugs - MBA (West),DT_DOUBLE,,1438,,,,x,298,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-6 Plugs - BA2 (North),DT_DOUBLE,,1438,,,,x,299,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-7 Plugs - BR3,DT_DOUBLE,,1438,,,,x,300,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-8 Refrigerator,DT_DOUBLE,,1438,,,,x,301,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-9 Plugs - Kit (Sink),DT_DOUBLE,,1438,,,,x,302,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-10 Garbage Disposal,DT_DOUBLE,,1438,,,,x,303,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-11 Plugs - Kit (Range),DT_DOUBLE,,1438,,,,x,304,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-12 Plugs - Kit Peninsula,DT_DOUBLE,,1438,,,,x,305,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-13 Range  (1of2),DT_DOUBLE,,1438,,,,x,306,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-14 Microwave,DT_DOUBLE,,1438,,,,x,307,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-15 Range  (2of2),DT_DOUBLE,,1438,,,,x,308,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-16 FCU-2 Future  (1of2),DT_DOUBLE,,1438,,,,x,309,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-17 Solar Hot Water #1  -  (1of2),DT_DOUBLE,,1438,,,,x,310,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-18 FCU-2 Future  (2of2),DT_DOUBLE,,1438,,,,x,311,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-19 Solar Hot Water #1  -  (2of2),DT_DOUBLE,,1438,,,,x,312,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-20 HPU-4 Future (1of2),DT_DOUBLE,,1438,,,,x,313,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-21 Plugs - 2nd Floor,DT_DOUBLE,,1438,,,,x,314,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-22 HPU-4 Future (2of2),DT_DOUBLE,,1438,,,,x,315,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-23 Spare,DT_DOUBLE,,1438,,,,x,316,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-24 ACCU-1  (1of2),DT_DOUBLE,,1438,,,,x,317,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-25 Solar Hot Water #2  -  (1of2),DT_DOUBLE,,1438,,,,x,318,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-26 ACCU-1  (2of2),DT_DOUBLE,,1438,,,,x,319,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-27 Solar Hot Water #2  -  (2of2),DT_DOUBLE,,1438,,,,x,320,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-28 ACCU-2  (1of2),DT_DOUBLE,,1438,,,,x,321,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-29 Plugs - BR2,DT_DOUBLE,,1438,,,,x,322,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-30 ACCU-2  (2of2),DT_DOUBLE,,1438,,,,x,323,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-31 Plugs - MBR,DT_DOUBLE,,1438,,,,x,324,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-32 Lights - 1st FloorA,DT_DOUBLE,,1438,,,,x,325,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-33 Cooktop,DT_DOUBLE,,1438,,,,x,326,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-34 Lights - 1st FloorB,DT_DOUBLE,,1438,,,,x,327,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-35 Space,DT_DOUBLE,,1438,,,,x,328,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-36 FCU-2 Future (1of2),DT_DOUBLE,,1438,,,,x,329,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-37 Space,DT_DOUBLE,,1438,,,,x,330,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-38 FCU-2 Future (2of2),DT_DOUBLE,,1438,,,,x,331,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-39 Space,DT_DOUBLE,,1438,,,,x,332,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-40 Dishwasher,DT_DOUBLE,,1438,,,,x,333,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-41 Space,DT_DOUBLE,,1438,,,,x,334,Base,11.1,Elec,PF,-,0
+Power Factor - RP BA-42 Space,DT_DOUBLE,,1438,,,,x,335,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-1 Plugs - GSHP Instrumentation,DT_DOUBLE,,1438,,,,x,336,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-2 Plugs - Inst Mudroom A,DT_DOUBLE,,1438,,,,x,337,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-3 Plugs - HVAC Instrumentation,DT_DOUBLE,,1438,,,,x,338,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-4 Plugs - Inst BA1,DT_DOUBLE,,1438,,,,x,339,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-5 Lights - Attic,DT_DOUBLE,,1438,,,,x,340,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-6 Plugs - Inst Kit A,DT_DOUBLE,,1438,,,,x,341,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-7 Plugs - Inst Mudroom B,DT_DOUBLE,,1438,,,,x,342,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-8 Parent A - Downstairs,DT_DOUBLE,,1438,,,,x,343,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-9 Plugs - Inst DR A,DT_DOUBLE,,1438,,,,x,344,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-10 Plugs - Inst BR4 A,DT_DOUBLE,,1438,,,,x,345,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-11 Child B - Downstairs,DT_DOUBLE,,1438,,,,x,346,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-12 Plugs - Inst BR4 A,DT_DOUBLE,,1438,,,,x,347,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-13 Plugs - Inst LR A,DT_DOUBLE,,1438,,,,x,348,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-14 Spare,DT_DOUBLE,,1438,,,,x,349,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-15 Child A - Downstairs,DT_DOUBLE,,1438,,,,x,350,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-16 Plugs - Inst LR B,DT_DOUBLE,,1438,,,,x,351,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-17 Plugs - Inst MBA A (Scale),DT_DOUBLE,,1438,,,,x,352,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-18 Plugs - Inst BA2,DT_DOUBLE,,1438,,,,x,353,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-19 Plugs - Inst MBA B,DT_DOUBLE,,1438,,,,x,354,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-20 Leak Detection System,DT_DOUBLE,,1438,,,,x,355,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-21 Plugs - Inst MBR A,DT_DOUBLE,,1438,,,,x,356,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-22 Plugs - Inst BR2/Hall,DT_DOUBLE,,1438,,,,x,357,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-23 Parent A - Upstairs,DT_DOUBLE,,1438,,,,x,358,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-24 Plugs - Inst Hall,DT_DOUBLE,,1438,,,,x,359,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-25 Lighting Control Panel (RP-S #1),DT_DOUBLE,,1438,,,,x,360,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-26 Plugs - Inst BR3,DT_DOUBLE,,1438,,,,x,361,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-27 Child A - Upstairs,DT_DOUBLE,,1438,,,,x,362,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-28 Child B - Upstairs,DT_DOUBLE,,1438,,,,x,363,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-29 Heat Load for Refrigerator,DT_DOUBLE,,1438,,,,x,364,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-30 Plugs - Inst,DT_DOUBLE,,1438,,,,x,365,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-31 Lighting Control Panel (RP-S #2),DT_DOUBLE,,1438,,,,x,366,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-32 Plugs - Inst Control Power,DT_DOUBLE,,1438,,,,x,367,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-33 Lights - Basement,DT_DOUBLE,,1438,,,,x,368,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-34 Parent B - Upstairs,DT_DOUBLE,,1438,,,,x,369,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-35 Spare,DT_DOUBLE,,1438,,,,x,370,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-36 Plugs - Inst Network/Cable Box,DT_DOUBLE,,1438,,,,x,371,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-37 BCPM Power/Voltage,DT_DOUBLE,,1438,,,,x,372,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-38 Plugs - Inst Phone/Data,DT_DOUBLE,,1438,,,,x,373,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-39 Parent B - Downstairs,DT_DOUBLE,,1438,,,,x,374,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-40 Plugs - Inst Kit D,DT_DOUBLE,,1438,,,,x,375,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-41 Plugs - DR B,DT_DOUBLE,,1438,,,,x,376,Base,11.1,Elec,PF,-,0
+Power Factor - RP BB-42 Plugs - Attic,DT_DOUBLE,,1438,,,,x,377,Base,11.1,Elec,PF,-,0
+Current - RP B-1 Plugs - Base A (Heliodyne HXs),DT_DOUBLE,,1438,,,,x,378,Base,11.1,Elec,Cur,A,0
+Current - RP B-2 Plugs - Base B,DT_DOUBLE,,1438,,,,x,379,Base,11.1,Elec,Cur,A,0
+Current - RP B-3 Plugs - Base C,DT_DOUBLE,,1438,,,,x,380,Base,11.1,Elec,Cur,A,0
+Current - RP B-4 Sump Pump,DT_DOUBLE,,1438,,,,x,381,Base,11.1,Elec,Cur,A,0
+Current - RP B-5 Lights - Basement Stair,DT_DOUBLE,,1438,,,,x,382,Base,11.1,Elec,Cur,A,0
+Current - RP B-6 Spare,DT_DOUBLE,,1438,,,,x,383,Base,11.1,Elec,Cur,A,0
+Current - RP B-7 Plugs - Center Hall,DT_DOUBLE,,1438,,,,x,384,Base,11.1,Elec,Cur,A,0
+Current - RP B-8 Plugs - BA1,DT_DOUBLE,,1438,,,,x,385,Base,11.1,Elec,Cur,A,0
+Current - RP B-9 Plugs - Outside North,DT_DOUBLE,,1438,,,,x,386,Base,11.1,Elec,Cur,A,0
+Current - RP B-10 Plugs - Outdoor A,DT_DOUBLE,,1438,,,,x,387,Base,11.1,Elec,Cur,A,0
+Current - RP B-11 Plugs - Outside East,DT_DOUBLE,,1438,,,,x,388,Base,11.1,Elec,Cur,A,0
+Current - RP B-12 Plugs - Outdoor B,DT_DOUBLE,,1438,,,,x,389,Base,11.1,Elec,Cur,A,0
+Current - RP B-13 Plugs - DR,DT_DOUBLE,,1438,,,,x,390,Base,11.1,Elec,Cur,A,0
+Current - RP B-14 Plugs - BR4,DT_DOUBLE,,1438,,,,x,391,Base,11.1,Elec,Cur,A,0
+Current - RP B-15 Plugs - Entry Hall,DT_DOUBLE,,1438,,,,x,392,Base,11.1,Elec,Cur,A,0
+Current - RP B-16 Plugs - LR,DT_DOUBLE,,1438,,,,x,393,Base,11.1,Elec,Cur,A,0
+Current - RP B-17 Clothes Washer,DT_DOUBLE,,1438,,,,x,394,Base,11.1,Elec,Cur,A,0
+Current - RP B-18 Dryer (1of2),DT_DOUBLE,,1438,,,,x,395,Base,11.1,Elec,Cur,A,0
+Current - RP B-19 Dehumidifier,DT_DOUBLE,,1438,,,,x,396,Base,11.1,Elec,Cur,A,0
+Current - RP B-20 Dryer (2of2),DT_DOUBLE,,1438,,,,x,397,Base,11.1,Elec,Cur,A,0
+Current - RP B-21 Heat Pump (1of2),DT_DOUBLE,,1438,,,,x,398,Base,11.1,Elec,Cur,A,0
+Current - RP B-22 AHU-2  (1of2),DT_DOUBLE,,1438,,,,x,399,Base,11.1,Elec,Cur,A,0
+Current - RP B-23 Heat Pump (2of2),DT_DOUBLE,,1438,,,,x,400,Base,11.1,Elec,Cur,A,0
+Current - RP B-24 AHU-2  (2of2),DT_DOUBLE,,1438,,,,x,401,Base,11.1,Elec,Cur,A,0
+Current - RP B-25 HRV,DT_DOUBLE,,1438,,,,x,402,Base,11.1,Elec,Cur,A,0
+Current - RP B-26 Heat Pump WH (1of2),DT_DOUBLE,,1438,,,,x,403,Base,11.1,Elec,Cur,A,0
+Current - RP B-27 RP B-BA BCPM Power/Voltage,DT_DOUBLE,,1438,,,,x,404,Base,11.1,Elec,Cur,A,0
+Current - RP B-28 Heat Pump WH (2of2),DT_DOUBLE,,1438,,,,x,405,Base,11.1,Elec,Cur,A,0
+Current - RP B-29 Plugs - Vehicle - 240V (1of2),DT_DOUBLE,,1438,,,,x,406,Base,11.1,Elec,Cur,A,0
+Current - RP B-30 AHU-2 Alternate,DT_DOUBLE,,1438,,,,x,407,Base,11.1,Elec,Cur,A,0
+Current - RP B-31 Plugs - Vehicle - 240V (2of2),DT_DOUBLE,,1438,,,,x,408,Base,11.1,Elec,Cur,A,0
+Current - RP B-32 AHU-1,DT_DOUBLE,,1438,,,,x,409,Base,11.1,Elec,Cur,A,0
+Current - RP B-33 PV (1of2),DT_DOUBLE,,1438,,,,x,410,Base,11.1,Elec,Cur,A,0
+Current - RP B-34 Plugs - Vehicle - 120V,DT_DOUBLE,,1438,,,,x,411,Base,11.1,Elec,Cur,A,0
+Current - RP B-35 PV (2of2),DT_DOUBLE,,1438,,,,x,412,Base,11.1,Elec,Cur,A,0
+Current - RP B-36 Plugs - Garage,DT_DOUBLE,,1438,,,,x,413,Base,11.1,Elec,Cur,A,0
+Current - RP B-37 FCU-1 Future (1of2),DT_DOUBLE,,1438,,,,x,414,Base,11.1,Elec,Cur,A,0
+Current - RP B-38 Space,DT_DOUBLE,,1438,,,,x,415,Base,11.1,Elec,Cur,A,0
+Current - RP B-39 FCU-1 Future (1of2),DT_DOUBLE,,1438,,,,x,416,Base,11.1,Elec,Cur,A,0
+Current - RP B-40 Space,DT_DOUBLE,,1438,,,,x,417,Base,11.1,Elec,Cur,A,0
+Current - RP B-41 Spare,DT_DOUBLE,,1438,,,,x,418,Base,11.1,Elec,Cur,A,0
+Current - RP B-42 Space,DT_DOUBLE,,1438,,,,x,419,Base,11.1,Elec,Cur,A,0
+Current - RP BA-1 Make-Up Air Damper,DT_DOUBLE,,1438,,,,x,420,Base,11.1,Elec,Cur,A,0
+Current - RP BA-2 Lights - 2nd Floor,DT_DOUBLE,,1438,,,,x,421,Base,11.1,Elec,Cur,A,0
+Current - RP BA-3 Plugs - MBA (East),DT_DOUBLE,,1438,,,,x,422,Base,11.1,Elec,Cur,A,0
+Current - RP BA-4 Plugs - BA2 (South),DT_DOUBLE,,1438,,,,x,423,Base,11.1,Elec,Cur,A,0
+Current - RP BA-5 Plugs - MBA (West),DT_DOUBLE,,1438,,,,x,424,Base,11.1,Elec,Cur,A,0
+Current - RP BA-6 Plugs - BA2 (North),DT_DOUBLE,,1438,,,,x,425,Base,11.1,Elec,Cur,A,0
+Current - RP BA-7 Plugs - BR3,DT_DOUBLE,,1438,,,,x,426,Base,11.1,Elec,Cur,A,0
+Current - RP BA-8 Refrigerator,DT_DOUBLE,,1438,,,,x,427,Base,11.1,Elec,Cur,A,0
+Current - RP BA-9 Plugs - Kit (Sink),DT_DOUBLE,,1438,,,,x,428,Base,11.1,Elec,Cur,A,0
+Current - RP BA-10 Garbage Disposal,DT_DOUBLE,,1438,,,,x,429,Base,11.1,Elec,Cur,A,0
+Current - RP BA-11 Plugs - Kit (Range),DT_DOUBLE,,1438,,,,x,430,Base,11.1,Elec,Cur,A,0
+Current - RP BA-12 Plugs - Kit Peninsula,DT_DOUBLE,,1438,,,,x,431,Base,11.1,Elec,Cur,A,0
+Current - RP BA-13 Range  (1of2),DT_DOUBLE,,1438,,,,x,432,Base,11.1,Elec,Cur,A,0
+Current - RP BA-14 Microwave,DT_DOUBLE,,1438,,,,x,433,Base,11.1,Elec,Cur,A,0
+Current - RP BA-15 Range  (2of2),DT_DOUBLE,,1438,,,,x,434,Base,11.1,Elec,Cur,A,0
+Current - RP BA-16 FCU-2 Future  (1of2),DT_DOUBLE,,1438,,,,x,435,Base,11.1,Elec,Cur,A,0
+Current - RP BA-17 Solar Hot Water #1  -  (1of2),DT_DOUBLE,,1438,,,,x,436,Base,11.1,Elec,Cur,A,0
+Current - RP BA-18 FCU-2 Future  (2of2),DT_DOUBLE,,1438,,,,x,437,Base,11.1,Elec,Cur,A,0
+Current - RP BA-19 Solar Hot Water #1  -  (2of2),DT_DOUBLE,,1438,,,,x,438,Base,11.1,Elec,Cur,A,0
+Current - RP BA-20 HPU-4 Future (1of2),DT_DOUBLE,,1438,,,,x,439,Base,11.1,Elec,Cur,A,0
+Current - RP BA-21 Plugs - 2nd Floor,DT_DOUBLE,,1438,,,,x,440,Base,11.1,Elec,Cur,A,0
+Current - RP BA-22 HPU-4 Future (2of2),DT_DOUBLE,,1438,,,,x,441,Base,11.1,Elec,Cur,A,0
+Current - RP BA-23 Spare,DT_DOUBLE,,1438,,,,x,442,Base,11.1,Elec,Cur,A,0
+Current - RP BA-24 ACCU-1  (1of2),DT_DOUBLE,,1438,,,,x,443,Base,11.1,Elec,Cur,A,0
+Current - RP BA-25 Solar Hot Water #2  -  (1of2),DT_DOUBLE,,1438,,,,x,444,Base,11.1,Elec,Cur,A,0
+Current - RP BA-26 ACCU-1  (2of2),DT_DOUBLE,,1438,,,,x,445,Base,11.1,Elec,Cur,A,0
+Current - RP BA-27 Solar Hot Water #2  -  (2of2),DT_DOUBLE,,1438,,,,x,446,Base,11.1,Elec,Cur,A,0
+Current - RP BA-28 ACCU-2  (1of2),DT_DOUBLE,,1438,,,,x,447,Base,11.1,Elec,Cur,A,0
+Current - RP BA-29 Plugs - BR2,DT_DOUBLE,,1438,,,,x,448,Base,11.1,Elec,Cur,A,0
+Current - RP BA-30 ACCU-2  (2of2),DT_DOUBLE,,1438,,,,x,449,Base,11.1,Elec,Cur,A,0
+Current - RP BA-31 Plugs - MBR,DT_DOUBLE,,1438,,,,x,450,Base,11.1,Elec,Cur,A,0
+Current - RP BA-32 Lights - 1st FloorA,DT_DOUBLE,,1438,,,,x,451,Base,11.1,Elec,Cur,A,0
+Current - RP BA-33 Cooktop,DT_DOUBLE,,1438,,,,x,452,Base,11.1,Elec,Cur,A,0
+Current - RP BA-34 Lights - 1st FloorB,DT_DOUBLE,,1438,,,,x,453,Base,11.1,Elec,Cur,A,0
+Current - RP BA-35 Space,DT_DOUBLE,,1438,,,,x,454,Base,11.1,Elec,Cur,A,0
+Current - RP BA-36 FCU-2 Future (1of2),DT_DOUBLE,,1438,,,,x,455,Base,11.1,Elec,Cur,A,0
+Current - RP BA-37 Space,DT_DOUBLE,,1438,,,,x,456,Base,11.1,Elec,Cur,A,0
+Current - RP BA-38 FCU-2 Future (2of2),DT_DOUBLE,,1438,,,,x,457,Base,11.1,Elec,Cur,A,0
+Current - RP BA-39 Space,DT_DOUBLE,,1438,,,,x,458,Base,11.1,Elec,Cur,A,0
+Current - RP BA-40 Dishwasher,DT_DOUBLE,,1438,,,,x,459,Base,11.1,Elec,Cur,A,0
+Current - RP BA-41 Space,DT_DOUBLE,,1438,,,,x,460,Base,11.1,Elec,Cur,A,0
+Current - RP BA-42 Space,DT_DOUBLE,,1438,,,,x,461,Base,11.1,Elec,Cur,A,0
+Current - RP BB-1 Plugs - GSHP Instrumentation,DT_DOUBLE,,1438,,,,x,462,Base,11.1,Elec,Cur,A,0
+Current - RP BB-2 Plugs - Inst Mudroom A,DT_DOUBLE,,1438,,,,x,463,Base,11.1,Elec,Cur,A,0
+Current - RP BB-3 Plugs - HVAC Instrumentation,DT_DOUBLE,,1438,,,,x,464,Base,11.1,Elec,Cur,A,0
+Current - RP BB-4 Plugs - Inst BA1,DT_DOUBLE,,1438,,,,x,465,Base,11.1,Elec,Cur,A,0
+Current - RP BB-5 Lights - Attic,DT_DOUBLE,,1438,,,,x,466,Base,11.1,Elec,Cur,A,0
+Current - RP BB-6 Plugs - Inst Kit A,DT_DOUBLE,,1438,,,,x,467,Base,11.1,Elec,Cur,A,0
+Current - RP BB-7 Plugs - Inst Mudroom B,DT_DOUBLE,,1438,,,,x,468,Base,11.1,Elec,Cur,A,0
+Current - RP BB-8 Parent A - Downstairs,DT_DOUBLE,,1438,,,,x,469,Base,11.1,Elec,Cur,A,0
+Current - RP BB-9 Plugs - Inst DR A,DT_DOUBLE,,1438,,,,x,470,Base,11.1,Elec,Cur,A,0
+Current - RP BB-10 Plugs - Inst BR4 A,DT_DOUBLE,,1438,,,,x,471,Base,11.1,Elec,Cur,A,0
+Current - RP BB-11 Child B - Downstairs,DT_DOUBLE,,1438,,,,x,472,Base,11.1,Elec,Cur,A,0
+Current - RP BB-12 Plugs - Inst BR4 A,DT_DOUBLE,,1438,,,,x,473,Base,11.1,Elec,Cur,A,0
+Current - RP BB-13 Plugs - Inst LR A,DT_DOUBLE,,1438,,,,x,474,Base,11.1,Elec,Cur,A,0
+Current - RP BB-14 Spare,DT_DOUBLE,,1438,,,,x,475,Base,11.1,Elec,Cur,A,0
+Current - RP BB-15 Child A - Downstairs,DT_DOUBLE,,1438,,,,x,476,Base,11.1,Elec,Cur,A,0
+Current - RP BB-16 Plugs - Inst LR B,DT_DOUBLE,,1438,,,,x,477,Base,11.1,Elec,Cur,A,0
+Current - RP BB-17 Plugs - Inst MBA A (Scale),DT_DOUBLE,,1438,,,,x,478,Base,11.1,Elec,Cur,A,0
+Current - RP BB-18 Plugs - Inst BA2,DT_DOUBLE,,1438,,,,x,479,Base,11.1,Elec,Cur,A,0
+Current - RP BB-19 Plugs - Inst MBA B,DT_DOUBLE,,1438,,,,x,480,Base,11.1,Elec,Cur,A,0
+Current - RP BB-20 Leak Detection System,DT_DOUBLE,,1438,,,,x,481,Base,11.1,Elec,Cur,A,0
+Current - RP BB-21 Plugs - Inst MBR A,DT_DOUBLE,,1438,,,,x,482,Base,11.1,Elec,Cur,A,0
+Current - RP BB-22 Plugs - Inst BR2/Hall,DT_DOUBLE,,1438,,,,x,483,Base,11.1,Elec,Cur,A,0
+Current - RP BB-23 Parent A - Upstairs,DT_DOUBLE,,1438,,,,x,484,Base,11.1,Elec,Cur,A,0
+Current - RP BB-24 Plugs - Inst Hall,DT_DOUBLE,,1438,,,,x,485,Base,11.1,Elec,Cur,A,0
+Current - RP BB-25 Lighting Control Panel (RP-S #1),DT_DOUBLE,,1438,,,,x,486,Base,11.1,Elec,Cur,A,0
+Current - RP BB-26 Plugs - Inst BR3,DT_DOUBLE,,1438,,,,x,487,Base,11.1,Elec,Cur,A,0
+Current - RP BB-27 Child A - Upstairs,DT_DOUBLE,,1438,,,,x,488,Base,11.1,Elec,Cur,A,0
+Current - RP BB-28 Child B - Upstairs,DT_DOUBLE,,1438,,,,x,489,Base,11.1,Elec,Cur,A,0
+Current - RP BB-29 Heat Load for Refrigerator,DT_DOUBLE,,1438,,,,x,490,Base,11.1,Elec,Cur,A,0
+Current - RP BB-30 Plugs - Inst,DT_DOUBLE,,1438,,,,x,491,Base,11.1,Elec,Cur,A,0
+Current - RP BB-31 Lighting Control Panel (RP-S #2),DT_DOUBLE,,1438,,,,x,492,Base,11.1,Elec,Cur,A,0
+Current - RP BB-32 Plugs - Inst Control Power,DT_DOUBLE,,1438,,,,x,493,Base,11.1,Elec,Cur,A,0
+Current - RP BB-33 Lights - Basement,DT_DOUBLE,,1438,,,,x,494,Base,11.1,Elec,Cur,A,0
+Current - RP BB-34 Parent B - Upstairs,DT_DOUBLE,,1438,,,,x,495,Base,11.1,Elec,Cur,A,0
+Current - RP BB-35 Spare,DT_DOUBLE,,1438,,,,x,496,Base,11.1,Elec,Cur,A,0
+Current - RP BB-36 Plugs - Inst Network/Cable Box,DT_DOUBLE,,1438,,,,x,497,Base,11.1,Elec,Cur,A,0
+Current - RP BB-37 BCPM Power/Voltage,DT_DOUBLE,,1438,,,,x,498,Base,11.1,Elec,Cur,A,0
+Current - RP BB-38 Plugs - Inst Phone/Data,DT_DOUBLE,,1438,,,,x,499,Base,11.1,Elec,Cur,A,0
+Current - RP BB-39 Parent B - Downstairs,DT_DOUBLE,,1438,,,,x,500,Base,11.1,Elec,Cur,A,0
+Current - RP BB-40 Plugs - Inst Kit D,DT_DOUBLE,,1438,,,,x,501,Base,11.1,Elec,Cur,A,0
+Current - RP BB-41 Plugs - DR B,DT_DOUBLE,,1438,,,,x,502,Base,11.1,Elec,Cur,A,0
+Current - RP BB-42 Plugs - Attic,DT_DOUBLE,,1438,,,,x,503,Base,11.1,Elec,Cur,A,0
+RP B Line Voltage,DT_DOUBLE,,1438,,,,Avg,504,Base,11.1,Elec,V,V,0
+RP B Total kWh,DT_DOUBLE,,1438,,,,Diff,505,Base,11.1,Elec,Wh,A,0
+RP B Total kW,DT_DOUBLE,,1438,,,,Avg,506,Base,11.1,Elec,Pwr,W,0
+RP B Phase 1&2 Average Current,DT_DOUBLE,,1438,,,,Avg,507,Base,11.1,Elec,Cur,VA,0
+RP BB Line Voltage,DT_DOUBLE,,1438,,,,Avg,508,Base,11.1,Elec,V,V,0
+RP BB Total kWh,DT_DOUBLE,,1438,,,,Diff,509,Base,11.1,Elec,Wh,A,0
+RP BB Total kW,DT_DOUBLE,,1438,,,,Avg,510,Base,11.1,Elec,Pwr,W,0
+RP BB Phase 1&2 Average Current,DT_DOUBLE,,1438,,,,Avg,511,Base,11.1,Elec,Cur,VA,0
+Energy Load - SumCirc,DT_DOUBLE,,1438,,,,Avg_0,20,Base,PXI Calc,Elec,kWh,Wh,0
+Power Load - SumCirc,DT_DOUBLE,,1438,,,,Avg_0,21,Base,PXI Calc,Elec,Pwr,W,0
+Energy Import - SumCirc,DT_DOUBLE,,1438,,,,Avg_0,22,Base,PXI Calc,Elec,kWh,Wh,0
+Energy Export - SumCirc,DT_DOUBLE,,1438,,,,Avg_0,23,Base,PXI Calc,Elec,kWh,Wh,0
+Power Import - SumCirc,DT_DOUBLE,,1438,,,,Avg_0,24,Base,PXI Calc,Elec,Pwr,W,0
+Power Export - SumCirc,DT_DOUBLE,,1438,,,,Avg_0,25,Base,PXI Calc,Elec,Pwr,W,0
+Energy Import - CT,DT_DOUBLE,,1438,,,,Avg_0,26,Base,PXI Calc,Elec,kWh,Wh,0
+Energy Export - CT,DT_DOUBLE,,1438,,,,Avg_0,27,Base,PXI Calc,Elec,kWh,Wh,0
+Power Import - CT,DT_DOUBLE,,1438,,,,Avg_0,28,Base,PXI Calc,Elec,Pwr,W,0
+Power Export - CT,DT_DOUBLE,,1438,,,,Avg_0,29,Base,PXI Calc,Elec,Pwr,W,0
+Energy Load - CT,DT_DOUBLE,,1438,,,,Avg_0,30,Base,PXI Calc,Elec,kWh,Wh,0
+Power Load - CT,DT_DOUBLE,,1438,,,,Avg_0,31,Base,PXI Calc,Elec,Pwr,W,0
+Total Appliance Energy,DT_DOUBLE,,1438,,,,Diff,16,Base,Calc,Elec,Wh,Wh,0
+Total Lighting Energy,DT_DOUBLE,,1438,,,,Diff,17,Base,Calc,Elec,Wh,Wh,0
+Total Plug Load Energy,DT_DOUBLE,,1438,,,,Diff,18,Base,Calc,Elec,Wh,Wh,0
+Total HVAC Energy,DT_DOUBLE,,1438,,,,Diff,19,Base,Calc,Elec,Wh,Wh,0
+Total DHW Energy,DT_DOUBLE,,1438,,,,Diff,20,Base,Calc,Elec,Wh,Wh,0
+Total Generation Energy,DT_DOUBLE,,1438,,,,Diff,21,Base,Calc,Elec,Wh,Wh,0
+Total Occupant Energy,DT_DOUBLE,,1438,,,,Diff,22,Base,Calc,Elec,Wh,Wh,0
+Total Appliance Power,DT_DOUBLE,,1438,,,,Avg_0,23,Base,Calc,Elec,Pwr,W,0
+Total Lighting Power,DT_DOUBLE,,1438,,,,Avg_0,24,Base,Calc,Elec,Pwr,W,0
+Total Plug Load Power,DT_DOUBLE,,1438,,,,Avg_0,25,Base,Calc,Elec,Pwr,W,0
+Total HVAC Power,DT_DOUBLE,,1438,,,,Avg_0,26,Base,Calc,Elec,Pwr,W,0
+Total DHW Power,DT_DOUBLE,,1438,,,,Avg_0,27,Base,Calc,Elec,Pwr,W,0
+Total Generation Power,DT_DOUBLE,,1438,,,,Avg_0,28,Base,Calc,Elec,Pwr,W,0
+Total Occupant Power,DT_DOUBLE,,1438,,,,Avg_0,29,Base,Calc,Elec,Pwr,W,0
+Total NZERTF Energy Load - Sum Circ,DT_DOUBLE,,1438,,,,Diff,105,Base,Calc,Elec,Wh,Wh,0
+Total NZERTF Power Load - Sum Circ,DT_DOUBLE,,1438,,,,Avg_0,106,Base,Calc,Elec,Pwr,W,0
+Total NZERTF Energy Import - Sum Circ,DT_DOUBLE,,1438,,,,Diff,107,Base,Calc,Elec,Wh,Wh,0
+Total NZERTF Energy Export - Sum Circ,DT_DOUBLE,,1438,,,,Diff,108,Base,Calc,Elec,Wh,Wh,0
+Total NZERTF Power Import - Sum Circ,DT_DOUBLE,,1438,,,,Avg_0,109,Base,Calc,Elec,Pwr,W,0
+Total NZERTF Power Export - Sum Circ,DT_DOUBLE,,1438,,,,Avg_0,110,Base,Calc,Elec,Pwr,W,0
+Total NZERTF Energy Import - CT,DT_DOUBLE,,1438,,,,Diff,111,Base,Calc,Elec,Wh,Wh,0
+Total NZERTF Energy Export - CT,DT_DOUBLE,,1438,,,,Diff,112,Base,Calc,Elec,Wh,Wh,0
+Total NZERTF Power Import - CT,DT_DOUBLE,,1438,,,,Avg_0,113,Base,Calc,Elec,Pwr,W,0
+Total NZERTF Power Export - CT,DT_DOUBLE,,1438,,,,Avg_0,114,Base,Calc,Elec,Pwr,W,0
+RP-BB Instrument Circuits Energy - Lights,DT_DOUBLE,,1438,,,,Diff,115,Base,Calc,Elec,Wh,Wh,0
+RP-BB Instrument Circuits Energy - Loads,DT_DOUBLE,,1438,,,,Diff,116,Base,Calc,Elec,Wh,Wh,0
+RP-BB Instrument Circuits Energy - Fixed Equipment,DT_DOUBLE,,1438,,,,Diff,117,Base,Calc,Elec,Wh,Wh,0
+RP-BB Instrument Circuits Energy - Plugs,DT_DOUBLE,,1438,,,,Diff,118,Base,Calc,Elec,Wh,Wh,0
