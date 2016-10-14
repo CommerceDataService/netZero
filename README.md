@@ -1,4 +1,4 @@
-![CDS](https://github.com/CommerceDataService/netZero/blob/master/images/CDS-logo%20small.png) ![NIST Logo](https://github.com/CommerceDataService/netZero/blob/master/images/nist-small.png =1000x200)
+![CDS logo](https://github.com/CommerceDataService/netZero/blob/master/images/CDS-logo%20small.png) ![NIST Logo](https://github.com/CommerceDataService/netZero/blob/master/images/nist-small.png)
 
 # netZero
 
@@ -12,3 +12,13 @@ While this repo has some files with the data dictionary or variables flagged for
 The [convert_tdms_to_csv.py](https://github.com/CommerceDataService/netZero/blob/master/convert_tdms_to_csv.py) python script needs to be run first to convert TDMS files into CSV files. The paths to the TDMS file locations and the folder to save the CSV files will need to be updated before running.
 
 The [cleaning_script.R](https://github.com/CommerceDataService/netZero/blob/master/cleaning_script.R) file can be run subsequently. 
+
+### Data caveats
+
+Here are a few data cleaning and manipulation issues to keep in mind:
+
+- Various channels and systems may not always exactly have 1440 readings per day because of resets at midnight, instrumentation boot time lags, different intervals for collecting data from instruments. Channel readings are rounded to the nearest minute and if readings start after midnight, the channel values are zero up until the readings begin.
+
+## Tutorials
+
+R markdowns and knitted html outputs are available for tutorials in R. Refer to the html file to see the code, formatting and output in one file. The tutorials have been posted on the [Net Zero website](https://pages.nist.gov/netzero/). 
