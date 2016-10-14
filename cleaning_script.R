@@ -1,12 +1,15 @@
-# run convert_tdms_to_csv.py first, to convert tdms files into csv
+# Be sure to run the convert_tdms_to_csv.py first, to convert TDMS files into CSVs
 
 ###############
 # working directories
 ###############
 
+### update these file paths to your local directory ###
+
 # set working directories for raw data (data that was converted from tdms to csv) and for processed data (cleaned csv files)
 mainWD <- "/Users/prioberoi/Documents/nist/netZero"
 rawDataWD <- paste0(mainWD, "/data/raw")
+rawDataAltSystemWD <- paste0(rawDataWD, "/AlternateSystem") # only use this file path if data from an alternate system needs to be imported as well
 processedDataWD <- paste0(mainWD, "/data/processed")
 
 ###############
@@ -17,10 +20,11 @@ ptm <- proc.time()
 # Create object to house all data with minute-level timestamps
 d <- data.frame(Timestamp = seq(ISOdatetime(2015, 02, 01, 0, 0, 0, tz = "EST"), ISOdatetime(2016, 01, 31, 0, 0, 0, tz = "EST"), "min"))
 
-# import data, add new channels as needed, and add data to existing channels from LabView files
+# import data from the raw files, add new channels (columns) as needed or add data to existing channels
 paths <- dir(path = rawDataWD, pattern = "\\.csv$", full.names = TRUE)
 
 for(path in paths){
+  # import each csv, which has one day worth of data
   day <- read.csv(path, header = TRUE, stringsAsFactors = FALSE)
   # remove _
   names(day) <- gsub("_", "", names(day))
@@ -31,12 +35,12 @@ for(path in paths){
   # remove X prefix from variable names
   day$X <- NULL
   names(day) <- sub("^X", "", names(day))
-  # format timestamp 
+  # format timestamp as object of class POSIXlt
   day$TimeStamp_SystemTime <- strptime(substr(day$TimeStamp_SystemTime, 1, 19), "%Y-%m-%d %H:%M:%S", tz = "EST")
   # create new timestamp rounded to the minute
   day$Timestamp <- round(day$TimeStamp_SystemTime, units = "min")
   day <- day[!(duplicated(day$Timestamp)),]
-  # add any new channels
+  # add any new channels (columns) from day to d
   temp <- as.data.frame(matrix(0, ncol = length(names(day)[!(names(day) %in% names(d))]), nrow = nrow(d)))
   names(temp) <- names(day)[!(names(day) %in% names(d))]
   d <- cbind(d, temp)
@@ -47,15 +51,43 @@ for(path in paths){
 }
 proc.time() - ptm
 
-# import data, add new channels as needed, and add data to existing channels from Alternate instrument acquisition system 
-paths <- dir(path = paste0(rawDataWD, "/AlternateSystem"), pattern = "\\.txt$", full.names = TRUE, recursive = TRUE)
+##########
+# Remove channels (variables) flagged for removal 
+##########
+
+### only run this segment of code if there are particular variables you would like removed from the dataset ###
+### some preprocessing was done on this csv manually to flag variables for removal, refer to DataToBeIncluded file in repo ###
+### rows flagged with a 0 in the remove$Remove column, will be removed in the code below ###
+
+remove <- read.csv(paste0(processedDataWD, "/DataToBeIncluded.csv"), header = TRUE, stringsAsFactors = FALSE)
+remove$Channel <- gsub("[[:punct:]]", "", remove$Channel)
+remove$Channel <- gsub(" ", "", remove$Channel)
+remove$Remove[is.na(remove$Remove)] <- 1
+remove <- remove[remove$Remove < 1,]
+# remove the channels from data
+for(channel in remove$Channel){
+  temp <- names(d)[grep(paste0("_", channel), names(d), ignore.case = TRUE)]
+  d[,temp] <- NULL
+}
+
+############### 
+# Add data from alternate system
+############### 
+
+### only run the code below if you are also adding data from an alternate instrumentation system that uses txt files ###
+### note that this code runs after the code above which removes any unwanted variables ###
+### additionally, update the string below to indicate which subsystem these channels belong to ###
+altSubSystem <- "HVAC"
+
+# import data from alternate instrument acquisition system, add new channels (columns) as needed, and add data to existing channels 
+paths <- dir(path = rawDataAltSystemWD, pattern = "\\.txt$", full.names = TRUE, recursive = TRUE)
 
 for(path in paths){
   day <- read.csv(path, header = TRUE, stringsAsFactors = FALSE, sep = "\t")
   # remove _
   names(day) <- gsub("\\_", "", names(day))
-  # prefix "HVAC" for new channels
-  names(day) <- paste0("HVAC_", names(day))
+  # prefix name of subsystem for new channels
+  names(day) <- paste0(altSubSystem, "_", names(day))
   # create new timestamp rounded to the minute
   day$Timestamp <- seq(from = ISOdatetime(2015, 02, 01, 0, 0, 0, tz = "EST"), by = "min", length.out = nrow(day))
   # add any new channels
@@ -70,27 +102,10 @@ for(path in paths){
 proc.time() - ptm
 
 ##########
-# Remove unwanted channels (variables)
-##########
-
-remove <- read.csv(paste0(processedDataWD, "/DataToBeIncluded.csv"), header = TRUE, stringsAsFactors = FALSE)
-remove$Channel <- gsub("[[:punct:]]", "", remove$Channel)
-remove$Channel <- gsub(" ", "", remove$Channel)
-remove$Remove[is.na(remove$Remove)] <- 1
-remove <- remove[remove$Remove < 1,]
-# remove the channels from data
-df <- data.frame()
-for(channel in remove$Channel){
-  temp <- names(d)[grep(paste0("_", channel), names(d), ignore.case = TRUE)]
-  #df <- rbind(df, data.frame())
-  d[,temp] <- NULL
-}
-
-##########
 # More time variable processing
 ##########
 
-# Remove extraneous timestamp variables
+# Remove extraneous timestamp variables, like TimeStamp_GPSTime
 d <- d[,!(names(d) %in% c("TimeStamp_GPSTime"))] 
 # create variable for day of week
 d$DayOfWeek <- as.factor(weekdays(d$Timestamp))
@@ -136,7 +151,6 @@ write.csv(dic, file = paste0(processedDataWD, "/dataDictionary.csv"), row.names 
 write.csv(d, file = paste0(processedDataWD, "/data.csv"), row.names = FALSE)
 
 # write CSV for each subsystem
-
 for(subsystem in subsystems){
   vars <- c(timeVars, names(d)[grep(paste0("^",subsystem,"_"), names(d))])
   data_subsystem <- d[,vars]
@@ -170,4 +184,4 @@ metadata$min_value <- temp
 
 write.csv(metadata, file = paste0(processedDataWD, "/metadata.csv"), row.names = FALSE)
 
-proc.time() - ptm
+proc.time() - ptm #approximately 78 mins
