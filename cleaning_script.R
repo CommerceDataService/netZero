@@ -129,30 +129,32 @@ timeVars <- c(names(d)[grep("time", names(d), ignore.case = TRUE)], "DayOfWeek")
 proc.time() - ptm
 
 ###############
-# Update data dictionary subsystem and channels to match nomenclature in data
+# create metadata object from d and data dictionary
 ###############
 
+metadata <- data.frame(variable = names(d))
+metadata$subsystem <- NA
+metadata$subsystem[!(metadata$variable %in% timeVars)] <- unlist(lapply(as.character(metadata$variable[!(metadata$variable %in% timeVars)]), function(x) substr(x, 1, grep("_", strsplit(x, split = "")[[1]])-1)))
+subsystems <- unique(metadata$subsystem[!is.na(metadata$subsystem)])
+
+# import data dictionary
 dic <- read.csv(paste0(userUpdatesWD, "/dataDictionary.csv"), header = TRUE, stringsAsFactors = FALSE, na.strings = c("", NA, " "))
 dic <- na.omit(dic)
 
-# list of subsystems
-subsystems <- unlist(unique(lapply(names(d[grep("_", names(d))]), function(x) substr(x, 1, grep("_", strsplit(x, split = "")[[1]])-1))))
-subsystems <- subsystems[!(subsystems == "TimeStamp")]
-dic$data_subsystem <- "placeholder"
-for(i in max(nchar(subsystems)):min(nchar(subsystems))){
-  dic$data_subsystem[!(dic$data_subsystem %in% subsystems)] <- substr(dic$Subsystem[!(dic$data_subsystem %in% subsystems)], 1, i)
-}
-dic$data_subsystem[dic$Subsystem == "Lighting"] <- "Elec"
-dic$data_subsystem[dic$data_subsystem == "placeholder"] <- "Not mapped"
-dic$channel <- paste0(dic$data_subsystem, "_", dic$channel)
-# fuzzy match channel in dic to data to replace name with exact match
-for(channel in dic$channel){
-  temp <- names(d)[grep(channel, names(d), ignore.case = TRUE)]
-  temp <- ifelse(length(temp)==0, channel, temp)
-  dic$channel[dic$channel == channel] <- temp
-}
+# Pull variable descriptions, measurement location, measured parameter and units from data dictionary
+metadata <- merge(metadata, dic[,c("Data.Label", "Measurement.Location", "Measured.Parameter", "Description", "Units")], by.x = 'variable', by.y = 'Data.Label', all.x = TRUE)
 
-write.csv(dic, file = paste0(processedDataWD, "/dataDictionary.csv"), row.names = FALSE)
+# rename metadata columns
+names(metadata) <- c("Variable", "Subsystem", "Measurement_Location", "Parameter", "Description", "Units")
+
+metadata[metadata$Variable %in% timeVars,'Units'] <- "Date/Time"
+metadata$Units[grep("_Status", metadata$Variable)] <- "Binary Status"
+metadata$max_value <- 0
+metadata$min_value <- 0
+for(col in names(d)){
+  metadata$max_value[metadata$Variable == col] <- round(max(as.numeric(d[,col])), digits = 4)
+  metadata$min_value[metadata$Variable == col] <- round(min(as.numeric(d[,col])), digits = 4)
+}
 
 ###############
 # write final CSVs to processed folder
@@ -168,27 +170,7 @@ for(subsystem in subsystems){
   write.csv(data_subsystem, file = paste0(processedDataWD, "/", subsystem, ".csv"), row.names = FALSE)
 }
 
-proc.time() - ptm
-
-###############
-# create metadata object
-###############
-
-metadata <- data.frame(variable = names(d))
-metadata$subsystem <- NA
-metadata$subsystem[grep("_", metadata$variable)] <- unlist(lapply(as.character(metadata$variable[grep("_", metadata$variable)]), function(x) substr(x, 1, grep("_", strsplit(x, split = "")[[1]])-1)))
-metadata <- merge(unique(metadata), unique(dic[,c("channel", "Description", "Measurement.Location", "Units")]), by.x = "variable", by.y = "channel", all.x = TRUE)
-metadata$in_dictionary <- "N"
-metadata$in_dictionary[!(metadata$description == "")] <- "Y"
-metadata[metadata$variable %in% timeVars,'description'] <- "Date/Time"
-metadata$description[grep("_Status", metadata$variable)] <- "Binary Status"
-metadata$max_value <- 0
-metadata$min_value <- 0
-for(col in names(d)){
-  metadata$max_value[metadata$variable == col] <- max(as.numeric(d[,col]))
-  metadata$min_value[metadata$variable == col] <- min(as.numeric(d[,col]))
-}
-
+# write metadata file
 write.csv(metadata, file = paste0(processedDataWD, "/metadata.csv"), row.names = FALSE)
 
 proc.time() - ptm #approximately 78 mins
