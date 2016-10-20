@@ -1,0 +1,573 @@
+Channel
+1st Floor Lights Expected Energy Usage
+1st Floor Lights Expected Power Usage
+1st Floor Sens. Heat Expected Energy Usage
+1st Floor Sens. Heat Expected Power Usage
+2nd Floor Lights Expected Energy Usage
+2nd Floor Lights Expected Power Usage
+2nd Floor Sens. Heat Expected Energy Usage
+2nd Floor Sens. Heat Expected Power Usage
+Appliances Expected Energy Usage
+Appliances Expected Power Usage
+Are Inverters On? (B_AreInvertersOn)
+Array AC Energy (E_AC_array)
+Array AC Power Inv1 (P_AC_array_PercRated1)
+Array AC Power Inv2 (P_AC_array_PercRated2)
+Array DC Energy (E_DC_array)
+Array DC Power Percent of STC (P_DC_array_PercSTC)
+Array Efficiency (Eta_bar_array)
+Attic DAS TC Burnout [IsBurned]
+Attic DAS Temp. [T_DAS]
+Backside Temp Array (T_bar_array)
+Basement Plug Loads Expected Energy Usage
+Basement Plug Loads Expected Power Usage
+BR2 Operative Temperature
+BR2 Plug Loads Expected Energy Usage
+BR2 Plug Loads Expected Power Usage
+BR2OperativeTemperature
+BR3 Operative Temperature
+BR3 Plug Loads Expected Energy Usage
+BR3 Plug Loads Expected Power Usage
+BR3OperativeTemperature
+BR4 Plug Loads Expected Energy Usage
+BR4 Plug Loads Expected Power Usage
+Current - RP B-1 Plugs - Base A (Heliodyne HXs)
+Current - RP B-10 Plugs - Outdoor A
+Current - RP B-11 Plugs - Outside East
+Current - RP B-12 Plugs - Outdoor B
+Current - RP B-13 Plugs - DR
+Current - RP B-14 Plugs - BR4
+Current - RP B-15 Plugs - Entry Hall
+Current - RP B-16 Plugs - LR
+Current - RP B-17 Clothes Washer
+Current - RP B-18 Dryer (1of2)
+Current - RP B-19 Dehumidifier
+Current - RP B-2 Plugs - Base B
+Current - RP B-20 Dryer (2of2)
+Current - RP B-21 Heat Pump (1of2)
+Current - RP B-22 AHU-2  (1of2)
+Current - RP B-23 Heat Pump (2of2)
+Current - RP B-24 AHU-2  (2of2)
+Current - RP B-25 HRV
+Current - RP B-26 Heat Pump WH (1of2)
+Current - RP B-27 RP B-BA BCPM Power/Voltage
+Current - RP B-28 Heat Pump WH (2of2)
+Current - RP B-29 Plugs - Vehicle - 240V (1of2)
+Current - RP B-3 Plugs - Base C
+Current - RP B-30 AHU-2 Alternate
+Current - RP B-31 Plugs - Vehicle - 240V (2of2)
+Current - RP B-32 AHU-1
+Current - RP B-33 PV (1of2)
+Current - RP B-34 Plugs - Vehicle - 120V
+Current - RP B-35 PV (2of2)
+Current - RP B-36 Plugs - Garage
+Current - RP B-37 FCU-1 Future (1of2)
+Current - RP B-38 Space
+Current - RP B-39 FCU-1 Future (1of2)
+Current - RP B-4 Sump Pump
+Current - RP B-40 Space
+Current - RP B-41 Spare
+Current - RP B-42 Space
+Current - RP B-5 Lights - Basement Stair
+Current - RP B-6 Spare
+Current - RP B-7 Plugs - Center Hall
+Current - RP B-8 Plugs - BA1
+Current - RP B-9 Plugs - Outside North
+Current - RP BA-1 Make-Up Air Damper
+Current - RP BA-10 Garbage Disposal
+Current - RP BA-11 Plugs - Kit (Range)
+Current - RP BA-12 Plugs - Kit Peninsula
+Current - RP BA-13 Range  (1of2)
+Current - RP BA-14 Microwave
+Current - RP BA-15 Range  (2of2)
+Current - RP BA-16 FCU-2 Future  (1of2)
+Current - RP BA-17 Solar Hot Water #1  -  (1of2)
+Current - RP BA-18 FCU-2 Future  (2of2)
+Current - RP BA-19 Solar Hot Water #1  -  (2of2)
+Current - RP BA-2 Lights - 2nd Floor
+Current - RP BA-20 HPU-4 Future (1of2)
+Current - RP BA-21 Plugs - 2nd Floor
+Current - RP BA-22 HPU-4 Future (2of2)
+Current - RP BA-23 Spare
+Current - RP BA-24 ACCU-1  (1of2)
+Current - RP BA-25 Solar Hot Water #2  -  (1of2)
+Current - RP BA-26 ACCU-1  (2of2)
+Current - RP BA-27 Solar Hot Water #2  -  (2of2)
+Current - RP BA-28 ACCU-2  (1of2)
+Current - RP BA-29 Plugs - BR2
+Current - RP BA-3 Plugs - MBA (East)
+Current - RP BA-30 ACCU-2  (2of2)
+Current - RP BA-31 Plugs - MBR
+Current - RP BA-32 Lights - 1st FloorA
+Current - RP BA-33 Cooktop
+Current - RP BA-34 Lights - 1st FloorB
+Current - RP BA-35 Space
+Current - RP BA-36 FCU-2 Future (1of2)
+Current - RP BA-37 Space
+Current - RP BA-38 FCU-2 Future (2of2)
+Current - RP BA-39 Space
+Current - RP BA-4 Plugs - BA2 (South)
+Current - RP BA-40 Dishwasher
+Current - RP BA-41 Space
+Current - RP BA-42 Space
+Current - RP BA-5 Plugs - MBA (West)
+Current - RP BA-6 Plugs - BA2 (North)
+Current - RP BA-7 Plugs - BR3
+Current - RP BA-8 Refrigerator
+Current - RP BA-9 Plugs - Kit (Sink)
+Current - RP BB-1 Plugs - GSHP Instrumentation
+Current - RP BB-10 Plugs - Inst BR4 A
+Current - RP BB-11 Child B - Downstairs
+Current - RP BB-12 Plugs - Inst BR4 A
+Current - RP BB-13 Plugs - Inst LR A
+Current - RP BB-14 Spare
+Current - RP BB-15 Child A - Downstairs
+Current - RP BB-16 Plugs - Inst LR B
+Current - RP BB-17 Plugs - Inst MBA A (Scale)
+Current - RP BB-18 Plugs - Inst BA2
+Current - RP BB-19 Plugs - Inst MBA B
+Current - RP BB-2 Plugs - Inst Mudroom A
+Current - RP BB-20 Leak Detection System
+Current - RP BB-21 Plugs - Inst MBR A
+Current - RP BB-22 Plugs - Inst BR2/Hall
+Current - RP BB-23 Parent A - Upstairs
+Current - RP BB-24 Plugs - Inst Hall
+Current - RP BB-25 Lighting Control Panel (RP-S #1)
+Current - RP BB-26 Plugs - Inst BR3
+Current - RP BB-27 Child A - Upstairs
+Current - RP BB-28 Child B - Upstairs
+Current - RP BB-29 Heat Load for Refrigerator
+Current - RP BB-3 Plugs - HVAC Instrumentation
+Current - RP BB-30 Plugs - Inst
+Current - RP BB-31 Lighting Control Panel (RP-S #2)
+Current - RP BB-32 Plugs - Inst Control Power
+Current - RP BB-33 Lights - Basement
+Current - RP BB-34 Parent B - Upstairs
+Current - RP BB-35 Spare
+Current - RP BB-36 Plugs - Inst Network/Cable Box
+Current - RP BB-37 BCPM Power/Voltage
+Current - RP BB-38 Plugs - Inst Phone/Data
+Current - RP BB-39 Parent B - Downstairs
+Current - RP BB-4 Plugs - Inst BA1
+Current - RP BB-40 Plugs - Inst Kit D
+Current - RP BB-41 Plugs - DR B
+Current - RP BB-42 Plugs - Attic
+Current - RP BB-5 Lights - Attic
+Current - RP BB-6 Plugs - Inst Kit A
+Current - RP BB-7 Plugs - Inst Mudroom B
+Current - RP BB-8 Parent A - Downstairs
+Current - RP BB-9 Plugs - Inst DR A
+"Daily Solar fraction, f"
+"Daily Total Hot Water Load, QL"
+DailySolarfractionf
+DailyTotalHotWaterLoadQL
+Delivery Temp - CW
+Delivery Temp - DW
+Delivery Temp - Kitchen Sink
+Delivery Temp - MBA Sink
+Delivery Temp - Shower
+Delivery Temp - Tub
+DeliveryTempCW
+DeliveryTempDW
+DeliveryTempKitchenSink
+DeliveryTempMBASink
+DeliveryTempShower
+DeliveryTempTub
+Draw Volume - CW
+Draw Volume - DW
+Draw Volume - Kitchen Sink
+Draw Volume - MBA Sink
+Draw Volume - Shower
+Draw Volume - Tub
+DrawVolumeCW
+DrawVolumeDW
+DrawVolumeKitchenSink
+DrawVolumeMBASink
+DrawVolumeShower
+DrawVolumeTub
+Dryer Water Flow
+DryerOn
+Energy - RP B-10 Plugs - Outdoor A
+Energy - RP B-11 Plugs - Outside East
+Energy - RP B-12 Plugs - Outdoor B
+Energy - RP B-27 RP B-BA BCPM Power/Voltage
+Energy - RP B-29 Plugs - Vehicle - 240V (1of2)
+Energy - RP B-30 AHU-2 Alternate
+Energy - RP B-31 Plugs - Vehicle - 240V (2of2)
+Energy - RP B-32 AHU-1
+Energy - RP B-34 Plugs - Vehicle - 120V
+Energy - RP B-36 Plugs - Garage
+Energy - RP B-37 FCU-1 Future (1of2)
+Energy - RP B-38 Space
+Energy - RP B-39 FCU-1 Future (1of2)
+Energy - RP B-40 Space
+Energy - RP B-41 Spare
+Energy - RP B-42 Space
+Energy - RP B-7 Plugs - Center Hall
+Energy - RP B-9 Plugs - Outside North
+Energy - RP BA-13 Range  (1of2)
+Energy - RP BA-15 Range  (2of2)
+Energy - RP BA-16 FCU-2 Future  (1of2)
+Energy - RP BA-17 Solar Hot Water #1  -  (1of2)
+Energy - RP BA-18 FCU-2 Future  (2of2)
+Energy - RP BA-19 Solar Hot Water #1  -  (2of2)
+Energy - RP BA-20 HPU-4 Future (1of2)
+Energy - RP BA-22 HPU-4 Future (2of2)
+Energy - RP BA-25 Solar Hot Water #2  -  (1of2)
+Energy - RP BA-27 Solar Hot Water #2  -  (2of2)
+Energy - RP BA-28 ACCU-2  (1of2)
+Energy - RP BA-30 ACCU-2  (2of2)
+Energy - RP BA-33 Cooktop
+Energy - RP BA-35 Space
+Energy - RP BA-36 FCU-2 Future (1of2)
+Energy - RP BA-37 Space
+Energy - RP BA-38 FCU-2 Future (2of2)
+Energy - RP BA-39 Space
+Energy - RP BA-41 Space
+Energy - RP BA-42 Space
+Energy - RP BB-14 Spare
+Energy - RP BB-17 Plugs - Inst MBA A (Scale)
+Energy - RP BB-20 Leak Detection System
+Energy - RP BB-30 Plugs - Inst
+Energy - RP BB-32 Plugs - Inst Control Power
+Energy - RP BB-35 Spare
+Energy - RP BB-36 Plugs - Inst Network/Cable Box
+Energy - RP BB-37 BCPM Power/Voltage
+Energy - RP BB-38 Plugs - Inst Phone/Data
+Energy Export - CT
+Energy Export - SumCirc
+Energy Import - CT
+Energy Import - SumCirc
+Energy Load - CT
+Energy Load - SumCirc
+EnergyRPB21HeatPump1of2
+EnergyRPB22AHU21of2
+EnergyRPB23HeatPump2of2
+EnergyRPB24AHU22of2
+EnergyRPBA24ACCU11of2
+EnergyRPBA26ACCU12of2
+Frequency Minimum [F_min_1]
+Frequency Minimum [F_min_2]
+"Frequency, Maximum [F_max_1]"
+"Frequency, Maximum [F_max_2]"
+Glycol Flow - SHW HX (80 gal) In
+Glycol Temp - SHW HX (80 gal) In
+"Heat pump water heater energy, QAUX"
+HeatPumpEnergyIndoorunit
+HeatPumpEnergyOutdoorUnit
+HeatPumpIndoorEnergyTotal
+HeatPumpIndoorPowerTotal
+HeatPumpOutdoorEnergyTotal
+HeatPumpOutdoorPowerTotal
+HeatpumpwaterheaterenergyQAUX
+Hot Water Load - CW
+Hot Water Load - DW
+Hot Water Load - Kitchen Sink
+Hot Water Load - MBA Sink
+Hot Water Load - Shower
+Hot Water Load - Tub
+HotWaterLoadCW
+HotWaterLoadDW
+HotWaterLoadKitchenSink
+HotWaterLoadMBASink
+HotWaterLoadShower
+HotWaterLoadTub
+HRVEfficiency
+HRVOn
+HVAC Heat Pump Air Flow Rate
+HVAC Heat Pump Latent Capacity
+HVAC Heat Pump Sensible Capacity
+HVAC Heat Pump Total Capacity
+HVAC Sensible Heat Ratio
+HVACDeltaPPressureDiffacrossIndoorUnit
+Inverter 1 Efficiency (Eta_inv1)
+Inverter 2 Efficiency (Eta_inv2)
+Inverter Efficiency (Eta_bar_inv)
+Irradiance Percent Difference (G_PercDiff)
+K Plug Loads Expected Energy Usage
+K Plug Loads Expected Power Usage
+Kitchen Operative Temperature
+Kitchen Scale (lb)
+KitchenOperativeTemperature
+KitchenScalelb
+Latent Heat Expected Energy Usage
+Latent Heat Expected Power Usage
+LR Operative Temperature
+LR Plug Loads Expected Energy Usage
+LR Plug Loads Expected Power Usage
+LROperativeTemperature
+Mains Temp - DHW
+Mains Temp - DW/CW
+MainsTempDHW
+MainsTempDWCW
+MBA Scale (lb)
+MBAScalelb
+MBR Operative Temperature
+MBR Plug Loads Expected Energy Usage
+MBR Plug Loads Expected Power Usage
+MBROperativeTemperature
+Neutral Current [I_N_1]
+Neutral Current [I_N_2]
+OutdoortoSupplyHX
+Over-/ Under-draw
+OverUnderdraw
+Power - RP B-10 Plugs - Outdoor A
+Power - RP B-11 Plugs - Outside East
+Power - RP B-12 Plugs - Outdoor B
+Power - RP B-27 RP B-BA BCPM Power/Voltage
+Power - RP B-29 Plugs - Vehicle - 240V (1of2)
+Power - RP B-30 AHU-2 Alternate
+Power - RP B-31 Plugs - Vehicle - 240V (2of2)
+Power - RP B-32 AHU-1
+Power - RP B-34 Plugs - Vehicle - 120V
+Power - RP B-36 Plugs - Garage
+Power - RP B-37 FCU-1 Future (1of2)
+Power - RP B-38 Space
+Power - RP B-39 FCU-1 Future (1of2)
+Power - RP B-40 Space
+Power - RP B-41 Spare
+Power - RP B-42 Space
+Power - RP B-7 Plugs - Center Hall
+Power - RP B-9 Plugs - Outside North
+Power - RP BA-13 Range  (1of2)
+Power - RP BA-15 Range  (2of2)
+Power - RP BA-16 FCU-2 Future  (1of2)
+Power - RP BA-17 Solar Hot Water #1  -  (1of2)
+Power - RP BA-18 FCU-2 Future  (2of2)
+Power - RP BA-19 Solar Hot Water #1  -  (2of2)
+Power - RP BA-20 HPU-4 Future (1of2)
+Power - RP BA-22 HPU-4 Future (2of2)
+Power - RP BA-25 Solar Hot Water #2  -  (1of2)
+Power - RP BA-27 Solar Hot Water #2  -  (2of2)
+Power - RP BA-28 ACCU-2  (1of2)
+Power - RP BA-30 ACCU-2  (2of2)
+Power - RP BA-33 Cooktop
+Power - RP BA-35 Space
+Power - RP BA-36 FCU-2 Future (1of2)
+Power - RP BA-37 Space
+Power - RP BA-38 FCU-2 Future (2of2)
+Power - RP BA-39 Space
+Power - RP BA-41 Space
+Power - RP BA-42 Space
+Power - RP BB-14 Spare
+Power - RP BB-17 Plugs - Inst MBA A (Scale)
+Power - RP BB-20 Leak Detection System
+Power - RP BB-30 Plugs - Inst
+Power - RP BB-32 Plugs - Inst Control Power
+Power - RP BB-35 Spare
+Power - RP BB-36 Plugs - Inst Network/Cable Box
+Power - RP BB-37 BCPM Power/Voltage
+Power - RP BB-38 Plugs - Inst Phone/Data
+Power Export - CT
+Power Export - SumCirc
+Power Factor - RP B-1 Plugs - Base A (Heliodyne HXs)
+Power Factor - RP B-10 Plugs - Outdoor A
+Power Factor - RP B-11 Plugs - Outside East
+Power Factor - RP B-12 Plugs - Outdoor B
+Power Factor - RP B-13 Plugs - DR
+Power Factor - RP B-14 Plugs - BR4
+Power Factor - RP B-15 Plugs - Entry Hall
+Power Factor - RP B-16 Plugs - LR
+Power Factor - RP B-17 Clothes Washer
+Power Factor - RP B-18 Dryer (1of2)
+Power Factor - RP B-19 Dehumidifier
+Power Factor - RP B-2 Plugs - Base B
+Power Factor - RP B-20 Dryer (2of2)
+Power Factor - RP B-21 Heat Pump (1of2)
+Power Factor - RP B-22 AHU-2  (1of2)
+Power Factor - RP B-23 Heat Pump (2of2)
+Power Factor - RP B-24 AHU-2  (2of2)
+Power Factor - RP B-25 HRV
+Power Factor - RP B-26 Heat Pump WH (1of2)
+Power Factor - RP B-27 RP B-BA BCPM Power/Voltage
+Power Factor - RP B-28 Heat Pump WH (2of2)
+Power Factor - RP B-29 Plugs - Vehicle - 240V (1of2)
+Power Factor - RP B-3 Plugs - Base C
+Power Factor - RP B-30 AHU-2 Alternate
+Power Factor - RP B-31 Plugs - Vehicle - 240V (2of2)
+Power Factor - RP B-32 AHU-1
+Power Factor - RP B-33 PV (1of2)
+Power Factor - RP B-34 Plugs - Vehicle - 120V
+Power Factor - RP B-35 PV (2of2)
+Power Factor - RP B-36 Plugs - Garage
+Power Factor - RP B-37 FCU-1 Future (1of2)
+Power Factor - RP B-38 Space
+Power Factor - RP B-39 FCU-1 Future (1of2)
+Power Factor - RP B-4 Sump Pump
+Power Factor - RP B-40 Space
+Power Factor - RP B-41 Spare
+Power Factor - RP B-42 Space
+Power Factor - RP B-5 Lights - Basement Stair
+Power Factor - RP B-6 Spare
+Power Factor - RP B-7 Plugs - Center Hall
+Power Factor - RP B-8 Plugs - BA1
+Power Factor - RP B-9 Plugs - Outside North
+Power Factor - RP BA-1 Make-Up Air Damper
+Power Factor - RP BA-10 Garbage Disposal
+Power Factor - RP BA-11 Plugs - Kit (Range)
+Power Factor - RP BA-12 Plugs - Kit Peninsula
+Power Factor - RP BA-13 Range  (1of2)
+Power Factor - RP BA-14 Microwave
+Power Factor - RP BA-15 Range  (2of2)
+Power Factor - RP BA-16 FCU-2 Future  (1of2)
+Power Factor - RP BA-17 Solar Hot Water #1  -  (1of2)
+Power Factor - RP BA-18 FCU-2 Future  (2of2)
+Power Factor - RP BA-19 Solar Hot Water #1  -  (2of2)
+Power Factor - RP BA-2 Lights - 2nd Floor
+Power Factor - RP BA-20 HPU-4 Future (1of2)
+Power Factor - RP BA-21 Plugs - 2nd Floor
+Power Factor - RP BA-22 HPU-4 Future (2of2)
+Power Factor - RP BA-23 Spare
+Power Factor - RP BA-24 ACCU-1  (1of2)
+Power Factor - RP BA-25 Solar Hot Water #2  -  (1of2)
+Power Factor - RP BA-26 ACCU-1  (2of2)
+Power Factor - RP BA-27 Solar Hot Water #2  -  (2of2)
+Power Factor - RP BA-28 ACCU-2  (1of2)
+Power Factor - RP BA-29 Plugs - BR2
+Power Factor - RP BA-3 Plugs - MBA (East)
+Power Factor - RP BA-30 ACCU-2  (2of2)
+Power Factor - RP BA-31 Plugs - MBR
+Power Factor - RP BA-32 Lights - 1st FloorA
+Power Factor - RP BA-33 Cooktop
+Power Factor - RP BA-34 Lights - 1st FloorB
+Power Factor - RP BA-35 Space
+Power Factor - RP BA-36 FCU-2 Future (1of2)
+Power Factor - RP BA-37 Space
+Power Factor - RP BA-38 FCU-2 Future (2of2)
+Power Factor - RP BA-39 Space
+Power Factor - RP BA-4 Plugs - BA2 (South)
+Power Factor - RP BA-40 Dishwasher
+Power Factor - RP BA-41 Space
+Power Factor - RP BA-42 Space
+Power Factor - RP BA-5 Plugs - MBA (West)
+Power Factor - RP BA-6 Plugs - BA2 (North)
+Power Factor - RP BA-7 Plugs - BR3
+Power Factor - RP BA-8 Refrigerator
+Power Factor - RP BA-9 Plugs - Kit (Sink)
+Power Factor - RP BB-1 Plugs - GSHP Instrumentation
+Power Factor - RP BB-10 Plugs - Inst BR4 A
+Power Factor - RP BB-11 Child B - Downstairs
+Power Factor - RP BB-12 Plugs - Inst BR4 A
+Power Factor - RP BB-13 Plugs - Inst LR A
+Power Factor - RP BB-14 Spare
+Power Factor - RP BB-15 Child A - Downstairs
+Power Factor - RP BB-16 Plugs - Inst LR B
+Power Factor - RP BB-17 Plugs - Inst MBA A (Scale)
+Power Factor - RP BB-18 Plugs - Inst BA2
+Power Factor - RP BB-19 Plugs - Inst MBA B
+Power Factor - RP BB-2 Plugs - Inst Mudroom A
+Power Factor - RP BB-20 Leak Detection System
+Power Factor - RP BB-21 Plugs - Inst MBR A
+Power Factor - RP BB-22 Plugs - Inst BR2/Hall
+Power Factor - RP BB-23 Parent A - Upstairs
+Power Factor - RP BB-24 Plugs - Inst Hall
+Power Factor - RP BB-25 Lighting Control Panel (RP-S #1)
+Power Factor - RP BB-26 Plugs - Inst BR3
+Power Factor - RP BB-27 Child A - Upstairs
+Power Factor - RP BB-28 Child B - Upstairs
+Power Factor - RP BB-29 Heat Load for Refrigerator
+Power Factor - RP BB-3 Plugs - HVAC Instrumentation
+Power Factor - RP BB-30 Plugs - Inst
+Power Factor - RP BB-31 Lighting Control Panel (RP-S #2)
+Power Factor - RP BB-32 Plugs - Inst Control Power
+Power Factor - RP BB-33 Lights - Basement
+Power Factor - RP BB-34 Parent B - Upstairs
+Power Factor - RP BB-35 Spare
+Power Factor - RP BB-36 Plugs - Inst Network/Cable Box
+Power Factor - RP BB-37 BCPM Power/Voltage
+Power Factor - RP BB-38 Plugs - Inst Phone/Data
+Power Factor - RP BB-39 Parent B - Downstairs
+Power Factor - RP BB-4 Plugs - Inst BA1
+Power Factor - RP BB-40 Plugs - Inst Kit D
+Power Factor - RP BB-41 Plugs - DR B
+Power Factor - RP BB-42 Plugs - Attic
+Power Factor - RP BB-5 Lights - Attic
+Power Factor - RP BB-6 Plugs - Inst Kit A
+Power Factor - RP BB-7 Plugs - Inst Mudroom B
+Power Factor - RP BB-8 Parent A - Downstairs
+Power Factor - RP BB-9 Plugs - Inst DR A
+Power Import - CT
+Power Import - SumCirc
+Power Load - CT
+Power Load - SumCirc
+PowerRPB21HeatPump1of2
+PowerRPB22AHU21of2
+PowerRPB23HeatPump2of2
+PowerRPB24AHU22of2
+PowerRPBA24ACCU11of2
+PowerRPBA26ACCU12of2
+PV Ref. Cell (mA)
+Refrigerator Temp
+ReturntoExhaustHX
+RP B Line Voltage
+RP B Phase 1&2 Average Current
+RP B Total kW
+RP B Total kWh
+RP BB Line Voltage
+RP BB Phase 1&2 Average Current
+RP BB Total kW
+RP BB Total kWh
+RP-BB Instrument Circuits Energy - Fixed Equipment
+RP-BB Instrument Circuits Energy - Lights
+RP-BB Instrument Circuits Energy - Loads
+RP-BB Instrument Circuits Energy - Plugs
+Solar Preheat Tank (80 gal) Water Flow
+"Solar tank energy, QSOLAR"
+SolartankenergyQSOLAR
+Specific Yield Day (SY)
+Status? Appliances - Dryer Water
+Status? Drain Tank Solenoid - Kitchen
+Status? Drain Tank Solenoid - MBA
+Status? Make-up Air Damper
+StatusDrainTankSolenoidKitchen
+StatusDrainTankSolenoidMBA
+Total Appliance Energy
+Total Appliance Power
+Total DHW Energy
+Total DHW Power
+Total Generation Energy
+Total Generation Power
+Total Hot Water Load
+Total HVAC Energy
+Total HVAC Power
+Total Lighting Energy
+Total Lighting Power
+Total NZERTF Energy Export - CT
+Total NZERTF Energy Export - Sum Circ
+Total NZERTF Energy Import - CT
+Total NZERTF Energy Import - Sum Circ
+Total NZERTF Energy Load - Sum Circ
+Total NZERTF Power Export - CT
+Total NZERTF Power Export - Sum Circ
+Total NZERTF Power Import - CT
+Total NZERTF Power Import - Sum Circ
+Total NZERTF Power Load - Sum Circ
+Total Occupant Energy
+Total Occupant Power
+Total Plug Load Energy
+Total Plug Load Power
+TotalHotWaterLoad
+"VA-hours, Total [VAh_T_1]"
+"VA-hours, Total [VAh_T_2]"
+"VAR-hours, Negative [VARh_N_1]"
+"VAR-hours, Negative [VARh_N_2]"
+"VAR-hours, Positive [VARh_P_1]"
+"VAR-hours, Positive [VARh_P_2]"
+"VARs, 3-Ph Total [VAR_3PhT_1]"
+"VARs, 3-Ph Total [VAR_3PhT_2]"
+"VAs,3-Ph Total [VA_3PhT_1]"
+"VAs,3-Ph Total [VA_3PhT_2]"
+"Volts A-N, %THD [U_ANTHD_1]"
+"Volts A-N, %THD [U_ANTHD_2]"
+"Volts A-N, Maximum [U_ANmax_1]"
+"Volts A-N, Maximum [U_ANmax_2]"
+"Volts A-N, Minimum [U_ANmin_1]"
+"Volts A-N, Minimum [U_ANmin_2]"
+"Volts B-N, %THD [U_BNTHD_1]"
+"Volts B-N, %THD [U_BNTHD_2]"
+"Volts B-N, Maximum [U_BNmax_1]"
+"Volts B-N, Maximum [U_BNmax_2]"
+"Volts B-N, Minimum [U_BNmin_1]"
+"Volts B-N, Minimum [U_BNmin_2]"
+EnergyRPB19Dehumidifier
+PowerRPB19Dehumidifier
