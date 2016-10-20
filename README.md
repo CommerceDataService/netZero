@@ -18,6 +18,7 @@ The [cleaning_script.R](https://github.com/CommerceDataService/netZero/blob/mast
 Here are a few data cleaning and manipulation issues to keep in mind:
 
 - Various channels and systems may not always exactly have 1440 readings per day because of resets at midnight, instrumentation boot time lags, different intervals for collecting data from instruments. Channel readings are rounded to the nearest minute and if readings start after midnight, the channel values are zero up until the readings begin.
+- The TimeStamp_SystemTime variable, rounded to the minute, was used as a timestamp for the data from the LabView system. For the alternate system, 1440 readings were provided for each day, so an appropriate minute-level timestamp was generated.
 
 ## Tutorials
 

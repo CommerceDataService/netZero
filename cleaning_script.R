@@ -11,6 +11,7 @@ mainWD <- "/Users/prioberoi/Documents/nist/netZero"
 rawDataWD <- paste0(mainWD, "/data/raw")
 rawDataAltSystemWD <- paste0(rawDataWD, "/AlternateSystem") # only use this file path if data from an alternate system needs to be imported as well
 processedDataWD <- paste0(mainWD, "/data/processed")
+userUpdatesWD <- paste0(mainWD, "/data/user_updates")
 
 ###############
 # Get data and clean
@@ -51,25 +52,6 @@ for(path in paths){
 }
 proc.time() - ptm
 
-##########
-# Remove channels (variables) flagged for removal 
-##########
-
-### only run this segment of code if there are particular variables you would like removed from the dataset ###
-### some preprocessing was done on this csv manually to flag variables for removal, refer to DataToBeIncluded file in repo ###
-### rows flagged with a 0 in the remove$Remove column, will be removed in the code below ###
-
-remove <- read.csv(paste0(processedDataWD, "/DataToBeIncluded.csv"), header = TRUE, stringsAsFactors = FALSE)
-remove$Channel <- gsub("[[:punct:]]", "", remove$Channel)
-remove$Channel <- gsub(" ", "", remove$Channel)
-remove$Remove[is.na(remove$Remove)] <- 1
-remove <- remove[remove$Remove < 1,]
-# remove the channels from data
-for(channel in remove$Channel){
-  temp <- names(d)[grep(paste0("_", channel), names(d), ignore.case = TRUE)]
-  d[,temp] <- NULL
-}
-
 ############### 
 # Add data from alternate system
 ############### 
@@ -99,16 +81,48 @@ for(path in paths){
   vars <- vars[!(vars %in% vars[grep("^Time", vars)])]
   d[as.character(d$Timestamp) %in% as.character(day$Timestamp),vars] <- day[,vars]
 }
-proc.time() - ptm
+proc.time() - ptm # approximately 48 mins
+
+##########
+# Remove channels (variables) flagged for removal 
+##########
+
+### only run this segment of code if there are particular variables you would like removed from the dataset ###
+### some preprocessing was done on this csv manually to flag variables for removal, refer to DataToBeExcluded file in repo ###
+### variable names included in the DataToBeExcluded file, will be removed from the data in the code below ###
+
+remove <- read.csv(paste0(userUpdatesWD, "/DataToBeExcluded.csv"), header = TRUE, stringsAsFactors = FALSE)
+remove$Channel <- gsub("[[:punct:]]", "", remove$Channel)
+remove$Channel <- gsub(" ", "", remove$Channel)
+remove <- remove$Channel[!duplicated(remove$Channel)]
+# remove the channels from data
+for(i in 1:length(remove)){
+  temp <- grep(paste0("_", remove[i], "$"), names(d), ignore.case = TRUE, value = TRUE)
+  d[,temp] <- NULL
+  remove[i] <- temp
+}
+
+##########
+# Rename variables for interpretability
+##########
+
+# manual override of channel names
+rename <- read.csv(paste0(userUpdatesWD, "/newVariableNames.csv"), header = TRUE, stringsAsFactors = FALSE)
+updatedNames <- setNames(rename$NewDataLabel, rename$OldDataLabel)
+
+# updated variable names with manual override names
+names(d)[names(d) %in% rename$OldDataLabel] <- updatedNames[names(d)[names(d) %in% rename$OldDataLabel]]
 
 ##########
 # More time variable processing
 ##########
 
-# Remove extraneous timestamp variables, like TimeStamp_GPSTime
-d <- d[,!(names(d) %in% c("TimeStamp_GPSTime"))] 
+# Remove extraneous timestamp variables, like TimeStamp_GPSTime, TimeStamp_SystemTime, TimeStamp_SchedulerTime
+d <- d[,!(names(d) %in% c("TimeStamp_GPSTime", "TimeStamp_SystemTime", "TimeStamp_SchedulerTime"))] 
 # create variable for day of week
 d$DayOfWeek <- as.factor(weekdays(d$Timestamp))
+# update timestamp count
+d$TimeStamp_Count <- 1:nrow(d)
 # store list of time variables
 timeVars <- c(names(d)[grep("time", names(d), ignore.case = TRUE)], "DayOfWeek")
 
@@ -118,11 +132,8 @@ proc.time() - ptm
 # Update data dictionary subsystem and channels to match nomenclature in data
 ###############
 
-dic <- read.csv(paste0(rawDataWD, "/dataDictionary.csv"), header = TRUE, stringsAsFactors = FALSE, na.strings = c("", NA, " "))
+dic <- read.csv(paste0(userUpdatesWD, "/dataDictionary.csv"), header = TRUE, stringsAsFactors = FALSE, na.strings = c("", NA, " "))
 dic <- na.omit(dic)
-dic$channel <- gsub("[[:punct:]]", "", dic$Data.Label)
-dic$channel <- gsub("\\\xd0", "", dic$channel)
-dic$channel <- gsub(" ", "", dic$channel)
 
 # list of subsystems
 subsystems <- unlist(unique(lapply(names(d[grep("_", names(d))]), function(x) substr(x, 1, grep("_", strsplit(x, split = "")[[1]])-1))))
@@ -171,17 +182,15 @@ metadata$in_dictionary <- "N"
 metadata$in_dictionary[!(metadata$description == "")] <- "Y"
 metadata[metadata$variable %in% timeVars,'description'] <- "Date/Time"
 metadata$description[grep("_Status", metadata$variable)] <- "Binary Status"
-temp <- c()
-for(i in 1:ncol(d)){
-  temp[i] <- max(as.numeric(d[,i]))
+metadata$max_value <- 0
+metadata$min_value <- 0
+for(col in names(d)){
+  metadata$max_value[metadata$variable == col] <- max(as.numeric(d[,col]))
+  metadata$min_value[metadata$variable == col] <- min(as.numeric(d[,col]))
 }
-metadata$max_value <- temp
-temp <- c()
-for(i in 1:ncol(d)){
-  temp[i] <- min(as.numeric(d[,i]))
-}
-metadata$min_value <- temp
 
 write.csv(metadata, file = paste0(processedDataWD, "/metadata.csv"), row.names = FALSE)
 
 proc.time() - ptm #approximately 78 mins
+
+#save(d, data_subsystem, day, dic, metadata, remove, altSubSystem, channel, mainWD, naics, path, paths, processedDataWD, rawDataWD, rawDataAltSystemWD, subsystem, subsystems, timeVars, vars, file = '/Users/prioberoi/Documents/nist/netZero/internal/cleaning_script_2016-10-18.Rda')
