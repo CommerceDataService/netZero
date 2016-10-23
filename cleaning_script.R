@@ -42,13 +42,13 @@ for(path in paths){
   day$Timestamp <- round(day$TimeStamp_SystemTime, units = "min")
   day <- day[!(duplicated(day$Timestamp)),]
   # add any new channels (columns) from day to d
-  temp <- as.data.frame(matrix(0, ncol = length(names(day)[!(names(day) %in% names(d))]), nrow = nrow(d)))
+  temp <- as.data.frame(matrix(NA, ncol = length(names(day)[!(names(day) %in% names(d))]), nrow = nrow(d)))
   names(temp) <- names(day)[!(names(day) %in% names(d))]
   d <- cbind(d, temp)
   # add data to channels
   vars <- names(day)
   vars <- vars[!(vars %in% vars[grep("^Time", vars)])]
-  d[as.character(d$Timestamp) %in% as.character(day$Timestamp),vars] <- day[,vars]
+  d[d$Timestamp %in% day$Timestamp,vars] <- day[,vars]
 }
 proc.time() - ptm
 
@@ -70,16 +70,22 @@ for(path in paths){
   names(day) <- gsub("\\_", "", names(day))
   # prefix name of subsystem for new channels
   names(day) <- paste0(altSubSystem, "_", names(day))
+  # parse date from file name in path 
+  start_loc <- regexpr("......\\.txt", path)[1]
+  date <- paste0(strsplit(path, "")[[1]][start_loc:(start_loc+5)], collapse = '')
+  year <- as.numeric(paste0("20", substr(date, 1, 2)))
+  month <- as.numeric(substr(date, 3, 4))
+  dom <- as.numeric(substr(date, 5, 6))
   # create new timestamp rounded to the minute
-  day$Timestamp <- seq(from = ISOdatetime(2015, 02, 01, 0, 0, 0, tz = "EST"), by = "min", length.out = nrow(day))
+  day$Timestamp <- seq(from = ISOdatetime(year, month, dom, 0, 0, 0, tz = "EST"), by = "min", length.out = nrow(day))
   # add any new channels
-  temp <- as.data.frame(matrix(0, ncol = length(names(day)[!(names(day) %in% names(d))]), nrow = nrow(d)))
+  temp <- as.data.frame(matrix(NA, ncol = length(names(day)[!(names(day) %in% names(d))]), nrow = nrow(d)))
   names(temp) <- names(day)[!(names(day) %in% names(d))]
   d <- cbind(d, temp)
   # add data to channels
   vars <- names(day)
   vars <- vars[!(vars %in% vars[grep("^Time", vars)])]
-  d[as.character(d$Timestamp) %in% as.character(day$Timestamp),vars] <- day[,vars]
+  d[d$Timestamp %in% day$Timestamp,vars] <- day[,vars]
 }
 proc.time() - ptm # approximately 48 mins
 
