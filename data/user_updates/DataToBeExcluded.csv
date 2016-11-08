@@ -571,3 +571,5 @@ TotalHotWaterLoad
 "Volts B-N, Minimum [U_BNmin_2]"
 EnergyRPB19Dehumidifier
 PowerRPB19Dehumidifier
+UTR1Temperature
+UTR2Temperature
