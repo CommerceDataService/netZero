@@ -22,7 +22,7 @@ userUpdatesWD <- paste0(mainWD, "/data/user_updates")
 ptm <- proc.time()
 
 # Create object to house all data with minute-level timestamps
-d <- data.frame(Timestamp = seq(ISOdatetime(2015, 02, 01, 0, 0, 0, tz = "EST"), ISOdatetime(2016, 01, 31, 0, 0, 0, tz = "EST"), "min"))
+d <- data.frame(Timestamp = seq(ISOdatetime(2015, 02, 01, 0, 0, 0, tz = "EST"), ISOdatetime(2016, 02, 01, 0, 0, 0, tz = "EST"), "min"))
 
 # import data from the raw files, add new channels (columns) as needed or add data to existing channels
 paths <- dir(path = rawDataWD, pattern = "\\.csv$", full.names = TRUE)
