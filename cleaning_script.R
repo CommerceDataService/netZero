@@ -60,6 +60,11 @@ for(path in paths){
 }
 proc.time() - ptm
 
+# account for daylight savings (adds one hour between 2am on March 8th and November 1st, 2015)
+d$Timestamp[((d$Timestamp > as.POSIXct("2015-03-08 02:00:00", tz = "EST")) & (d$Timestamp < as.POSIXct("2015-11-01 01:00:00", tz = "EST")))] <- (d$Timestamp[((d$Timestamp > as.POSIXct("2015-03-08 02:00:00", tz = "EST")) & (d$Timestamp < as.POSIXct("2015-11-01 01:00:00", tz = "EST")))]) + (60*60)
+# remove duplicate hour on 11/1 from 01:00:00 to 01:59:00
+d <- d[!duplicated(d$Timestamp),]
+
 ############### 
 # Add data from alternate system
 ############### 
@@ -95,6 +100,10 @@ for(path in paths){
   d[as.character(d$Timestamp) %in% as.character(day$Timestamp),vars] <- day[,vars]
 }
 proc.time() - ptm # approximately 48 mins
+
+### remove an hour of duplicated data
+### it may not be necessary to run this chunk of code on future datasets 
+d[(d$Timestamp > as.POSIXct("2015-03-09 06:45:00", tz = "EST")) & (d$Timestamp < as.POSIXct("2015-03-09 07:46:00", tz = "EST")),names(day)[!(names(day) %in% "Timestamp")]] <- NA
 
 ##########
 # Remove channels (variables) flagged for removal 
@@ -252,4 +261,4 @@ proc.time() - ptm
 # write metadata file
 write.csv(metadata, file = paste0(processedDataWD, "/metadata.csv"), row.names = FALSE)
 
-#save(d, d_hour, data_subsystem, day, dic, metadata, remove, altSubSystem, mainWD, path, paths, processedDataWD, rawDataWD, rawDataAltSystemWD, subsystem, subsystems, timeVars, vars, file = '/Users/prioberoi/Documents/nist/netZero/internal/cleaning_script_2016-10-18.Rda')
+#save(d, d_hour, data_subsystem, day, dic, metadata, remove, altSubSystem, mainWD, path, paths, processedDataWD, rawDataWD, rawDataAltSystemWD, subsystem, subsystems, timeVars, vars, file = '/Users/prioberoi/Documents/nist/netZero/internal/cleaning_script.Rda')
